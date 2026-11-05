@@ -29,3 +29,8 @@ Use the approved V10 footprint layout as approximate **where buildings should si
 - Some V10 polygons may intentionally overlap or need modest correction. The flags are advisory, never an automatic geometry rewrite.
 - All measurements in native source catalogue are metres; target footprints and road linework use atlas pixels. Before matching sizes across sources, use a validated geometric registration; do not equate pixel values with metres.
 - This is a public repository. Do not upload the original commercial/licensed `.skp` or binary model libraries until their redistribution rights are settled. This repository deliberately contains only analysis-derived catalogues, geometry target placements and decision records.
+## Collision-audit results
+
+The preserved target layer has 11,508 footprint polygons. A first geometric check against 2,422 cleaned road chains found zero direct road-centreline crossings, but 40 footprints are within three atlas pixels of their nearest centreline. The dataset also contains 3,182 polygon-overlap pairs involving 2,432 sites. These are manual-review flags; no footprints were removed or moved. See `data/checks/` for the detailed records.
+
+The next stage is to register the source SketchUp placements against known landmarks, then place native-scale models with limited rotations and translations, filling genuine gaps with smaller originals.
