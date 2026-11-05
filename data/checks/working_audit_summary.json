@@ -13,3 +13,23 @@
   "size_class_distribution_usable": {
     "L": 1120,
     "M": 1887,
+    "S": 721,
+    "XL": 571,
+    "XS": 137,
+    "XXL": 26
+  },
+  "coordinate_note": "Atlas pixel coordinate frame; do not treat as lat/lon. One-source-building per desired slot is NOT required. Source original SKP placements not yet authenticated in V10 atlas coordinates.",
+  "road_note": "Detect line/plot intersections only: no verified width buffer; a crossing is a flag, not an instruction to move anything.",
+  "road_proximity_counts_atlas_pixels": {
+    "<=10 px": 4032,
+    ">10 px": 7296,
+    "<=5 px": 140,
+    "<=3 px": 40
+  },
+  "slot_overlap_severity": {
+    "MEDIUM_OVERLAP": 828,
+    "HIGH_OVERLAP": 2018,
+    "MINOR_OVERLAP": 336
+  },
+  "note": "Road distance values in atlas pixels only. Proximity flags are not proven road-width violations."
+}
