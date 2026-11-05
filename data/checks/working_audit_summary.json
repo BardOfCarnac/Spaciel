@@ -1,0 +1,15 @@
+{
+  "approved_footprints": 11508,
+  "road_chains": 2422,
+  "road_centerline_crossing_slots": 0,
+  "road_centerline_crossing_edges": 0,
+  "footprint_overlap_slots": 2432,
+  "footprint_overlap_pairs": 3182,
+  "geometry_validity_review_sites": 1,
+  "native_buildings_screened": 4470,
+  "native_complete_building_envelopes": 4462,
+  "native_on_hold": 8,
+  "approved_native_reuse_proposals": 1520,
+  "size_class_distribution_usable": {
+    "L": 1120,
+    "M": 1887,
