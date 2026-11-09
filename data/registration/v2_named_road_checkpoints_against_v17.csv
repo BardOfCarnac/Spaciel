@@ -1,0 +1,10 @@
+road,checkpoint,original_skp_plan_x_px,original_skp_plan_y_px,atlas_v2_x_px,atlas_v2_y_px,v2_nearest_v17_centerline_px,v1_nearest_v17_centerline_px,prior_v2_nearest_skp_road_trace_px,independent_control
+Watson Blvd,1,3496.797,1326.224,2400.417,2638.833,0.002,41.545,0.266,No — saved V2 reference-point replay
+Watson Blvd,2,3510.226,1292.987,2415.144,2591.427,0.003,18.369,11.465,No — saved V2 reference-point replay
+Kennedy Ave,1,3707.079,1296.212,2630.833,2596.083,0.002,119.229,4.248,No — saved V2 reference-point replay
+Kennedy Ave,2,3679.848,1287.045,2601.0,2582.999,2.604,99.282,4.452,No — saved V2 reference-point replay
+Kennedy Ave,3,3676.126,1283.433,2596.923,2577.846,0.002,96.135,0.718,No — saved V2 reference-point replay
+Marina Blvd,1,3779.745,1850.8,2710.25,3387.166,0.002,8.407,5.692,No — saved V2 reference-point replay
+Marina Blvd,2,3784.08,1849.981,2715.0,3385.999,2.531,5.377,6.63,No — saved V2 reference-point replay
+Marina Blvd,3,3805.065,1829.646,2738.0,3357.0,1.711,9.55,9.396,No — saved V2 reference-point replay
+Marina Blvd,4,3813.886,1824.562,2747.667,3349.75,0.002,15.578,12.796,No — saved V2 reference-point replay
