@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spaciel Spectral Ocean — Map Repair</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#0d1720;color:#e4f4f8;font:15px/1.6 system-ui,sans-serif;display:grid;place-items:center;padding:22px}.panel{max-width:520px;width:100%;border:1px solid #315663;border-radius:16px;background:#142833;padding:22px}h1{font-size:23px;line-height:1.25;margin:8px 0}.small{font-size:12px;color:#a3bfcb}.label{color:#94cfdd;font-size:11px;font-weight:700;letter-spacing:.14em}label.file{display:block;margin:20px 0;padding:22px 12px;border:1px dashed #6aafbf;border-radius:10px;cursor:pointer;text-align:center;background:#193542}input[type=file]{width:100%;font-size:13px;margin-top:14px}a.download{display:none;margin:14px 0;padding:14px;background:#b0e4ec;color:#0a2934;border-radius:10px;text-align:center;text-decoration:none;font-weight:750}#msg{font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere;color:#bed3db}ol{padding-left:21px}li{margin-bottom:5px}footer{font-size:11px;color:#8daab7;margin-top:22px}
+</style></head><body><main class="panel">
+<div class="label">SPACIEL / OFFLINE REPAIR</div>
+<h1>Restore the Spectral Ocean map</h1>
+<p class="small">This repairs the missing shader declaration and adds a fallback to the previously working ocean renderer. The geography, terrain, roads and buildings are untouched. No files are uploaded to a server.</p>
+<ol><li>Choose your downloaded <b>Spaciel V19 Spectral Ocean Motion Test.html</b> file below.</li><li>Tap <b>Download repaired map</b>.</li><li>Open the new HTML file in Chrome.</li></ol>
+<label class="file">Select the original Spectral Ocean HTML<input id="file" type="file"></label>
+<p id="msg" role="status">Ready to select a file.</p>
+<a class="download" id="save" download="Spaciel_V19_Spectral_Ocean_Repaired.html">Download repaired map</a>
+<footer>Runs locally on your device. For the full 28 MB HTML, your phone may need a moment to prepare the download.</footer>
+</main>
+<script>
+(function(){
+  const input=document.getElementById('file'),message=document.getElementById('msg'),save=document.getElementById('save');
+  let prev=null;
+  input.addEventListener('change',async function(){
+    save.style.display='none';
+    const f=input.files && input.files[0];
+    if(!f)return;
+    message.textContent='Reading '+f.name+' ...';
+    try{
+      if(f.size<1000000 || !/\.html?$/i.test(f.name))throw Error('Select the full 28 MB Spectral Ocean HTML, not a ZIP.');
+      let source=await f.text();
+      const target='uniform float oceanTime;uniform float oceanWind;';
+      const original='const TP=prog(VS,FS),BP=prog(BVS,BFS),EP=prog(EVS,EFS);';
+      if(!source.includes('oceanColourSpectral')||!source.includes(original)||!source.includes(target))throw Error('This is not the expected Spectral Ocean viewer.');
+      if(source.includes('uniform int oceanModel;'))throw Error('This file appears already repaired.');
+      source=source.replace(target,'uniform int oceanModel;'+target);
+      const safe=[
+        'let TP;',
+        'try { TP=prog(VS,FS); }',
+        'catch(spectralError){',
+        " console.warn('Spectral shader unavailable; restoring earlier water renderer',spectralError);",
+        " const a=FS.indexOf('// Wave-spectrum-based glitter:');",
+        " const b=FS.indexOf('void main(){vec3 dx=dFdx(W)',a);",
+        ' if(a<0||b<0)throw spectralError;',
+        " const fallbackFS=FS.slice(0,a)+'vec3 oceanColour(vec3 world,float px){return oceanColourCloud(world,px);}\\n'+FS.slice(b);",
+        ' TP=prog(VS,fallbackFS);',
+        " const flag=document.createElement('div');",
+        " flag.textContent='Compatible ocean active — spectral shader unavailable';",
+        " flag.style.cssText='position:fixed;z-index:999;top:6px;left:6px;padding:6px 9px;background:#102430ec;color:#bdeaf0;border:1px solid #6d9daa;border-radius:6px;font:11px system-ui';",
+        ' document.body.appendChild(flag);',
+        '}',
+        'const BP=prog(BVS,BFS),EP=prog(EVS,EFS);'
+      ].join('\n');
+      source=source.replace(original,safe);
+      if(!source.includes('uniform int oceanModel;')||!source.includes('const fallbackFS=')||!source.trimEnd().endsWith('</html>'))throw Error('Validation failed.');
+      if(prev)URL.revokeObjectURL(prev);
+      prev=URL.createObjectURL(new Blob([source],{type:'text/html;charset=utf-8'}));
+      save.href=prev; save.style.display='block';
+      message.style.color='#a3e6bb';
+      message.textContent='Repair ready. The complete map data is preserved. Tap Download repaired map.';
+    }catch(e){
+      message.style.color='#ffc4b8';message.textContent='Could not repair: '+e.message;
+    }
+  });
+})();
+</script></body></html>
