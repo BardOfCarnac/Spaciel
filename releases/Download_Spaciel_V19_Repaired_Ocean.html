@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Spaciel V19 · Repaired Ocean Downloader</title>
+<style>
+:root{color-scheme:dark}body{background:#101b24;color:#e6f3f5;margin:0;font:15px system-ui,sans-serif;line-height:1.6}
+main{max-width:520px;margin:6vh auto;padding:24px;background:#172936;border:1px solid #315365;border-radius:16px}
+h1{font-size:22px;line-height:1.25;margin:8px 0 14px}small,.muted{color:#a8bfcc}
+.tag{font-size:11px;letter-spacing:.12em;color:#86c8d9;font-weight:800}
+button,a.btn{display:block;width:100%;box-sizing:border-box;text-align:center;background:#afe2ec;color:#0d2834;border:0;border-radius:9px;padding:14px;margin-top:18px;cursor:pointer;text-decoration:none;font:700 14px system-ui}
+button:disabled{opacity:.55;cursor:wait}
+#msg{font-size:13px;min-height:55px;color:#b6d6e2;margin:15px 0}
+progress{width:100%;height:10px;accent-color:#8bd0df}
+code{font-size:12px}a.link{color:#9de0f2}
+</style></head><body><main>
+<div class="tag">SPACIEL / REPAIRED SPECTRAL OCEAN</div>
+<h1>Download the complete V19 map</h1>
+<p>This assembles the saved 27.8 MB Spaciel viewer into one standalone HTML file, with the missing spectral shader declaration repaired and a fallback water renderer included.</p>
+<p class="muted">No file selection or upload needed. The map, terrain and building data remain embedded, and the finished viewer works offline.</p>
+<button id="go">Build and download repaired viewer</button>
+<progress id="bar" value="0" max="8" hidden></progress>
+<div id="msg" role="status">Ready · 8 source pieces · no upload</div>
+<a id="save" class="btn" style="display:none" download="Spaciel_V19_Spectral_Ocean_Repaired.html">Download repaired map again</a>
+<p><small>Keep this page open until the download finishes. Opening the resulting HTML requires a browser that supports WebGL2.</small></p>
+</main><script>
+(()=>{"use strict";
+const go=document.getElementById('go'),msg=document.getElementById('msg'),bar=document.getElementById('bar'),save=document.getElementById('save');
+const base='https://raw.githubusercontent.com/BardOfCarnac/Spaciel/fix/spectral-ocean-blank-map-20261109/releases/parts/part-';
+let url=null;
+go.addEventListener('click',async()=>{
+ go.disabled=true;bar.hidden=false;bar.value=0;save.style.display='none';
+ let total=0;
+ try {
+  const parts=new Array(8);
+  for(let i=0;i<8;i++){
+   msg.textContent='Retrieving map data… '+(i+1)+'/8';
+   const res=await fetch(base+String(i).padStart(2,'0')+'.txt',{cache:'no-store'});
+   if(!res.ok)throw new Error('Source piece '+(i+1)+' unavailable (HTTP '+res.status+')');
+   const body=await res.text();
+   if(body.length<50000)throw new Error('Incomplete source piece '+(i+1));
+   parts[i]=body;total+=body.length;bar.value=i+1;
+  }
+  if(total!==27790841||!parts[0].startsWith('<!doctype html>')||!parts[7].trimEnd().endsWith('</body></html>')){
+    throw new Error('File verification failed. Please retry when connected to the internet.');
+  }
+  if(url)URL.revokeObjectURL(url);
+  url=URL.createObjectURL(new Blob(parts,{type:'text/html;charset=utf-8'}));
+  save.href=url;save.style.display='block';
+  msg.textContent='Repaired viewer ready · '+(total/1048576).toFixed(1)+' MB · map data verified.';
+  save.click();
+ } catch(err){msg.textContent='Could not assemble the viewer: '+err.message;bar.hidden=true;}
+ finally{go.disabled=false;}
+});
+})();
+</script></body></html>
