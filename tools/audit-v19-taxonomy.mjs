@@ -17,7 +17,7 @@ const ins=fs.readFileSync(path.join(root,'review/Spaciel_V19_Icon_Taxonomy_Insta
 const payload=ins.match(/<script id="spaciel-payload" type="application\/json">([\s\S]*?)<\/script>/);assert.ok(payload);assert.deepEqual(JSON.parse(payload[1]),d);
 const getfn=s=>{let i=s.indexOf('function patchViewer(html,data){');assert.ok(i>=0);let j=s.indexOf('return html;\n}',i);assert.ok(j>i);return s.slice(i,j+'return html;\n}'.length)};
 assert.equal(getfn(node),getfn(ins));
-new Script(node.replace(/^#!.*\n/,'').replace(/^import .*\n/g,''),{filename:'taxonomy-converter'});
+new Script(getfn(node),{filename:'taxonomy-converter-function'});
 const scripts=[...ins.matchAll(/<script(?![^>]*type=)[^>]*>([\s\S]*?)<\/script>/g)];assert.ok(scripts.length);for(const m of scripts)new Script(m[1]);
 assert.equal(d.records.filter(x=>x.review_needed).length,178);
 console.log(JSON.stringify({locations:556,roles:35,families:7,corrections:d.sourcebook_corrections.length,secondary_sites:d.records.filter(x=>x.secondary_family_ids?.length).length,review_flags:178,counts},null,2));
