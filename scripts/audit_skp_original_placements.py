@@ -95,7 +95,7 @@ def audit(source,sites,roads,frame,config):
 def run(input_path,frame,targets,roads,output_dir,source_revision):
     config=json.loads(REG.read_text());source=read_geojson(input_path)
     if source_revision=='2':
-        revision_warning='V2 registration measured using (1).skp. World/map frame equivalence of (2).skp is UNVERIFIED.'
+        revision_warning='The saved (1).skp and (2).skp source files have identical SHA256. V2 road registration is source-frame consistent but each original site match is still only a candidate.'
     else: revision_warning='Source map placement frame should be confirmed against SKP road controls before approval.'
     rows,features=audit(source,read_geojson(targets),read_geojson(roads),frame,config)
     output_dir=Path(output_dir);output_dir.mkdir(parents=True,exist_ok=True)
