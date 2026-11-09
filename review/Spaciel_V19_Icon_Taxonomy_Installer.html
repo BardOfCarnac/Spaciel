@@ -56,9 +56,9 @@ function patchViewer(html,data){
  one("p.childCats=[...new Set(p.shops.map(e=>e.cat).filter(c=>c!==null))];","p.childCats=[...new Set([...(p.secondaryFamilyCats||[]),...p.shops.map(e=>e.cat===null?null:GEO_OLD_TO_NEW[e.cat])].filter(c=>c!==null))];");
  one("CAT_NAMES[shop.cat].toLocaleLowerCase()","CAT_NAMES[GEO_OLD_TO_NEW[shop.cat]].toLocaleLowerCase()");
  one("glyph.style.background=CAT_COLORS[shop.cat]+\u002728\u0027;","glyph.style.background=CAT_COLORS[GEO_OLD_TO_NEW[shop.cat]]+\u002728\u0027;");
- one("(item.basis==='sourcebook_review_provisional'?' · REVIEW':'')","(item.needsTaxonomyReview?' · REVIEW':'')");
+ one("(item.basis==='sourcebook_review_provisional'?' · REVIEW':'')","(item.c!==null&&item.sub>0&&SUB_NAMES[item.c]?.[item.sub]?' · '+SUB_NAMES[item.c][item.sub]:'')+(item.needsTaxonomyReview?' · REVIEW':'')");
  one("const subMode=renderCat>=0&&item.c===renderCat&&item.sub!==null,bitmap=categoryHost?parentBitmaps[renderCat]:(isNeutral?null:(subMode?subBitmaps[item.c][item.sub]:parentBitmaps[item.c]));",
- "const bitmap=categoryHost?parentBitmaps[GEO_FAMILY_ART[renderCat]]:(item.iconCat===null?null:(item.iconSub!==null&&subBitmaps[item.iconCat]?.[item.iconSub]?subBitmaps[item.iconCat][item.iconSub]:parentBitmaps[item.iconCat]));");
+ "const bitmap=categoryHost?null:(item.iconCat===null?null:(item.iconSub!==null&&subBitmaps[item.iconCat]?.[item.iconSub]?subBitmaps[item.iconCat][item.iconSub]:parentBitmaps[item.iconCat]));");
  one("document.getElementById('geo-location-count').textContent=cat<0?'556 PINS · 90 VENUES':cat===4?(GEO_POINTS.filter(x=>x.c===4||(x.shops.length>0)).length+' COMMERCE SITES'):GEO_POINTS.filter(x=>x.c===cat).length+' LOCATIONS';",
  "document.getElementById('geo-location-count').textContent=cat<0?GEO_POINTS.length+' PINS · '+GEO_SHOP_ROWS.length+' LINKED VENUES':GEO_POINTS.filter(x=>visibleGeoCategory(x,cat)).length+' LOCATIONS';");
  one("Search 556 mapped places plus '+GEO_SHOP_ROWS.length+' Vend-R occupants, shops, bars and services.",

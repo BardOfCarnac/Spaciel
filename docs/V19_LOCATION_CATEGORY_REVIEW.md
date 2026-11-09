@@ -49,3 +49,7 @@ Seven previously misclassified entries have been corrected after checking their 
 The existing 35 roles now support **secondary family filtering** from documented mixed uses (independent of Vend-R listings): Bristol Business Park (Leisure events), Graceland Medical (Municipal/security), Obsidian Equinox (Leisure boating), Stop. Shop. Stitch. (Shopping and Civic), and Snack & Shack (Shopping and Living). These secondary relationships change only filtering, never marker counts, locations, height or Vend-R data.
 
 Run `node tools/audit-v19-taxonomy.mjs` to validate the manifest, corrected cases, converter/installer parity, and browser payload. Full 3D visual testing remains outstanding.
+
+## Viewer review behaviour
+
+The popup now shows the 35-role subtype alongside the family and REVIEW flag. When a mapped building appears under a secondary family, its map marker uses the selected family colour but does **not** borrow an unrelated legacy category glyph. Original icon art remains for verified primary-role matches. Missing new-role glyphs still require an artwork pass; they are not marked as finished merely because they are coloured.
