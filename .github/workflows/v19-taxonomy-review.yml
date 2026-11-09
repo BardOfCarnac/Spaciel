@@ -12,7 +12,7 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: node --version
       - run: node --check tools/build-v19-taxonomy-viewer.mjs
       - run: node tools/audit-v19-taxonomy.mjs
