@@ -8,16 +8,16 @@ The 2026-11-01 icon-role exploration defined **seven families and 35 roles**. Th
 
 | Visual spectrum / family | Proposed primary pins |
 |---|---:|
-| Civic & Care (red) | 89 |
-| Municipal (orange) | 74 |
+| Civic & Care (red) | 90 |
+| Municipal (orange) | 75 |
 | Shopping & Services (yellow) | 72 |
 | Living & Lodging (green) | 86 |
-| Food & Nightlife (cyan) | 62 |
-| Leisure & Culture (blue) | 62 |
-| Work & Industry (magenta) | 111 |
+| Food & Nightlife (cyan) | 63 |
+| Leisure & Culture (blue) | 58 |
+| Work & Industry (magenta) | 112 |
 | **Total** | **556** |
 
-**Review status:** 473 are matched by exact workbook ID. The other 83 are reconciled using existing local names, sourcebook sublocations, the old viewer classifications, or explicit provisional inference (65 named/sub-location rules; 6 legacy category fallbacks; 12 Executive Zone person-labelled residential locations). **175 classifications have a review flag**, including broad name-based inferences from the original worksheet. These are proposed categorical assignments; they are not 556 independently verified business descriptions.
+**Review status:** 473 are matched by exact workbook ID. The other 83 are reconciled using existing local names, sourcebook sublocations, the old viewer classifications, or explicit provisional inference (65 named/sub-location rules; 6 legacy category fallbacks; 12 Executive Zone person-labelled residential locations). **178 classifications have a review flag**, including broad name-based inferences from the original worksheet. These are proposed categorical assignments; they are not 556 independently verified business descriptions.
 
 ## Use it
 
@@ -41,3 +41,11 @@ The converter refuses an incorrect or already-patched source viewer. It validate
 **Art limitation:** where the existing 56-icon artwork lacks a suitable role (such as faith, schools, and parks), the updated viewer uses a family-coloured marker instead of misleading icon artwork. The custom final icons can be assigned later without changing the POI classification.
 
 **Limitations:** A source-data replacement test and JavaScript syntax check have passed. The full 3D rendering has **not** been browser-tested in this environment; open the converted viewer and spot-check it before merging or replacing anything. This is a review branch, not a deployment.
+
+## Sourcebook correction review — 9 November 2026
+
+Seven previously misclassified entries have been corrected after checking their printed sourcebook descriptions: The Crater, Zhirafa Office Park, Bristol Business Park, Main Gate, Hunger Street, Obsidian Equinox Marina & Docks, and Graceland Medical. The 528-entry original workbook is retained as research history; this manifest supersedes its seven mistaken assignments. The Crater, Hunger Street and Obsidian Equinox require final custom subtype decisions, raising review flags to **178**.
+
+The existing 35 roles now support **secondary family filtering** from documented mixed uses (independent of Vend-R listings): Bristol Business Park (Leisure events), Graceland Medical (Municipal/security), Obsidian Equinox (Leisure boating), Stop. Shop. Stitch. (Shopping and Civic), and Snack & Shack (Shopping and Living). These secondary relationships change only filtering, never marker counts, locations, height or Vend-R data.
+
+Run `node tools/audit-v19-taxonomy.mjs` to validate the manifest, corrected cases, converter/installer parity, and browser payload. Full 3D visual testing remains outstanding.

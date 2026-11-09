@@ -1,0 +1,18 @@
+name: V19 taxonomy review checks
+on:
+  push:
+    branches: [review/location-icon-taxonomy-v19]
+  pull_request:
+    paths:
+      - 'data/locations/**'
+      - 'tools/*taxonomy*'
+      - 'review/*Taxonomy*'
+      - '.github/workflows/v19-taxonomy-review.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: node --version
+      - run: node --check tools/build-v19-taxonomy-viewer.mjs
+      - run: node tools/audit-v19-taxonomy.mjs

@@ -14,14 +14,14 @@ function patchViewer(html,data){
  const byFamily=Object.fromEntries(order.map(f=>[f,data.role_definitions.filter(r=>r.family===f)]));
  const name=order.map(f=>data.role_families.find(g=>g.id===f).name);
  const subName=order.map(f=>byFamily[f].map(r=>r.name));
- const lookup=Object.fromEntries(data.records.map(x=>{let j=byFamily[x.family].findIndex(r=>r.id===x.role_id);if(j<0)throw Error("Role missing "+x.role_id);return[x.index,[order.indexOf(x.family),j,x.artwork.exact_match?x.artwork.legacy_category:null,x.artwork.exact_match?x.artwork.legacy_subtype:null,x.review_needed?1:0,x.source_place_type]];}));
+ const lookup=Object.fromEntries(data.records.map(x=>{let j=byFamily[x.family].findIndex(r=>r.id===x.role_id);if(j<0)throw Error("Role missing "+x.role_id);return[x.index,[order.indexOf(x.family),j,x.artwork.exact_match?x.artwork.legacy_category:null,x.artwork.exact_match?x.artwork.legacy_subtype:null,x.review_needed?1:0,x.source_place_type,(x.secondary_family_ids||[]).map(f=>{const id=order.indexOf(f);if(id<0)throw Error('Secondary family missing '+f);return id;})]];}));
  const namesPatch="\n/* SPACIEL_V19_TAXONOMY_MARKER */\nCAT_NAMES.splice(0,7,..."+JSON.stringify(name)+");\nSUB_NAMES.splice(0,7,..."+JSON.stringify(subName)+");\nwindow.CAT_NAMES="+JSON.stringify([...name].reverse())+";\n";
  const cl='const CAT_COLORS=["#d54ae8", "#08a4f5", "#42d7ff", "#00d79d", "#ffeb26", "#ff8527", "#ff4237"];';
  one(cl,cl+namesPatch);
  const gp='const GEO_POINTS=GEO_ROWS.map(p=>({index:p[0],name:p[1],district:p[2],x:p[3],z:p[4],h:p[5],c:p[6],sub:p[7],source:p[8],id:p[9],added:p[10],basis:p[11]}));';
- one(gp,gp+"\nconst GEO_FAMILY_ART=[0,5,5,3,4,2,6];\nconst GEO_OLD_TO_NEW=[0,5,5,3,4,2,6];\nconst GEO_NEW_TAXONOMY="+JSON.stringify(lookup)+";\nfor(const p of GEO_POINTS){const a=GEO_NEW_TAXONOMY[p.index];if(!a)throw Error('Missing role for '+p.index);p.legacyCat=p.c;p.legacySub=p.sub;p.c=a[0];p.sub=a[1];p.iconCat=a[2];p.iconSub=a[3];p.needsTaxonomyReview=!!a[4];p.sourcePlaceType=a[5]}\n");
+ one(gp,gp+"\nconst GEO_FAMILY_ART=[0,5,5,3,4,2,6];\nconst GEO_OLD_TO_NEW=[0,5,5,3,4,2,6];\nconst GEO_NEW_TAXONOMY="+JSON.stringify(lookup)+";\nfor(const p of GEO_POINTS){const a=GEO_NEW_TAXONOMY[p.index];if(!a)throw Error('Missing role for '+p.index);p.legacyCat=p.c;p.legacySub=p.sub;p.c=a[0];p.sub=a[1];p.iconCat=a[2];p.iconSub=a[3];p.needsTaxonomyReview=!!a[4];p.sourcePlaceType=a[5];p.secondaryFamilyCats=a[6]||[]}\n");
  one("img.src=PARENT_IMAGES[cat];img.alt=","img.src=PARENT_IMAGES[GEO_FAMILY_ART[cat]];img.alt=");
- one("p.childCats=[...new Set(p.shops.map(e=>e.cat).filter(c=>c!==null))];","p.childCats=[...new Set(p.shops.map(e=>e.cat===null?null:GEO_OLD_TO_NEW[e.cat]).filter(c=>c!==null))];");
+ one("p.childCats=[...new Set(p.shops.map(e=>e.cat).filter(c=>c!==null))];","p.childCats=[...new Set([...(p.secondaryFamilyCats||[]),...p.shops.map(e=>e.cat===null?null:GEO_OLD_TO_NEW[e.cat])].filter(c=>c!==null))];");
  one("CAT_NAMES[shop.cat].toLocaleLowerCase()","CAT_NAMES[GEO_OLD_TO_NEW[shop.cat]].toLocaleLowerCase()");
  one("glyph.style.background=CAT_COLORS[shop.cat]+\u002728\u0027;","glyph.style.background=CAT_COLORS[GEO_OLD_TO_NEW[shop.cat]]+\u002728\u0027;");
  one("(item.basis==='sourcebook_review_provisional'?' · REVIEW':'')","(item.needsTaxonomyReview?' · REVIEW':'')");

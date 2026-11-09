@@ -1,7 +1,7 @@
 {
   "schema": "spaciel.poi_category_assignments.v19.review.v1",
   "created": "2026-11-09",
-  "status": "REVIEW — no production/map coordinates modified",
+  "status": "REVIEW — sourcebook corrections and secondary family filters; original map points unchanged",
   "sources": {
     "locations": "Spaciel_V19_VendR_Icon_Integration_Review.html / GEO_ROWS (556)",
     "taxonomy": "Spaciel_Location_Led_Taxonomy.xlsx (528)",
@@ -293,13 +293,13 @@
     }
   ],
   "counts": {
-    "work": 111,
-    "food": 62,
-    "leisure": 62,
-    "municipal": 74,
-    "civic": 89,
+    "civic": 90,
+    "municipal": 75,
+    "shopping": 72,
     "living": 86,
-    "shopping": 72
+    "food": 63,
+    "leisure": 58,
+    "work": 112
   },
   "join_summary": {
     "workbook_id": 473,
@@ -2692,18 +2692,18 @@
       "district": "Heywood Industrial Zone",
       "place_id": "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-261-ZHIRAFA-OFFICE-PARK",
       "added": false,
-      "family": "leisure",
-      "family_label": "Leisure & Culture",
-      "role_id": "leisure:parks",
-      "role_label": "Parks & open spaces",
-      "source_place_type": "Park / garden / outdoor space",
+      "family": "work",
+      "family_label": "Work & Industry",
+      "role_id": "work:offices",
+      "role_label": "Offices & professional",
+      "source_place_type": "Corporate / professional office",
       "assignment_method": "sourcebook_workbook_id",
-      "evidence_tier": "Description-rule match",
+      "evidence_tier": "Sourcebook description rechecked",
       "review_needed": false,
       "artwork": {
-        "legacy_category": 5,
-        "legacy_subtype": 4,
-        "exact_match": false
+        "legacy_category": 0,
+        "legacy_subtype": 0,
+        "exact_match": true
       },
       "original": {
         "category": 0,
@@ -2711,7 +2711,8 @@
         "x": 1972.029,
         "z": 944.326,
         "h": 19.252
-      }
+      },
+      "classification_note": "Sourcebook p.261: Zhirafa's commercial offices and engineering facility, not a public park."
     },
     {
       "index": 89,
@@ -3880,18 +3881,18 @@
       "district": "Little Europe",
       "place_id": "NC2045-LOC-LITTLE-EUROPE-056-BRISTOL-BUSINESS-PARK",
       "added": false,
-      "family": "leisure",
-      "family_label": "Leisure & Culture",
-      "role_id": "leisure:parks",
-      "role_label": "Parks & open spaces",
-      "source_place_type": "Park / garden / outdoor space",
+      "family": "work",
+      "family_label": "Work & Industry",
+      "role_id": "work:offices",
+      "role_label": "Offices & professional",
+      "source_place_type": "Corporate / professional office",
       "assignment_method": "sourcebook_workbook_id",
-      "evidence_tier": "Description-rule match",
+      "evidence_tier": "Sourcebook description rechecked",
       "review_needed": false,
       "artwork": {
-        "legacy_category": 5,
-        "legacy_subtype": 4,
-        "exact_match": false
+        "legacy_category": 0,
+        "legacy_subtype": 1,
+        "exact_match": true
       },
       "original": {
         "category": 0,
@@ -3899,7 +3900,11 @@
         "x": -2907.857,
         "z": -1211.567,
         "h": 18.818
-      }
+      },
+      "classification_note": "Sourcebook p.56: rentable commercial building with office tenants and event space. The event venue is a secondary Leisure family.",
+      "secondary_family_ids": [
+        "leisure"
+      ]
     },
     {
       "index": 133,
@@ -5230,18 +5235,18 @@
       "district": "NorCal Military Base",
       "place_id": "NC2045-LOC-NORCAL-MILITARY-BASE-181-MAIN-GATE",
       "added": false,
-      "family": "leisure",
-      "family_label": "Leisure & Culture",
-      "role_id": "leisure:parks",
-      "role_label": "Parks & open spaces",
-      "source_place_type": "Park / garden / outdoor space",
+      "family": "municipal",
+      "family_label": "Municipal",
+      "role_id": "municipal:security",
+      "role_label": "Security & faction facilities",
+      "source_place_type": "Police / military / private security",
       "assignment_method": "sourcebook_workbook_id",
-      "evidence_tier": "Description-rule match",
+      "evidence_tier": "Sourcebook description rechecked",
       "review_needed": false,
       "artwork": {
-        "legacy_category": 5,
-        "legacy_subtype": 4,
-        "exact_match": false
+        "legacy_category": 1,
+        "legacy_subtype": 2,
+        "exact_match": true
       },
       "original": {
         "category": 1,
@@ -5249,7 +5254,8 @@
         "x": -2044.129,
         "z": -4362.519,
         "h": 53.17
-      }
+      },
+      "classification_note": "Sourcebook p.181: fortified NorCal military checkpoint staffed by military police, not a park."
     },
     {
       "index": 183,
@@ -7687,18 +7693,18 @@
       "district": "Pacifica Playground",
       "place_id": "NC2045-LOC-PACIFICA-PLAYGROUND-279-OBSIDIAN-EQUINOX-MARINA-DOCKS",
       "added": false,
-      "family": "leisure",
-      "family_label": "Leisure & Culture",
-      "role_id": "leisure:parks",
-      "role_label": "Parks & open spaces",
-      "source_place_type": "Park / garden / outdoor space",
+      "family": "municipal",
+      "family_label": "Municipal",
+      "role_id": "municipal:freight",
+      "role_label": "Freight & vehicle services",
+      "source_place_type": "Private marina / mooring services",
       "assignment_method": "sourcebook_workbook_id",
-      "evidence_tier": "Description-rule match",
-      "review_needed": false,
+      "evidence_tier": "Sourcebook description rechecked",
+      "review_needed": true,
       "artwork": {
-        "legacy_category": 5,
-        "legacy_subtype": 4,
-        "exact_match": false
+        "legacy_category": 2,
+        "legacy_subtype": 7,
+        "exact_match": true
       },
       "original": {
         "category": 2,
@@ -7706,7 +7712,11 @@
         "x": -1826.283,
         "z": 3542.271,
         "h": -1.637
-      }
+      },
+      "classification_note": "Sourcebook p.279: paid private yacht moorings, not parkland. Vehicle/port role approximate; Leisure is secondary.",
+      "secondary_family_ids": [
+        "leisure"
+      ]
     },
     {
       "index": 274,
@@ -7949,7 +7959,12 @@
         "x": -1642.079,
         "z": 3985.541,
         "h": 13.868
-      }
+      },
+      "secondary_family_ids": [
+        "shopping",
+        "civic"
+      ],
+      "classification_note": "Sourcebook p.281: bodega and Ripperdoc clinic operate in the same building; Shopping and Civic are secondary families."
     },
     {
       "index": 283,
@@ -9658,18 +9673,18 @@
       "district": "Santo Domingo",
       "place_id": "NC2045-LOC-SANTO-DOMINGO-268-HUNGER-STREET",
       "added": false,
-      "family": "leisure",
-      "family_label": "Leisure & Culture",
-      "role_id": "leisure:parks",
-      "role_label": "Parks & open spaces",
-      "source_place_type": "Park / garden / outdoor space",
+      "family": "food",
+      "family_label": "Food & Nightlife",
+      "role_id": "food:restaurants",
+      "role_label": "Restaurants",
+      "source_place_type": "Restaurant / prepared food",
       "assignment_method": "sourcebook_workbook_id",
-      "evidence_tier": "Description-rule match",
-      "review_needed": false,
+      "evidence_tier": "Sourcebook description rechecked",
+      "review_needed": true,
       "artwork": {
         "legacy_category": 5,
-        "legacy_subtype": 4,
-        "exact_match": false
+        "legacy_subtype": 6,
+        "exact_match": true
       },
       "original": {
         "category": null,
@@ -9677,7 +9692,8 @@
         "x": 1784.98,
         "z": 2201.39,
         "h": 36.012
-      }
+      },
+      "classification_note": "Sourcebook p.268: outdoor food trucks. Food family is confirmed; Restaurants role provisional pending a street-food role."
     },
     {
       "index": 347,
@@ -14240,7 +14256,12 @@
         "x": -1155.267,
         "z": -3009.287,
         "h": 11.817
-      }
+      },
+      "secondary_family_ids": [
+        "shopping",
+        "living"
+      ],
+      "classification_note": "Sourcebook p.194: bodega and monthly lodging in one container complex; Shopping and Living are secondary families."
     },
     {
       "index": 516,
@@ -14518,18 +14539,18 @@
       "district": "The Hot Zone",
       "place_id": "NC2045-LOC-THE-HOT-ZONE-092-THE-CRATER",
       "added": true,
-      "family": "work",
-      "family_label": "Work & Industry",
-      "role_id": "work:offices",
-      "role_label": "Offices & professional",
-      "source_place_type": "Corporate / professional office",
+      "family": "leisure",
+      "family_label": "Leisure & Culture",
+      "role_id": "leisure:culture",
+      "role_label": "Culture & landmarks",
+      "source_place_type": "Abandoned / hazardous site",
       "assignment_method": "sourcebook_workbook_id",
-      "evidence_tier": "Description-rule match",
-      "review_needed": false,
+      "evidence_tier": "Sourcebook description rechecked",
+      "review_needed": true,
       "artwork": {
-        "legacy_category": 0,
-        "legacy_subtype": 0,
-        "exact_match": true
+        "legacy_category": null,
+        "legacy_subtype": null,
+        "exact_match": false
       },
       "original": {
         "category": 0,
@@ -14537,7 +14558,8 @@
         "x": -705.355,
         "z": -572.957,
         "h": 30.634
-      }
+      },
+      "classification_note": "Sourcebook p.92: 50-metre rubble crater of Arasaka HQ, not an operating office; landmark role provisional until a ruin/hazard role exists."
     },
     {
       "index": 527,
@@ -14653,17 +14675,17 @@
       "district": "The Hot Zone",
       "place_id": "NC2045-LOC-THE-HOT-ZONE-093-GRACELAND-MEDICAL",
       "added": true,
-      "family": "municipal",
-      "family_label": "Municipal",
-      "role_id": "municipal:security",
-      "role_label": "Security & faction facilities",
-      "source_place_type": "Gang / faction headquarters",
+      "family": "civic",
+      "family_label": "Civic & Care",
+      "role_id": "civic:medical",
+      "role_label": "Medical & cyberware",
+      "source_place_type": "Healthcare / pharmacy / cyberware",
       "assignment_method": "sourcebook_workbook_id",
-      "evidence_tier": "Curated from sourcebook excerpt",
+      "evidence_tier": "Sourcebook description rechecked",
       "review_needed": false,
       "artwork": {
-        "legacy_category": 1,
-        "legacy_subtype": 6,
+        "legacy_category": 6,
+        "legacy_subtype": 1,
         "exact_match": true
       },
       "original": {
@@ -14672,7 +14694,11 @@
         "x": 136.92,
         "z": -1199.583,
         "h": 32.238
-      }
+      },
+      "classification_note": "Sourcebook p.93: Father Grace's free mobile medical clinic occupies Lightning Cats garage; gang association retained as secondary Municipal.",
+      "secondary_family_ids": [
+        "municipal"
+      ]
     },
     {
       "index": 532,
@@ -15321,6 +15347,51 @@
         "z": -672.243,
         "h": 225.776
       }
+    }
+  ],
+  "updated": "2026-11-09",
+  "sourcebook_corrections": [
+    {
+      "index": 526,
+      "name": "The Crater",
+      "previous_role": "work:offices",
+      "new_role": "leisure:culture"
+    },
+    {
+      "index": 88,
+      "name": "Zhirafa Office Park",
+      "previous_role": "leisure:parks",
+      "new_role": "work:offices"
+    },
+    {
+      "index": 132,
+      "name": "Bristol Business Park",
+      "previous_role": "leisure:parks",
+      "new_role": "work:offices"
+    },
+    {
+      "index": 182,
+      "name": "Main Gate",
+      "previous_role": "leisure:parks",
+      "new_role": "municipal:security"
+    },
+    {
+      "index": 346,
+      "name": "Hunger Street",
+      "previous_role": "leisure:parks",
+      "new_role": "food:restaurants"
+    },
+    {
+      "index": 273,
+      "name": "Obsidian Equinox Marina & Docks",
+      "previous_role": "leisure:parks",
+      "new_role": "municipal:freight"
+    },
+    {
+      "index": 531,
+      "name": "Graceland Medical",
+      "previous_role": "municipal:security",
+      "new_role": "civic:medical"
     }
   ]
 }
