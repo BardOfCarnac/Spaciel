@@ -16,3 +16,8 @@ jobs:
       - run: node --version
       - run: node --check tools/build-v19-taxonomy-viewer.mjs
       - run: node tools/audit-v19-taxonomy.mjs
+
+      - name: Convert reference working viewer and compile generated scripts
+        run: |
+          node tools/build-v19-taxonomy-viewer.mjs review/test-fixtures/v19-vendr-real-script-no-terrain.html /tmp/converted-v19.html
+          node tools/verify-converted-viewer.mjs /tmp/converted-v19.html
