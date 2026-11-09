@@ -23,6 +23,7 @@ function patchViewer(html,data){
  one("img.src=PARENT_IMAGES[cat];img.alt=","img.src=PARENT_IMAGES[GEO_FAMILY_ART[cat]];img.alt=");
  one("p.childCats=[...new Set(p.shops.map(e=>e.cat).filter(c=>c!==null))];","p.childCats=[...new Set(p.shops.map(e=>e.cat===null?null:GEO_OLD_TO_NEW[e.cat]).filter(c=>c!==null))];");
  one("CAT_NAMES[shop.cat].toLocaleLowerCase()","CAT_NAMES[GEO_OLD_TO_NEW[shop.cat]].toLocaleLowerCase()");
+ one("glyph.style.background=CAT_COLORS[shop.cat]+\u002728\u0027;","glyph.style.background=CAT_COLORS[GEO_OLD_TO_NEW[shop.cat]]+\u002728\u0027;");
  one("(item.basis==='sourcebook_review_provisional'?' · REVIEW':'')","(item.needsTaxonomyReview?' · REVIEW':'')");
  one("const subMode=renderCat>=0&&item.c===renderCat&&item.sub!==null,bitmap=categoryHost?parentBitmaps[renderCat]:(isNeutral?null:(subMode?subBitmaps[item.c][item.sub]:parentBitmaps[item.c]));",
  "const bitmap=categoryHost?parentBitmaps[GEO_FAMILY_ART[renderCat]]:(item.iconCat===null?null:(item.iconSub!==null&&subBitmaps[item.iconCat]?.[item.iconSub]?subBitmaps[item.iconCat][item.iconSub]:parentBitmaps[item.iconCat]));");
