@@ -24,7 +24,7 @@ Use the approved V10 footprint layout as approximate **where buildings should si
 
 ## Important limitations
 
-- Native models' *actual original SKP locations* have **not yet been matched reliably** to the V10 atlas. The previous provisional density transform created false-positive overlaps even when shifted. Thus this repository does not falsely claim source model positions are registered.
+- The original top-level SketchUp instance positions and transforms have now been extracted directly from the user-supplied source. The recovered V2 road-derived transform maps those positions to the Atlas, but particular V10 target-site identities are still **unverified**. Do not reuse the old density-based source registration.
 - Road audit detects where a road centreline crosses a footprint (or two footprint polygons overlap). It does **not** verify safe road-edge offsets, elevation/bridge separation, shoreline, slope, or visual plausibility.
 - Some V10 polygons may intentionally overlap or need modest correction. The flags are advisory, never an automatic geometry rewrite.
 - All measurements in native source catalogue are metres; target footprints and road linework use atlas pixels. Before matching sizes across sources, use a validated geometric registration; do not equate pixel values with metres.
@@ -33,4 +33,16 @@ Use the approved V10 footprint layout as approximate **where buildings should si
 
 The preserved target layer has 11,508 footprint polygons. A first geometric check against 2,422 cleaned road chains found zero direct road-centreline crossings, but 40 footprints are within three atlas pixels of their nearest centreline. The dataset also contains 3,182 polygon-overlap pairs involving 2,432 sites. These are manual-review flags; no footprints were removed or moved. See `data/checks/` for the detailed records.
 
-The next stage is to register the source SketchUp placements against known landmarks, then place native-scale models with limited rotations and translations, filling genuine gaps with smaller originals.
+The next stage is manual visual assessment of original in-place candidates, followed by careful limited rotations/translations and use of smaller original buildings for genuine gaps.
+
+## Original SKP placement recovery — 9 November 2026
+
+- The named (1) and (2) SKP sources in the user's Library are SHA256-identical: `17317588df75a4bea8a87ad86d0438ff112c693f6c54e4ca9da4fa4c53842ee0`.
+- Parsed **16,499 original top-level instances** and their 13-value placement transforms; 4,902 instances reference 4,427 of the 4,462 screened usable building envelopes.
+- Replayed nine saved V2 road-registration controls on the current cleaned Atlas-pixel V17 roads: maximum nearest-road-line distance **2.604 Atlas px**, against **119.229 px** for the former V1 visual fit. These are saved controls, not an independent survey.
+- Non-destructive source placement QA: **739** original source hulls intersect a road centreline; **242** are less than five Atlas pixels away; **271** overlap an approved target by at least half the source hull and clear that road check. Of those, **224** avoid significant overlap with another original source hull. One best candidate per target gives a **137-site first visual shortlist**.
+- Source hulls are **convex-hull approximations** and may conceal concavities. Their overlap with a target is not proof of an original building's historical identity or final suitability.
+
+**New working files:** `data/registration/` contains the source-derived transform and nine controls; `data/placement/native_original_instance_review.csv` contains the 4,902 source-position review records; `data/placement/in_place_high_overlap_visual_shortlist.csv` contains 137 top-priority visual-review candidates; `reports/` documents provenance and limitations; and `scripts/` contains reproducible extraction and diagnostic tools.
+
+The original SKP binaries and exact source-derived polygon hulls are **not** committed to this public repository. The latter are retained in the user's private Spaciel Library archive.
