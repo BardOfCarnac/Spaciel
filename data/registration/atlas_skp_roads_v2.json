@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "status": "road_derived_registration_from_previous_spaciel_work",
+  "reference_source": "night_city_atlas_skp_road_registration_v2.json (2026 prior work)",
+  "validated_against_original_skp_version": "Night+City2045_2 (1).skp map image",
+  "newer_sketch_up_version_used_for_library": "Night+City2045_2 (2).skp",
+  "newer_version_frame_equivalence": "not yet verified",
+  "atlas_frame": {"size_px": [5175,7966], "origin": "top-left", "axes": "x right, y down"},
+  "skp_plan_frame": {"size_px": [6930,5562], "origin": "top-left", "axes": "x right, y down"},
+  "skp_plan_to_atlas_matrix_3x3": [
+    [1.0956952680760181, -0.00036675251033988057, -1430.5202834740833],
+    [0.00028172297856186564, 1.426397634249643, 746.1248161129311],
+    [0,0,1]
+  ],
+  "atlas_to_skp_plan_matrix_3x3": [
+    [0.9126624555441253, 0.00023466194743084235, 1305.4070675187595],
+    [-0.00018025687874386744, 0.7010667361463956, -523.3411507114009],
+    [0,0,1]
+  ],
+  "skp_world_xy_inches_to_skp_plan_px": {
+    "x_px": "1328.6103203859448 + 0.017533351586320734 * x_world_inches",
+    "y_px": "5038.968244382606 - 0.017533351586320734 * y_world_inches",
+    "px_per_inch": 0.017533351586320734,
+    "offset_x_px": 1328.6103203859448,
+    "offset_y_px": 5038.968244382606,
+    "source": "night_city_buildings_wireframe_3d.json, 2026 prior work on (1).skp",
+    "newer_version_frame_equivalence": "not yet verified"
+  },
+  "validation_road_residuals_skp_px": {
+    "Watson Blvd": {"mean": 5.865, "maximum": 11.465, "samples": 2},
+    "Kennedy Ave": {"mean": 3.139, "maximum": 4.452, "samples": 3},
+    "Marina Blvd": {"mean": 8.629, "maximum": 12.796, "samples": 4}
+  },
+  "authority": "Atlas roads authoritative; SKP buildings only source geometry; no placements authenticated by this matrix alone"
+}
