@@ -46,3 +46,12 @@ The next stage is manual visual assessment of original in-place candidates, foll
 **New working files:** `data/registration/` contains the source-derived transform and nine controls; `data/placement/native_original_instance_review.csv` contains the 4,902 source-position review records; `data/placement/in_place_high_overlap_visual_shortlist.csv` contains 137 top-priority visual-review candidates; `reports/` documents provenance and limitations; and `scripts/` contains reproducible extraction and diagnostic tools.
 
 The original SKP binaries and exact source-derived polygon hulls are **not** committed to this public repository. The latter are retained in the user's private Spaciel Library archive.
+
+
+## Architectural visual triage — 9 November 2026, pass 2
+
+The 137 original-position shortlist remains **unapproved**: 12 have source/target footprint IoU >= 0.45, 23 are partially aligned, 61 are small original buildings inside larger proposed sites and 41 cross a proposed footprint. Geometry screening found a single watertight source shell for each, but 77 have fewer than 36 triangles and may be simple massing rather than finished architecture.
+
+A separate non-destructive translation audit found 84 candidate original models that can be shifted at most 12 Atlas pixels toward nearby proposed sites **without scaling or rotation**; five meet tighter inspection criteria. Nothing has been applied to the layout or the live viewer.
+
+See [the pass-2 report](reports/architecture_review_phase2.md), [source geometry triage](data/review/in_place_137_architectural_structure_triage.csv), [small-move register](data/review/small_move_candidates_no_scaling.csv), and [five first inspections](data/review/small_move_first_five.csv). The private interactive viewer with original SKP-derived geometry is retained in the user's Spaciel Library and **not** published here.
