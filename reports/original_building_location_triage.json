@@ -1,0 +1,25 @@
+{
+  "instances_processed": 4902,
+  "source_definition_names": 4427,
+  "groups": {
+    "NO_NEAR_APPROVED_SITE_20PX": 2965,
+    "ROAD_CENTRELINE_CONFLICT": 739,
+    "IN_PLACE_OVERLAP_50PCT": 271,
+    "PARTIAL_APPROVED_SITE_OVERLAP": 445,
+    "NEAR_ROAD_CENTRELINE_5PX": 242,
+    "NEAR_TARGET_WITHIN_10PX": 51,
+    "NEAR_TARGET_WITHIN_20PX": 98,
+    "NEAR_TARGET_WITHIN_5PX": 91
+  },
+  "unique_target_sites_with_high_overlap_candidate": 150,
+  "high_overlap_instances": 271,
+  "original_building_hull_overlaps_25pct_pairs": 818,
+  "original_building_hull_almost_contained_pairs": 576,
+  "original_source_instances_involved_in_major_overlaps": 955,
+  "high_overlap_instances_without_major_original_overlap": 224,
+  "distinct_target_sites_with_clean_high_overlap_shortlist": 137,
+  "high_overlap_shortlisted_unique_source_instances": 137,
+  "note": "Candidates preserve original source transforms; polygon convex hulls overstate concave building area. Do not automatically place/move anything.",
+  "same_skp_source_versions_sha256_verified": true,
+  "do_not_publish_private_exact_source_polygons": true
+}
