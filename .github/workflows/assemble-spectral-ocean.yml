@@ -1,0 +1,28 @@
+name: Assemble Spaciel repaired ocean viewer
+on:
+  push:
+    branches:
+      - fix/v19-spectral-direct-repair-20261109
+    paths:
+      - 'ocean_parts/**'
+      - '.github/workflows/assemble-spectral-ocean.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reassemble and validate complete viewer
+        run: |
+          cat ocean_parts/part*.txt > Spaciel_V19_Spectral_Ocean_Repaired.html
+          test "$(wc -c < Spaciel_V19_Spectral_Ocean_Repaired.html)" -gt 27700000
+          grep -q 'uniform int oceanModel;' Spaciel_V19_Spectral_Ocean_Repaired.html
+          grep -q 'oceanRendererFallback=false;' Spaciel_V19_Spectral_Ocean_Repaired.html
+      - name: Commit standalone viewer to repair branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Spaciel_V19_Spectral_Ocean_Repaired.html
+          git diff --cached --quiet || (git commit -m 'Build full repaired V19 ocean viewer' && git push)
