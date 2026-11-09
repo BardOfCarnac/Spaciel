@@ -1,6 +1,6 @@
 # Spaciel — original SKP placement registration review
 
-**Status:** working alignment validated against saved road checkpoints; **original building instances are not yet independently registered**. This report does not change the existing 11,508 V10 footprint shapes or their locations.
+**Status (9 Nov 2026):** original source instances have been extracted, road registration replayed against current V17 linework using nine saved controls, and a non-destructive placement audit of 4,902 source building envelopes has been completed. This report changes none of the 11,508 approved V10 footprint shapes or positions.
 
 ## Why this matters
 
@@ -30,8 +30,8 @@ The earlier V2 registration had separate residual measurements against the SKP r
 
 - The V2 alignment and the original 6930×5562 SKP plan-image projection were recorded for `Night+City2045_2 (1).skp` (16,383 placements in the older extraction metadata).
 - The 4,462 usable source-envelope catalogue and newer native geometry were extracted from `Night+City2045_2 (2).skp` (16,499 top-level instances reported in prior reconciliation, including non-buildings).
-- **We have not yet proved that (2) uses the same SKP plan pixel frame as (1)** or recovered a per-instance placed-footprint file with native placement IDs in that frame.
-- A catalogue of *definitions* and their sizes is not equivalent to the original *placed instances* and transforms. The 1,520 previous verified geometry choices are suitable architectural candidates, but do **not** authenticate any original SKP building location.
+- **Resolved:** `(1).skp` and `(2).skp` are byte-for-byte identical (SHA256 `17317588df75a4bea8a87ad86d0438ff112c693f6c54e4ca9da4fa4c53842ee0`). Their same map frame is established. Earlier placement-count differences reflect extraction methods.
+- The raw source contains **16,499 unique top-level instances** linked to 13,697 distinct definition IDs, recovered with native transforms. The screened catalogue contains 4,462 complete building-envelope definitions. **4,902 placed top-level instances** use 4,427 of these definitions; 35 screened definitions are not top-level placed. The prior 1,520 geometry-fit proposals remain alternate architectural candidates, not original-location authentications.
 
 ## What is now ready
 
@@ -46,8 +46,25 @@ It does **not** stretch models, move roads, authenticate the original identities
 
 ## How to advance
 
-Next input required: actual **original per-instance footprints** or native instance transforms exported from `Night+City2045_2 (2).skp`, with stable IDs, original world coordinates, orientation and definition references. A raw SketchUp file is not currently present in this session's accessible working files. The already archived V19 SketchUp wireframe can help visually, but its separate lines alone do not recover all definition/group IDs.
+**Recovered:** the actual original SKP in the user's Library (and its identical named copy). `extract_skp_original_instances.py` now recovers the instance IDs, definition IDs and native 13-value transformations. `build_original_placement_outlines.py` extracts the source vertex hulls, transforms them with the original component matrices, and projects them through the V2 road registration. It keeps private exact source-derived geometry out of the public repository.
 
-Before running the city-wide keep/jiggle/reuse classification, compare at least 3 widely separated **road junctions** and 3 recognizable **source building landmarks** in (2) against the registered Atlas. Preserve unmatched structures for reusing as assets; use the 11,508 approved polygons as a layout guide, not a mould.
+The road and site audit of all 4,902 source building placements produces:
+
+| QA classification | Original instances |
+|---|---:|
+| Direct V17 road-centreline intersections | 739 |
+| Within 5 Atlas px of a centreline (no intersection) | 242 |
+| Source polygon covers at least 50% of itself within an approved target, road clear | 271 |
+| Some other target overlap, road clear | 445 |
+| Road clear, target polygon within 5 px but not touching | 91 |
+| Road clear, target polygon 5–10 px away | 51 |
+| Road clear, target polygon 10–20 px away | 98 |
+| No nearby approved target within 20 px and road clear | 2,965 |
+
+These categories add to 4,902 and are **diagnostic**, not final move/keep decisions. There are **818** pairs of source convex hulls overlapping by at least 25% of the smaller shape, involving **955** source instances; some are nested architecture. There are **576** almost-contained pairs. Among the 271 high-overlap candidates, 224 avoid any 25%-overlap with another screened source instance; these span 137 distinct target sites. One candidate per target forms the first **137-site manual visual shortlist**.
+
+**Caution:** convex hulls can exaggerate actual source geometry (courtyards/concavities) and the road data is centreline geometry, not road widths or shorelines. The project should visually inspect these 137 and then expand to small-jiggle candidates. The full SKP binary, source face meshes and private exact placed hulls were not uploaded to the public GitHub repository.
+
+Next compare representative source buildings visually on the registered Atlas, including roads and waterfront; vet the 137 clean in-place shortlist first. Keep unmatched native architecture available for reuse; the 11,508 approved polygons remain layout guides, not moulds.
 
 All the earlier cross-version figures in this report remain **working diagnostics**. They must not be read as evidence that source buildings already fit their original sites.
