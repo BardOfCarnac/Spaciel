@@ -84,7 +84,7 @@ window.spacielTagFor=function(item){
 };
 window.SPACIEL_TAGS_V2={count:rows.length,source:"Spaciel 556 tag QA v2",records:rows};
 })();
-<\/script>`.replace("__SPACIEL_RECORDS__",JSON.stringify(RECORDS).replace(/<\\/script/gi,"<\\\\/script"));
+<\/script>`.replace("__SPACIEL_RECORDS__",JSON.stringify(RECORDS));
   const i = patched.indexOf(closeTag,patched.indexOf(oldAnchor)) + closeTag.length;
   patched = patched.slice(0,i)+"\n"+newLogic+"\n"+patched.slice(i);
   if(!patched.includes('id="spaciel-reviewed-tags-v2"') ||
