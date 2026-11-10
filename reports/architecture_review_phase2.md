@@ -67,3 +67,7 @@ The private original SKP, exact 4,902 native hull polygons, full source GLBs and
 ## Next decision
 
 Review the twelve stronger in-place matches and five best small translations in the private viewer, then decide whether each original source mesh has enough design character for production use, should be grouped with neighbouring SketchUp objects, or should serve only as an existing shell needing detail. Keep any approvals as explicit versioned placement records, never as a silent rewrite of V10 geometry.
+
+## Acceptance-policy update — 10 November 2026
+
+The user has clarified that **simple enclosed building forms are acceptable**: sides/walls plus a top, without a staple-like open appearance. The earlier discussion of 77 models under 36 triangles reflects detail classification **only**, not a defect or a requirement for additional modelling. All 137 are eligible at the initial one-shell watertight stage; manual silhouette inspection, distinction from partial components, and all placement constraints remain to be reviewed. Refer to `docs/building_acceptance_policy.md` and `data/review/in_place_137_minimum_closed_shell_screen.csv`. This update does not approve placement or change any geometry.
