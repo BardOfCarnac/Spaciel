@@ -16,7 +16,7 @@ export function applyLocationPatch(originalPOIs, patch) {
   }
   const norm = value => String(value ?? "").toLowerCase()
     .normalize("NFKD").replace(/[’‘]/g, "'")
-    .replace(/[^\\p{L}\\p{N}]+/gu, " ").trim();
+    .replace(/[^a-z0-9]+/g, " ").trim();
   const output = originalPOIs.map(poi => ({ ...poi }));
   const seen = new Set();
   const ids = new Set();
