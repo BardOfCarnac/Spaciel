@@ -99,3 +99,20 @@ The Draft 03 gold placement area was derived from existing V10 building footprin
 The current 6,257-placement Draft 03 arrangement **remains untouched**. The extra areas are candidates only; they are not an instruction to densely build on all available land.
 
 Files: [560 recovered character blocks](data/blocks/recovered_october_560_character_blocks.geojson), [possible expansion areas (not approved)](data/blocks/recovered_additional_territory_REVIEW_ONLY.geojson), [rebuild script](scripts/recover_earlier_block_coverage.py), and [full recovery report](reports/recovered_earlier_city_block_areas.md). The interactive comparison website and visual reference remain in the user's private Spaciel working Library, rather than deploying the site.
+
+
+## Round Three / Draft 04 — expanded road-block infill (10 November 2026)
+
+**Current provisional 2D placement baseline: 7,858 original-source building outlines**, including all **6,257 Round Two placements retained** and **1,601 additional original-scale source models** rigidly translated/rotated into recovered broad-block territory. The **140** native-source positions retained in Round Two are unchanged. Total distinct original SKP designs across the trial: **3,081**.
+
+The newly recovered placement field comes from the older **560 road-separated planning blocks**, instead of treating old V10 building footprint polygons as fixed sites. This pass adds buildings only in the extra territory and protects the current gold/Round Two layout. We subtract current stylised V17 road corridors, a recovered Hot Zone preservation outline and brightly marked atlas water/landscape areas before trying new placements.
+
+**Key qualification:** Only **16.12% of the additionally eligible trial area** is covered by new roof outlines. A remaining gap does not automatically mean a planning error: some areas are fragmented, landscaped or intentionally open. The overall union of gold plus recovered blocks has **34.29% outline coverage**, a different denominator from Round Two's **57.06% coverage of gold alone**. These figures are not contradictory.
+
+The source placement outlines and the self-contained interactive viewer are saved privately in the Spaciel working Library, not published to this public repository. Source redistribution rights have not been verified. There are no changes to the 3D viewer or public website.
+
+- [Round Three methodology and summary](reports/round3_broader_block_infill.md)
+- [Round Three build script](scripts/assemble_native_buildings_broader_blocks_round3.py)
+- [Recovered broad blocks, review only](data/blocks/recovered_road_exclusion_blocks_v2_REVIEW_ONLY.geojson)
+
+Still to verify: actual shoreline, parks and designed open spaces, surveyed road edges, terrain foundations, and street-level aesthetics. Nothing here should be treated as a finished authoritative building layout.
