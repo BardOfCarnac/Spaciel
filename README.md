@@ -55,3 +55,7 @@ The 137 original-position shortlist remains **unapproved**: 12 have source/targe
 A separate non-destructive translation audit found 84 candidate original models that can be shifted at most 12 Atlas pixels toward nearby proposed sites **without scaling or rotation**; five meet tighter inspection criteria. Nothing has been applied to the layout or the live viewer.
 
 See [the pass-2 report](reports/architecture_review_phase2.md), [source geometry triage](data/review/in_place_137_architectural_structure_triage.csv), [small-move register](data/review/small_move_candidates_no_scaling.csv), and [five first inspections](data/review/small_move_first_five.csv). The private interactive viewer with original SKP-derived geometry is retained in the user's Spaciel Library and **not** published here.
+
+## Minimum SketchUp building standard — 10 November 2026
+
+A plain enclosed source building is acceptable: walls/sides, a roof or top, and a convincing solid silhouette. **Low face or triangle counts alone are not grounds for rejection.** Open, missing-wall, or staple-like shapes still require inspection or repair. All 137 first-pass candidates meet the initial one-shell watertight geometry screen; visual completeness and siting are independently pending. See [building acceptance policy](docs/building_acceptance_policy.md) and [137-entry minimum-shell review](data/review/in_place_137_minimum_closed_shell_screen.csv). No positions or building geometry have been altered.
