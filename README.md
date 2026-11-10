@@ -116,3 +116,9 @@ The source placement outlines and the self-contained interactive viewer are save
 - [Recovered broad blocks, review only](data/blocks/recovered_road_exclusion_blocks_v2_REVIEW_ONLY.geojson)
 
 Still to verify: actual shoreline, parks and designed open spaces, surveyed road edges, terrain foundations, and street-level aesthetics. Nothing here should be treated as a finished authoritative building layout.
+
+## Hot Zone skyline landmark retained — 10 November 2026
+
+The Round Three layout has a small **landmark preservation revision**: the largest mapped Hot Zone building footprint from the approved V10 plan (`original-4125`, about 8,357 atlas px²) is now explicitly retained. Eleven smaller provisional buildings competing with its outline and a 2.5-px margin were removed; no other city placements changed. The resulting **working 2D footprint count is 7,848**: 7,847 retained original-source placements plus the protected historical large-building footprint. This shape is 60.4 atlas pixels clear of the cleaned road-centreline graph.
+
+This **does not yet restore the exact 3D SketchUp mesh** or prove its source identity, height or facade. That must be matched during 3D integration. This retains the important large-building silhouette and stops subsequent infill from consuming its site. Details: [preservation report](reports/hotzone_landmark_retention_round3.md), [protected footprint](data/landmarks/hotzone_largest_earlier_building_retained.geojson), and [replay script](scripts/retain_hotzone_landmark_round3.py). The revised full building placement file and single-file review website are stored privately in the Spaciel working Library; the public website has not been changed.
