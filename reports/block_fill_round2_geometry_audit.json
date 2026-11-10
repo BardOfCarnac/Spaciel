@@ -1,0 +1,15 @@
+{
+  "polygons": 6257,
+  "valid": 6257,
+  "overlap_pairs": 66,
+  "overlap_pairs_over_half_percent": 0,
+  "max_pair_overlap_percent_of_smaller": 0.4677,
+  "road_centerline_crossing_buildings": 0,
+  "gold_mask_pixel_violation_buildings": 0,
+  "gold_mask_violation_pixels": 0,
+  "notes": [
+    "Road centrelines are not surveyed full widths",
+    "Raster gold containment is not independently surveyed coastline/slope",
+    "Convex hull approximations are not full 3D solids"
+  ]
+}
