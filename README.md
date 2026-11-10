@@ -59,3 +59,9 @@ See [the pass-2 report](reports/architecture_review_phase2.md), [source geometry
 ## Minimum SketchUp building standard — 10 November 2026
 
 A plain enclosed source building is acceptable: walls/sides, a roof or top, and a convincing solid silhouette. **Low face or triangle counts alone are not grounds for rejection.** Open, missing-wall, or staple-like shapes still require inspection or repair. All 137 first-pass candidates meet the initial one-shell watertight geometry screen; visual completeness and siting are independently pending. See [building acceptance policy](docs/building_acceptance_policy.md) and [137-entry minimum-shell review](data/review/in_place_137_minimum_closed_shell_screen.csv). No positions or building geometry have been altered.
+
+## Native-scale building assembly — draft 01 (10 November 2026)
+
+A **non-destructive, whole-city 2D placement trial** has now assigned **8,618 original-source model instances** to the approved building areas: **228** retain their original source position and **8,390** are reused via translation/rotation without scaling. The proposals refer to **2,568 distinct original SketchUp source definitions** and **8,516 target site IDs**. The remaining 2,992 target IDs have no direct assignment; some are intentionally empty or overlap other approved slots. Independent geometry checks found no placed 2D hull within 2.6 atlas pixels of cleaned road centrelines and no significant hull-to-hull overlaps after cleaning four provisional conflicts.
+
+This is **not** yet integrated as finished 3D geometry; source model solids, district look, foundations, coastlines and actual street widths still need review. See [the method and full limitations](reports/native_building_assembly_draft01.md) and [rebuild script](scripts/assemble_native_buildings_draft01.py). Detailed source-derived hulls, placement coordinates and offline interactive review website remain in the private Spaciel Library, not this public repository.
