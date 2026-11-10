@@ -1,0 +1,43 @@
+{
+  "draft": "Spaciel block-first placement 02",
+  "status": "UNAPPROVED NONDESTRUCTIVE 2D TRIAL",
+  "principle": "Gold regions are free buildable blocks; V10 individual building polygons are not target slots.",
+  "buildable_block_mask_pixels": 1416953,
+  "occupied_with_spacing_pixels": 659585,
+  "occupied_fraction_including_spacing": 0.4655,
+  "placements": 3571,
+  "by_method": {
+    "ORIGINAL_SKP_POSITION": 140,
+    "BLOCK_FREELY_PACKED_UNSCALED": 3431
+  },
+  "distinct_original_skp_source_definitions": 2501,
+  "style_counts": {
+    "mixed": 510,
+    "university": 136,
+    "urban": 583,
+    "commercial": 149,
+    "port": 101,
+    "amusement": 98,
+    "combat": 315,
+    "affluent": 245,
+    "suburb": 202,
+    "heritage": 241,
+    "hotzone": 22,
+    "corporate": 536,
+    "military": 238,
+    "exec": 164,
+    "industrial": 31
+  },
+  "road_clearance_rule": "Buildable gold mask already excludes cleaned road centrelines; placements cannot leave inner gold mask.",
+  "original_geometry_unchanged": "No scaling; source geometric footprint rotated or translated as a rigid shape.",
+  "source_hull_note": "Convex-hull approximations of SKP shape; does not prove actual face geometry or construction.",
+  "limitations": [
+    "Gold blocks created by morphological closure of V10 approved building masks, not independently surveyed block polygons.",
+    "District style is nearest earlier V10 styled polygon; final district boundaries need verifying.",
+    "Road surface widths, coastline water geometry and terrain foundation grades not independently validated.",
+    "2D placement suggestions are not actual 3D mesh integrations; all unapproved."
+  ],
+  "actual_building_footprint_coverage_pct": 30.33,
+  "note_coverage": "30.3% physical convex-hull area; 46.6% including 1-pixel separation halos in working gold-mask resolution",
+  "v10_site_count_is_not_a_goal": true
+}
