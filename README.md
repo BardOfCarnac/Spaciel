@@ -77,3 +77,16 @@ Draft 02 freely packs unchanged native-source model footprints **anywhere inside
 - [Rebuild method](scripts/assemble_native_buildings_block_first_v2.py)
 
 The original source-derived exact placement hulls and interactive visual review page are stored privately in Spaciel's working Library, not in this public repository. Source model rights remain to be checked before publication of original 3D geometry.
+
+
+## Current building-layout baseline — Round Two / Draft 03 (10 November 2026)
+
+**Important:** The gold areas are *shared buildable city blocks*, never one-to-one destinations for V10 historical footprints. Draft 02 was a first free-block placement but left excessive unused edges (3,571 placements, 30.3% gold roof-outline coverage). The older one-to-one Draft 01 remains superseded.
+
+Round Two **repacked** the unapproved Draft 02 placements rather than retaining their arbitrary interior positions. It kept the 140 original-location source buildings, reused the source models at original proportions, preferentially established street frontages and then filled internal spaces. Draft 03 contains **6,257 provisional 2D native-source placements**, using **2,930 original source designs**, covering **57.06%** of the approved gold area with roof outlines. The Hot Zone remains intentionally sparse; corporate/urban blocks are denser. 
+
+The final geometry audit found **zero** road-centreline intersections, **zero** hulls outside the gold mask at working raster resolution, **zero** overlapping pairs greater than 0.5% of the smaller hull, and **6,257 valid hulls**. Small subthreshold overlap remains; full road widths, coastline, slopes, source mesh and district outlines still need 3D/manual validation. **No final 3D city or live site has been updated.**
+
+Review the [Round Two report](reports/block_fill_round2.md), [method](scripts/assemble_native_buildings_block_round2.py), [validation](reports/block_fill_round2_geometry_audit.json) and [district-style coverage](reports/block_fill_round2_style_coverage.json).
+
+The interactive before/after website and detailed source-derived placement GeoJSON are in the user's **private Spaciel Library**, not this public GitHub repository, pending checks of the original SketchUp model's redistribution rights.
