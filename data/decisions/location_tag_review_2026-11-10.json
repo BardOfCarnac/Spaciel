@@ -1,0 +1,355 @@
+{
+  "schema": "spaciel.location_tag_review.v1",
+  "review_date": "2026-11-10",
+  "scope": "38 previously flagged Spaciel Night City 2045 POI classification/display-tag review items",
+  "intent": "archived review decisions for reference; not applied to the map or any deployed POI dataset",
+  "summary": {
+    "reviewed": 38,
+    "category_changes_reported_in_prior_review": 23,
+    "existing_categories_retained_reported_in_prior_review": 15
+  },
+  "sources": [
+    "Cyberpunk RED Night City 2045 sourcebook (referenced for interpretation; no copyrighted text reproduced)",
+    "Vend-R v1.3 location database",
+    "Spaciel V19 location register",
+    "User-approved review conversation (2026-11-10)"
+  ],
+  "limitations": [
+    "These are name-keyed review proposals, not stable-ID keyed database updates.",
+    "Match each name against a unique canonical POI ID before applying; duplicate or missing IDs exist in the source register.",
+    "This archive does not confirm that live map data, pop-up code, or icon assignments have changed.",
+    "The 23/15 summary counts are retained from the preceding review and have not been independently recomputed from a before/after source snapshot."
+  ],
+  "highlights": [
+    {
+      "location_name": "Guns & Dolls",
+      "reason": "Hybrid gun store and adult club; medical classification was misleading."
+    },
+    {
+      "location_name": "The Night City Animal Shelter",
+      "reason": "Medical / bodysculpting clinic for exotics rather than an ordinary animal shelter."
+    },
+    {
+      "location_name": "University Cargo Bay",
+      "reason": "Budget student accommodation, not freight handling."
+    },
+    {
+      "location_name": "GraffitiX",
+      "reason": "Art gallery should govern primary map classification rather than narrow retail use."
+    },
+    {
+      "location_name": "Great River Storehouse",
+      "reason": "Drone fulfilment warehouse, not conventional walk-in shopping."
+    },
+    {
+      "location_name": "Graceland Medical",
+      "reason": "Medical care is the primary service despite gang-controlled context."
+    }
+  ],
+  "records": [
+    {
+      "location_name": "Anjelika’s",
+      "suggested_category": "food",
+      "suggested_role": "food:bars",
+      "display_tag": "Host bar",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Guns & Dolls",
+      "suggested_category": "shopping",
+      "suggested_role": "shopping:specialist",
+      "display_tag": "Gun shop / adult club",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Munch Munch Munch",
+      "suggested_category": "food",
+      "suggested_role": "food:clubs",
+      "display_tag": "Private members’ club",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Firebird Tearoom & Steam Baths",
+      "suggested_category": "food",
+      "suggested_role": "food:cafes",
+      "display_tag": "Tearoom / steam baths",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Zhirafa Office Park",
+      "suggested_category": "work",
+      "suggested_role": "work:offices",
+      "display_tag": "Corporate offices / factories",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Toranoko Gakuen",
+      "suggested_category": "civic",
+      "suggested_role": "civic:education",
+      "display_tag": "Orphanage / vocational school",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Tyger Works Tower",
+      "suggested_category": "municipal",
+      "suggested_role": "municipal:security",
+      "display_tag": "Gang-operated office tower",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Chrome Cross",
+      "suggested_category": "municipal",
+      "suggested_role": "municipal:security",
+      "display_tag": "Red Chrome Legion hangout",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "The Forlorn Hope Wreckage",
+      "suggested_category": "leisure",
+      "suggested_role": "leisure:culture",
+      "display_tag": "Ruined bar / memorial",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "The Seep",
+      "suggested_category": "leisure",
+      "suggested_role": "leisure:culture",
+      "display_tag": "Flooded temple sinkhole",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Bristol Business Park",
+      "suggested_category": "work",
+      "suggested_role": "work:offices",
+      "display_tag": "Offices / events complex",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "The Night City Animal Shelter",
+      "suggested_category": "civic",
+      "suggested_role": "civic:medical",
+      "display_tag": "Exotic clinic / bodysculpting",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Jesse James’ Kosher Deli",
+      "suggested_category": "food",
+      "suggested_role": "food:bars",
+      "display_tag": "Pub / martial arts studio",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "The Bodukkan",
+      "suggested_category": "municipal",
+      "suggested_role": "municipal:security",
+      "display_tag": "Kimen-Gumi headquarters",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Honest Hiro’s Used Cars",
+      "suggested_category": "shopping",
+      "suggested_role": "shopping:specialist",
+      "display_tag": "Used-car dealership",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Oni-Yama Jail",
+      "suggested_category": "municipal",
+      "suggested_role": "municipal:security",
+      "display_tag": "Gang-run jail",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Tartarus",
+      "suggested_category": "municipal",
+      "suggested_role": "municipal:security",
+      "display_tag": "Gang-controlled mall",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "The Island",
+      "suggested_category": "municipal",
+      "suggested_role": "municipal:security",
+      "display_tag": "Voodoo Boys headquarters",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Minimallism",
+      "suggested_category": "shopping",
+      "suggested_role": "shopping:general",
+      "display_tag": "Fixer-run mall / market",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Skinny James’ Lot",
+      "suggested_category": "municipal",
+      "suggested_role": "municipal:freight",
+      "display_tag": "Nomad cargo broker",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Container Mart",
+      "suggested_category": "shopping",
+      "suggested_role": "shopping:general",
+      "display_tag": "Container shopping plaza",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "University Cargo Bay",
+      "suggested_category": "living",
+      "suggested_role": "living:homes",
+      "display_tag": "Student container housing",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "EEC Consulate",
+      "suggested_category": "civic",
+      "suggested_role": "civic:public",
+      "display_tag": "Consulate",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Japanese Consulate",
+      "suggested_category": "civic",
+      "suggested_role": "civic:public",
+      "display_tag": "Consulate",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Mexican Consulate",
+      "suggested_category": "civic",
+      "suggested_role": "civic:public",
+      "display_tag": "Consulate",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Pacifica Confederation Offices",
+      "suggested_category": "civic",
+      "suggested_role": "civic:public",
+      "display_tag": "Government offices",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Organization of American States Mission",
+      "suggested_category": "civic",
+      "suggested_role": "civic:public",
+      "display_tag": "Diplomatic mission",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "United States Consulate",
+      "suggested_category": "civic",
+      "suggested_role": "civic:public",
+      "display_tag": "Consulate",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Carriage Street Books/Afterwords Café",
+      "suggested_category": "food",
+      "suggested_role": "food:cafes",
+      "display_tag": "Bookshop / café",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "The Forge",
+      "suggested_category": "work",
+      "suggested_role": "work:industry",
+      "display_tag": "Chrome refurbishment works",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "GraffitiX",
+      "suggested_category": "leisure",
+      "suggested_role": "leisure:culture",
+      "display_tag": "Art gallery",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Great River Storehouse",
+      "suggested_category": "work",
+      "suggested_role": "work:warehouses",
+      "display_tag": "Drone fulfilment warehouse",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Marina FloatHomes",
+      "suggested_category": "living",
+      "suggested_role": "living:homes",
+      "display_tag": "Floating residences",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Canadian Consulate",
+      "suggested_category": "civic",
+      "suggested_role": "civic:public",
+      "display_tag": "Consulate",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "The Obituary",
+      "suggested_category": "municipal",
+      "suggested_role": "municipal:security",
+      "display_tag": "Dragula Racers headquarters",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Turbo Neon Motors",
+      "suggested_category": "shopping",
+      "suggested_role": "shopping:services",
+      "display_tag": "Custom vehicle workshop",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Graceland Medical",
+      "suggested_category": "civic",
+      "suggested_role": "civic:medical",
+      "display_tag": "Community medical clinic",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    },
+    {
+      "location_name": "Totentanz",
+      "suggested_category": "food",
+      "suggested_role": "food:clubs",
+      "display_tag": "Maelstrom nightclub",
+      "status": "reviewed_proposal",
+      "match_to_live_id_required": true
+    }
+  ]
+}
