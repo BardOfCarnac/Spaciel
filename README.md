@@ -65,3 +65,15 @@ A plain enclosed source building is acceptable: walls/sides, a roof or top, and 
 A **non-destructive, whole-city 2D placement trial** has now assigned **8,618 original-source model instances** to the approved building areas: **228** retain their original source position and **8,390** are reused via translation/rotation without scaling. The proposals refer to **2,568 distinct original SketchUp source definitions** and **8,516 target site IDs**. The remaining 2,992 target IDs have no direct assignment; some are intentionally empty or overlap other approved slots. Independent geometry checks found no placed 2D hull within 2.6 atlas pixels of cleaned road centrelines and no significant hull-to-hull overlaps after cleaning four provisional conflicts.
 
 This is **not** yet integrated as finished 3D geometry; source model solids, district look, foundations, coastlines and actual street widths still need review. See [the method and full limitations](reports/native_building_assembly_draft01.md) and [rebuild script](scripts/assemble_native_buildings_draft01.py). Detailed source-derived hulls, placement coordinates and offline interactive review website remain in the private Spaciel Library, not this public repository.
+
+## Current building placement approach — Draft 02 (10 November 2026)
+
+**IMPORTANT: The approved gold regions are shared buildable blocks, not one building per old V10 footprint.** Draft 01's 8,618 one-to-one footprint-derived assignments are **superseded** and must not be treated as the approved city arrangement. The 11,508 old outlines contributed to the gold regions; none is a mandatory destination.
+
+Draft 02 freely packs unchanged native-source model footprints **anywhere inside the gold masks**, guided broadly by neighbourhood style. Current non-destructive 2D trial: **3,571** model shapes; **140** at their source positions and **3,431** moved/rotated without scaling. Exact geometry checks found no model-to-model overlaps above 0.5% of the smaller hull and no road centreline intersections. Source hulls cover **30.3%** of gold area; halos reserve **46.6%**. This is a conservative *first fill* with legitimate open space, not a finished 3D skyline.
+
+- [Gold buildable blocks (editable GeoJSON)](data/blocks/gold_buildable_regions_v1.geojson)
+- [Block-first placement report](reports/block_first_assembly_draft02.md)
+- [Rebuild method](scripts/assemble_native_buildings_block_first_v2.py)
+
+The original source-derived exact placement hulls and interactive visual review page are stored privately in Spaciel's working Library, not in this public repository. Source model rights remain to be checked before publication of original 3D geometry.
