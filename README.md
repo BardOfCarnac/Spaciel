@@ -90,3 +90,12 @@ The final geometry audit found **zero** road-centreline intersections, **zero** 
 Review the [Round Two report](reports/block_fill_round2.md), [method](scripts/assemble_native_buildings_block_round2.py), [validation](reports/block_fill_round2_geometry_audit.json) and [district-style coverage](reports/block_fill_round2_style_coverage.json).
 
 The interactive before/after website and detailed source-derived placement GeoJSON are in the user's **private Spaciel Library**, not this public GitHub repository, pending checks of the original SketchUp model's redistribution rights.
+
+
+## Historical block-area recovery — review only (10 November 2026)
+
+The Draft 03 gold placement area was derived from existing V10 building footprints, not from all available city land. Its undercoverage was confirmed by recovering the old October V6 morphology layer with **560 approximate character block polygons** (5.92M atlas px² union versus 3.29M atlas px² in the current gold layer). Old block polygons sometimes cross roads and are **not** a complete buildable-land mask. A preliminary exclusion of current stylised V17 roadway corridors identifies **2.25M additional atlas px²** worth reviewing, still subject to accurate coastline, parks, deliberate voids, terrain and road width checks.
+
+The current 6,257-placement Draft 03 arrangement **remains untouched**. The extra areas are candidates only; they are not an instruction to densely build on all available land.
+
+Files: [560 recovered character blocks](data/blocks/recovered_october_560_character_blocks.geojson), [possible expansion areas (not approved)](data/blocks/recovered_additional_territory_REVIEW_ONLY.geojson), [rebuild script](scripts/recover_earlier_block_coverage.py), and [full recovery report](reports/recovered_earlier_city_block_areas.md). The interactive comparison website and visual reference remain in the user's private Spaciel working Library, rather than deploying the site.
