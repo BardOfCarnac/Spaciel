@@ -1,0 +1,99 @@
+{
+  "note": "Style estimated by nearest original V10 footprint to each gold region centroid; manual verification needed",
+  "style_coverage": {
+    "military": {
+      "gold_area_px": 93842,
+      "covered_px": 46200,
+      "roof_coverage_pct": 49.2,
+      "block_regions": 59
+    },
+    "corporate": {
+      "gold_area_px": 204702,
+      "covered_px": 130305,
+      "roof_coverage_pct": 63.7,
+      "block_regions": 118
+    },
+    "urban": {
+      "gold_area_px": 226502,
+      "covered_px": 136511,
+      "roof_coverage_pct": 60.3,
+      "block_regions": 176
+    },
+    "mixed": {
+      "gold_area_px": 205052,
+      "covered_px": 129746,
+      "roof_coverage_pct": 63.3,
+      "block_regions": 93
+    },
+    "heritage": {
+      "gold_area_px": 105443,
+      "covered_px": 63994,
+      "roof_coverage_pct": 60.7,
+      "block_regions": 71
+    },
+    "hotzone": {
+      "gold_area_px": 4331,
+      "covered_px": 1512,
+      "roof_coverage_pct": 34.9,
+      "block_regions": 9
+    },
+    "commercial": {
+      "gold_area_px": 61808,
+      "covered_px": 37756,
+      "roof_coverage_pct": 61.1,
+      "block_regions": 41
+    },
+    "combat": {
+      "gold_area_px": 122674,
+      "covered_px": 63324,
+      "roof_coverage_pct": 51.6,
+      "block_regions": 63
+    },
+    "exec": {
+      "gold_area_px": 72451,
+      "covered_px": 34778,
+      "roof_coverage_pct": 48.0,
+      "block_regions": 65
+    },
+    "university": {
+      "gold_area_px": 57380,
+      "covered_px": 30332,
+      "roof_coverage_pct": 52.9,
+      "block_regions": 25
+    },
+    "affluent": {
+      "gold_area_px": 93162,
+      "covered_px": 50037,
+      "roof_coverage_pct": 53.7,
+      "block_regions": 44
+    },
+    "port": {
+      "gold_area_px": 42188,
+      "covered_px": 21131,
+      "roof_coverage_pct": 50.1,
+      "block_regions": 11
+    },
+    "amusement": {
+      "gold_area_px": 37952,
+      "covered_px": 18584,
+      "roof_coverage_pct": 49.0,
+      "block_regions": 29
+    },
+    "suburb": {
+      "gold_area_px": 71377,
+      "covered_px": 36202,
+      "roof_coverage_pct": 50.7,
+      "block_regions": 32
+    },
+    "industrial": {
+      "gold_area_px": 12648,
+      "covered_px": 7928,
+      "roof_coverage_pct": 62.7,
+      "block_regions": 3
+    }
+  },
+  "large_underfilled_dense_blocks_count": 1,
+  "review_block_ids": [
+    "gold-region-0388"
+  ]
+}
