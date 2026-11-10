@@ -1,0 +1,967 @@
+{
+  "schema": "spaciel.location_primary_secondary.v1",
+  "created": "2026-11-10",
+  "status": "non_destructive_review_overlay_not_in_live_viewer",
+  "scope": {
+    "reviewed_locations": 38,
+    "source_register_locations": 556,
+    "other_locations": "retain current primary; secondary arrays empty unless independently confirmed"
+  },
+  "precedence": [
+    "reviewed primary.category controls colour family",
+    "reviewed primary.role controls existing glyph family/subtype",
+    "display_tag is short text; not a category override",
+    "secondary_functions, affiliations and context_tags are searchable metadata only; do not override colour/icon",
+    "preserve existing IDs, coordinates, descriptions and animation"
+  ],
+  "outstanding_register_issues": [
+    "12 rows lack canonical ID",
+    "3 The Cells rows share the same canonical ID"
+  ],
+  "records": [
+    {
+      "location_id": "NC2045-LOC-CHARTER-HILL-224-ANJELIKA-S",
+      "location_name": "Anjelika’s",
+      "district": "Charter Hill",
+      "original_primary": {
+        "category": "food",
+        "role": "food:bars"
+      },
+      "primary": {
+        "category": "food",
+        "role": "food:bars"
+      },
+      "display_tag": "Host bar",
+      "secondary_functions": [],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 224",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-DOWNTOWN-085-GUNS-DOLLS",
+      "location_name": "Guns & Dolls",
+      "district": "Downtown",
+      "original_primary": {
+        "category": "civic",
+        "role": "civic:medical"
+      },
+      "primary": {
+        "category": "shopping",
+        "role": "shopping:specialist"
+      },
+      "display_tag": "Gun shop / adult club",
+      "secondary_functions": [
+        "adult entertainment"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "mixed-use"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 85",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-DOWNTOWN-085-MUNCH-MUNCH-MUNCH",
+      "location_name": "Munch Munch Munch",
+      "district": "Downtown",
+      "original_primary": {
+        "category": "food",
+        "role": "food:bars"
+      },
+      "primary": {
+        "category": "food",
+        "role": "food:clubs"
+      },
+      "display_tag": "Private members’ club",
+      "secondary_functions": [
+        "food and drink",
+        "short-stay rooms",
+        "adult entertainment"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "private-members"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 85",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-EXECUTIVE-ZONE-235-FIREBIRD-TEAROOM-STEAM-BATHS",
+      "location_name": "Firebird Tearoom & Steam Baths",
+      "district": "Executive Zone",
+      "original_primary": {
+        "category": "food",
+        "role": "food:cafes"
+      },
+      "primary": {
+        "category": "food",
+        "role": "food:cafes"
+      },
+      "display_tag": "Tearoom / steam baths",
+      "secondary_functions": [
+        "steam baths",
+        "wellness services"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "mixed-use"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 235",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-261-ZHIRAFA-OFFICE-PARK",
+      "location_name": "Zhirafa Office Park",
+      "district": "Heywood Industrial Zone",
+      "original_primary": {
+        "category": "leisure",
+        "role": "leisure:parks"
+      },
+      "primary": {
+        "category": "work",
+        "role": "work:offices"
+      },
+      "display_tag": "Corporate offices / factories",
+      "secondary_functions": [
+        "factory premises"
+      ],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 261",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-KABUKI-206-TORANOKO-GAKUEN",
+      "location_name": "Toranoko Gakuen",
+      "district": "Kabuki",
+      "original_primary": {
+        "category": "work",
+        "role": "work:industry"
+      },
+      "primary": {
+        "category": "civic",
+        "role": "civic:education"
+      },
+      "display_tag": "Orphanage / vocational school",
+      "secondary_functions": [
+        "orphanage",
+        "vocational training"
+      ],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 206",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-KABUKI-206-TYGER-WORKS-TOWER",
+      "location_name": "Tyger Works Tower",
+      "district": "Kabuki",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "display_tag": "Gang-operated office tower",
+      "secondary_functions": [
+        "office premises"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "gang-operated"
+      ],
+      "needs_function_validation": true,
+      "provenance": {
+        "register_source": "Night City 2045 p. 206",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-LITTLE-CHINA-098-CHROME-CROSS",
+      "location_name": "Chrome Cross",
+      "district": "Little China",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "display_tag": "Red Chrome Legion hangout",
+      "secondary_functions": [],
+      "affiliations": [
+        "Red Chrome Legion"
+      ],
+      "context_tags": [
+        "gang hangout"
+      ],
+      "needs_function_validation": true,
+      "provenance": {
+        "register_source": "Night City 2045 p. 98",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-LITTLE-CHINA-098-THE-FORLORN-HOPE-WRECKAGE",
+      "location_name": "The Forlorn Hope Wreckage",
+      "district": "Little China",
+      "original_primary": {
+        "category": "food",
+        "role": "food:bars"
+      },
+      "primary": {
+        "category": "leisure",
+        "role": "leisure:culture"
+      },
+      "display_tag": "Ruined bar / memorial",
+      "secondary_functions": [
+        "former bar",
+        "memorial"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "ruined",
+        "non-operational"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 98",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-LITTLE-CHINA-101-THE-SEEP",
+      "location_name": "The Seep",
+      "district": "Little China",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:infrastructure"
+      },
+      "primary": {
+        "category": "leisure",
+        "role": "leisure:culture"
+      },
+      "display_tag": "Flooded temple sinkhole",
+      "secondary_functions": [
+        "former temple"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "sinkhole",
+        "polluted runoff",
+        "hazard"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 101",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-LITTLE-EUROPE-056-BRISTOL-BUSINESS-PARK",
+      "location_name": "Bristol Business Park",
+      "district": "Little Europe",
+      "original_primary": {
+        "category": "leisure",
+        "role": "leisure:parks"
+      },
+      "primary": {
+        "category": "work",
+        "role": "work:offices"
+      },
+      "display_tag": "Offices / events complex",
+      "secondary_functions": [
+        "events venue"
+      ],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 56",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-NORTH-HEYWOOD-250-THE-NIGHT-CITY-ANIMAL-SHELTER",
+      "location_name": "The Night City Animal Shelter",
+      "district": "North Heywood",
+      "original_primary": {
+        "category": "living",
+        "role": "living:shelters"
+      },
+      "primary": {
+        "category": "civic",
+        "role": "civic:medical"
+      },
+      "display_tag": "Exotic clinic / bodysculpting",
+      "secondary_functions": [
+        "bodysculpting"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "exotics clinic"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 250",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-OLD-COMBAT-ZONE-169-JESSE-JAMES-KOSHER-DELI",
+      "location_name": "Jesse James’ Kosher Deli",
+      "district": "Old Combat Zone",
+      "original_primary": {
+        "category": "food",
+        "role": "food:bars"
+      },
+      "primary": {
+        "category": "food",
+        "role": "food:bars"
+      },
+      "display_tag": "Pub / martial arts studio",
+      "secondary_functions": [
+        "martial arts studio"
+      ],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 169",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-OLD-JAPANTOWN-130-THE-BODUKKAN",
+      "location_name": "The Bodukkan",
+      "district": "Old Japantown",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "display_tag": "Kimen-Gumi headquarters",
+      "secondary_functions": [],
+      "affiliations": [
+        "Kimen-Gumi"
+      ],
+      "context_tags": [
+        "gang headquarters"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 130",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-OLD-JAPANTOWN-131-HONEST-HIRO-S-USED-CARS",
+      "location_name": "Honest Hiro’s Used Cars",
+      "district": "Old Japantown",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:freight"
+      },
+      "primary": {
+        "category": "shopping",
+        "role": "shopping:specialist"
+      },
+      "display_tag": "Used-car dealership",
+      "secondary_functions": [],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 131",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-OLD-JAPANTOWN-133-ONI-YAMA-JAIL",
+      "location_name": "Oni-Yama Jail",
+      "district": "Old Japantown",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "display_tag": "Gang-run jail",
+      "secondary_functions": [
+        "detention"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "gang-run"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 133",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-OLD-JAPANTOWN-134-TARTARUS",
+      "location_name": "Tartarus",
+      "district": "Old Japantown",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "display_tag": "Gang-controlled mall",
+      "secondary_functions": [
+        "mall / retail"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "gang-controlled"
+      ],
+      "needs_function_validation": true,
+      "provenance": {
+        "register_source": "Night City 2045 p. 134",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-RANCHO-CORONADO-289-THE-ISLAND",
+      "location_name": "The Island",
+      "district": "Rancho Coronado",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "display_tag": "Voodoo Boys headquarters",
+      "secondary_functions": [],
+      "affiliations": [
+        "Voodoo Boys"
+      ],
+      "context_tags": [
+        "gang headquarters"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 289",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-RANCHO-CORONADO-290-MINIMALLISM",
+      "location_name": "Minimallism",
+      "district": "Rancho Coronado",
+      "original_primary": {
+        "category": "civic",
+        "role": "civic:faith"
+      },
+      "primary": {
+        "category": "shopping",
+        "role": "shopping:general"
+      },
+      "display_tag": "Fixer-run mall / market",
+      "secondary_functions": [
+        "market stalls"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "fixer-run"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 290",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-OUT-SANTO-DOMINGO-266-SKINNY-JAMES-LOT",
+      "location_name": "Skinny James’ Lot",
+      "district": "Santo Domingo",
+      "original_primary": {
+        "category": "work",
+        "role": "work:industry"
+      },
+      "primary": {
+        "category": "municipal",
+        "role": "municipal:freight"
+      },
+      "display_tag": "Nomad cargo broker",
+      "secondary_functions": [
+        "cargo brokerage"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "nomad-operated"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 266",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-SOUTH-NIGHT-CITY-141-CONTAINER-MART",
+      "location_name": "Container Mart",
+      "district": "South Night City",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:infrastructure"
+      },
+      "primary": {
+        "category": "shopping",
+        "role": "shopping:general"
+      },
+      "display_tag": "Container shopping plaza",
+      "secondary_functions": [
+        "multiple retail stalls"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "shopping complex"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 141",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-SOUTH-NIGHT-CITY-146-UNIVERSITY-CARGO-BAY",
+      "location_name": "University Cargo Bay",
+      "district": "South Night City",
+      "original_primary": {
+        "category": "civic",
+        "role": "civic:education"
+      },
+      "primary": {
+        "category": "living",
+        "role": "living:homes"
+      },
+      "display_tag": "Student container housing",
+      "secondary_functions": [
+        "student accommodation"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "container housing"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 146",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-OUT-THE-GLEN-118-EEC-CONSULATE",
+      "location_name": "EEC Consulate",
+      "district": "The Glen",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:infrastructure"
+      },
+      "primary": {
+        "category": "civic",
+        "role": "civic:public"
+      },
+      "display_tag": "Consulate",
+      "secondary_functions": [],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-OUT-THE-GLEN-118-JAPANESE-CONSULATE",
+      "location_name": "Japanese Consulate",
+      "district": "The Glen",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:infrastructure"
+      },
+      "primary": {
+        "category": "civic",
+        "role": "civic:public"
+      },
+      "display_tag": "Consulate",
+      "secondary_functions": [],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-OUT-THE-GLEN-119-MEXICAN-CONSULATE",
+      "location_name": "Mexican Consulate",
+      "district": "The Glen",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:infrastructure"
+      },
+      "primary": {
+        "category": "civic",
+        "role": "civic:public"
+      },
+      "display_tag": "Consulate",
+      "secondary_functions": [],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-OUT-THE-GLEN-119-PACIFICA-CONFEDERATION-OFFICES",
+      "location_name": "Pacifica Confederation Offices",
+      "district": "The Glen",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:infrastructure"
+      },
+      "primary": {
+        "category": "civic",
+        "role": "civic:public"
+      },
+      "display_tag": "Government offices",
+      "secondary_functions": [],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-OUT-THE-GLEN-119-OAS-MISSION",
+      "location_name": "Organization of American States Mission",
+      "district": "The Glen",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:infrastructure"
+      },
+      "primary": {
+        "category": "civic",
+        "role": "civic:public"
+      },
+      "display_tag": "Diplomatic mission",
+      "secondary_functions": [],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-OUT-THE-GLEN-119-UNITED-STATES-CONSULATE",
+      "location_name": "United States Consulate",
+      "district": "The Glen",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:infrastructure"
+      },
+      "primary": {
+        "category": "civic",
+        "role": "civic:public"
+      },
+      "display_tag": "Consulate",
+      "secondary_functions": [],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-UNIVERSITY-DISTRICT-107-CARRIAGE-STREET-BOOKS-AFTERWORDS-CAFE",
+      "location_name": "Carriage Street Books/Afterwords Café",
+      "district": "University District",
+      "original_primary": {
+        "category": "food",
+        "role": "food:cafes"
+      },
+      "primary": {
+        "category": "food",
+        "role": "food:cafes"
+      },
+      "display_tag": "Bookshop / café",
+      "secondary_functions": [
+        "bookshop"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "mixed-use"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 107",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-UPPER-MARINA-071-THE-FORGE",
+      "location_name": "The Forge",
+      "district": "Upper Marina",
+      "original_primary": {
+        "category": "work",
+        "role": "work:industry"
+      },
+      "primary": {
+        "category": "work",
+        "role": "work:industry"
+      },
+      "display_tag": "Chrome refurbishment works",
+      "secondary_functions": [
+        "chrome refurbishment"
+      ],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 71",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-UPPER-MARINA-071-GRAFFITIX",
+      "location_name": "GraffitiX",
+      "district": "Upper Marina",
+      "original_primary": {
+        "category": "leisure",
+        "role": "leisure:culture"
+      },
+      "primary": {
+        "category": "leisure",
+        "role": "leisure:culture"
+      },
+      "display_tag": "Art gallery",
+      "secondary_functions": [
+        "art retail"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "gallery"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 71",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-UPPER-MARINA-072-GREAT-RIVER-STOREHOUSE",
+      "location_name": "Great River Storehouse",
+      "district": "Upper Marina",
+      "original_primary": {
+        "category": "work",
+        "role": "work:warehouses"
+      },
+      "primary": {
+        "category": "work",
+        "role": "work:warehouses"
+      },
+      "display_tag": "Drone fulfilment warehouse",
+      "secondary_functions": [
+        "drone fulfilment"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "distribution"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 72",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-UPPER-MARINA-073-MARINA-FLOATHOMES",
+      "location_name": "Marina FloatHomes",
+      "district": "Upper Marina",
+      "original_primary": {
+        "category": "leisure",
+        "role": "leisure:sport"
+      },
+      "primary": {
+        "category": "living",
+        "role": "living:homes"
+      },
+      "display_tag": "Floating residences",
+      "secondary_functions": [
+        "floating residences"
+      ],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 73",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-WATSON-DEVELOPMENT-188-CANADIAN-CONSULATE",
+      "location_name": "Canadian Consulate",
+      "district": "Watson Development",
+      "original_primary": {
+        "category": "civic",
+        "role": "civic:public"
+      },
+      "primary": {
+        "category": "civic",
+        "role": "civic:public"
+      },
+      "display_tag": "Consulate",
+      "secondary_functions": [],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 188",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-WATSON-DEVELOPMENT-192-THE-OBITUARY",
+      "location_name": "The Obituary",
+      "district": "Watson Development",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "display_tag": "Dragula Racers headquarters",
+      "secondary_functions": [],
+      "affiliations": [
+        "Dragula Racers"
+      ],
+      "context_tags": [
+        "gang headquarters"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 192",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-WATSON-DEVELOPMENT-195-TURBO-NEON-MOTORS",
+      "location_name": "Turbo Neon Motors",
+      "district": "Watson Development",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:freight"
+      },
+      "primary": {
+        "category": "shopping",
+        "role": "shopping:services"
+      },
+      "display_tag": "Custom vehicle workshop",
+      "secondary_functions": [
+        "vehicle customisation"
+      ],
+      "affiliations": [],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 195",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-THE-HOT-ZONE-093-GRACELAND-MEDICAL",
+      "location_name": "Graceland Medical",
+      "district": "The Hot Zone",
+      "original_primary": {
+        "category": "municipal",
+        "role": "municipal:security"
+      },
+      "primary": {
+        "category": "civic",
+        "role": "civic:medical"
+      },
+      "display_tag": "Community medical clinic",
+      "secondary_functions": [
+        "community healthcare"
+      ],
+      "affiliations": [],
+      "context_tags": [
+        "gang-controlled"
+      ],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 93",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    },
+    {
+      "location_id": "NC2045-LOC-THE-HOT-ZONE-093-TOTENTANZ",
+      "location_name": "Totentanz",
+      "district": "The Hot Zone",
+      "original_primary": {
+        "category": "food",
+        "role": "food:bars"
+      },
+      "primary": {
+        "category": "food",
+        "role": "food:clubs"
+      },
+      "display_tag": "Maelstrom nightclub",
+      "secondary_functions": [],
+      "affiliations": [
+        "Maelstrom"
+      ],
+      "context_tags": [],
+      "needs_function_validation": false,
+      "provenance": {
+        "register_source": "Night City 2045 p. 93",
+        "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
+      }
+    }
+  ]
+}
