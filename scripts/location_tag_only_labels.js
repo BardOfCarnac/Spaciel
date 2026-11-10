@@ -13,7 +13,7 @@
   const SUBTYPES = [
     ['Offices & professional', 'Media & broadcasting', 'Industry & utilities', 'Warehouses & research'],
     ['Attractions & games', 'Sport & recreation', 'Culture & landmarks', 'Parks & open spaces'],
-    ['Bars & pubs', 'Cafés & bakeries', 'Restaurants', 'Clubs & nightlife'],
+    ['Restaurants', 'Cafés & bakeries', 'Bars & pubs', 'Clubs & nightlife'],
     ['Homes & apartments', 'Communities & estates', 'Hotels & short stays', 'Camps & shelters'],
     ['General retail', 'Gear & technology', 'Specialist retail', 'Services & repair'],
     ['Passenger transport', 'Freight & vehicle services', 'Security & faction facilities', 'City infrastructure'],
