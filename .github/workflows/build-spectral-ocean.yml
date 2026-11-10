@@ -1,0 +1,44 @@
+name: Build Spaciel V19 repaired spectral ocean
+on:
+  push:
+    branches:
+      - fix/spectral-ocean-v19-direct-20261110
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble and validate viewer
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          chunks = sorted(Path('ocean-build').glob('chunk_*.txt'))
+          assert len(chunks) == 40, f"Expected 40 chunks; got {len(chunks)}"
+          out = Path('Spaciel_V19_Spectral_Ocean_Repaired.html')
+          with out.open('wb') as destination:
+              for chunk in chunks:
+                  destination.write(chunk.read_bytes())
+          src = out.read_text(encoding='utf-8')
+          assert src.startswith('<!doctype html>')
+          assert src.rstrip().endswith('</body></html>')
+          assert 'uniform int oceanModel;' in src
+          assert 'const safeFS=FS.slice(0,start)' in src
+          scripts = re.findall(r'<script(?:\s[^>]*)?>([\s\S]*?)</script>', src)
+          assert scripts, 'Missing JavaScript'
+          for i, code in enumerate(scripts):
+              Path(f'/tmp/spaciel_check_{i}.js').write_text(code, encoding='utf-8')
+          print(f"Built {out.name}: {out.stat().st_size:,} bytes, {len(scripts)} scripts")
+          PY
+          for script in /tmp/spaciel_check_*.js; do node --check "$script"; done
+      - name: Upload finished viewer
+        uses: actions/upload-artifact@v4
+        with:
+          name: Spaciel-V19-Spectral-Ocean-Repaired
+          path: Spaciel_V19_Spectral_Ocean_Repaired.html
+          if-no-files-found: error
+          retention-days: 30
