@@ -1,0 +1,48 @@
+{
+  "version": "Draft 03 \u2014 source-position-preserving complete block repack",
+  "retained_original_positions": 140,
+  "round02_repacked_placements": 6117,
+  "all_placements": 6257,
+  "original_skp_source_position_retained": 140,
+  "native_sources_reused_elsewhere": 6117,
+  "new_road_frontage": 5582,
+  "new_interior_infill": 535,
+  "distinct_original_source_definitions": 2930,
+  "gold_mask_area_pixels": 1416953,
+  "building_outline_area_pixels": 808531,
+  "building_outline_coverage_pct": 57.06,
+  "with_character_specific_spacing_pct": 63.45,
+  "residual_unoccupied_gold_pixels": 608422,
+  "style_placement_counts": {
+    "mixed": 953,
+    "university": 195,
+    "urban": 1157,
+    "commercial": 301,
+    "port": 171,
+    "amusement": 150,
+    "combat": 441,
+    "affluent": 344,
+    "suburb": 263,
+    "heritage": 534,
+    "hotzone": 20,
+    "corporate": 1013,
+    "military": 380,
+    "exec": 278,
+    "industrial": 57
+  },
+  "final_geometry_rejected_candidates": 12,
+  "final_geometry_rejected_reasons": {
+    "outside_gold_rounding": 8,
+    "exact_overlap_above_half_percent": 4
+  },
+  "status": "UNAPPROVED 2D REPACK \u2014 140 original SKP positions retained; old Draft 02 free placements re-evaluated; no mesh scaling",
+  "regional_density_caps": "local character; deliberately sparse Hot Zone and Executive areas",
+  "constraint_notes": [
+    "140 authentic original-position placements retained; other Draft 02 allocations were provisional and repacked without changing source geometry",
+    "Native source hulls translated/rotated, never resized",
+    "No hull allowed outside approved gold mask or touching another hull at working raster scale",
+    "No geometry overlaps at working raster resolution; original Draft 02 has 1px clearance; dense frontage may abut",
+    "Original V10 polygons never treated as individual destination slots",
+    "Full road widths/coast/terrain grade and final 3D mesh placement not yet verified"
+  ]
+}
