@@ -963,5 +963,35 @@
         "review_archive": "data/decisions/location_tag_review_2026-11-10.json"
       }
     }
-  ]
+  ],
+  "role_subtypes": {
+    "civic:education": "Education & childcare",
+    "civic:faith": "Faith & memorials",
+    "civic:medical": "Medical & cyberware",
+    "civic:public": "Government, aid & emergency",
+    "food:bars": "Bars & pubs",
+    "food:cafes": "Cafés & bakeries",
+    "food:clubs": "Clubs & nightlife",
+    "food:restaurants": "Restaurants",
+    "leisure:attractions": "Attractions & games",
+    "leisure:culture": "Culture & landmarks",
+    "leisure:parks": "Parks & open spaces",
+    "leisure:sport": "Sport & recreation",
+    "living:communities": "Communities & estates",
+    "living:homes": "Homes & apartments",
+    "living:hotels": "Hotels & short stays",
+    "living:shelters": "Camps & shelters",
+    "municipal:freight": "Freight & vehicle services",
+    "municipal:infrastructure": "City infrastructure",
+    "municipal:passenger": "Passenger transport",
+    "municipal:security": "Security & faction facilities",
+    "shopping:gear": "Gear & technology",
+    "shopping:general": "General retail",
+    "shopping:services": "Services & repair",
+    "shopping:specialist": "Specialist retail",
+    "work:industry": "Industry & utilities",
+    "work:media": "Media & broadcasting",
+    "work:offices": "Offices & professional",
+    "work:warehouses": "Warehouses & research"
+  }
 }
