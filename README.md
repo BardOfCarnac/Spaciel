@@ -1,5 +1,15 @@
 # Spaciel — native SketchUp building placement workbench
 
+
+## Optional location tags — canonical V4 standard (11 November 2026)
+
+**Do not confuse category, subtype, tag and description.** Seven existing category colours and 28 existing roles/subtypes remain the sole icon classification. `tags` is an **optional array** of useful, searchable additional functions; an empty array is correct. Do not manufacture one label per place or duplicate the role as a display tag (e.g., `Specialist retailer` under `shopping:specialist`). Distinctive merchandise, ownership and narrative belong in descriptions; factions such as Maelstrom go in `affiliations`, not tags. Reviewed secondary uses and physical conditions remain in their own fields.
+
+The [V4 optional-tag policy](data/decisions/location_additional_tag_policy_v4.json), [556-place V4 register](data/locations/spaciel_locations_556_optional_tags_v4_2026-11-11.json), [canonical-ID lookup](data/locations/spaciel_location_additional_tags_lookup_v4_2026-11-11.json), [reusable integration helper](src/locations/optional-tags-v4.mjs), and [regression tests](tests/test_optional_tags_v4.mjs) are committed for future builds. **194 places have useful additional tags; 362 do not.** The separate 105 Vend-R outlet pins retain their descriptive kinds without forced display tags. Read the [integration contract](docs/location_optional_tags_v4_2026-11-11.md).
+
+This is the **approved data/UI rule**, not a claim that the private main application or Supabase has already been redeployed. Older V19 and modular preview HTML files embed their previous tag snapshots until explicitly updated.
+
+
 ## Default Night City roads — Roadcraft V23 (11 November 2026)
 
 **Roadcraft V23, 22 atlas-pixel interpretation width, is the selected working road network for future Spaciel builds.** This is the road layer to use, not merely a comparison experiment. The actual **1,436-node / 1,992-path connected routing graph** is committed at [`data/roads/roadcraft_v23_default_width22.json`](data/roads/roadcraft_v23_default_width22.json). The [active road manifest](data/roads/manifest.json) makes this the canonical default and [`viewer/src/road-network.js`](viewer/src/road-network.js) loads it without silently substituting V17/V21.
