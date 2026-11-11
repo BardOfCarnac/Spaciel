@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#171c20"><title>Spaciel · Ocean V4 — Continuous Glint</title>
+<style>
+:root{color-scheme:dark;--ink:#e5eceb;--muted:#93a5a8;--line:#ffffff1a;--panel:#121d21ef;--accent:#d7a777}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#162026;color:var(--ink);font:13px/1.45 system-ui,-apple-system,'Segoe UI',sans-serif}canvas{width:100%;height:100%;display:block;touch-action:none;cursor:grab}canvas:active{cursor:grabbing}
+.top{position:fixed;left:18px;top:18px;z-index:3;pointer-events:none;filter:drop-shadow(0 1px 8px #000a)}.eyebrow{font-size:10px;font-weight:750;letter-spacing:.20em;color:#e3b888}.top h1{font-size:clamp(19px,3vw,29px);font-weight:620;letter-spacing:-.035em;margin:3px 0 4px}.top p{margin:0;color:#bbccce;font-size:11px;max-width:380px}
+.hint{position:fixed;left:18px;bottom:17px;pointer-events:none;font-size:11px;color:#d2d8d7cc;text-shadow:0 2px 8px #050a0ded;z-index:3}.pill{position:fixed;top:18px;right:18px;background:#101b20d9;border:1px solid #ffffff20;border-radius:99px;padding:8px 12px;color:#cfdbd9;font-size:10px;letter-spacing:.045em;z-index:3}.indicator{display:inline-block;width:6px;height:6px;border-radius:50%;background:#a6dac1;margin-right:6px;box-shadow:0 0 9px #a6dac188}
+.control{position:fixed;top:70px;right:18px;width:min(270px,calc(100vw - 36px));max-height:calc(100vh - 90px);max-height:calc(100dvh - 90px);overflow-y:auto;z-index:5;padding:0 15px 14px;border:1px solid #ffffff26;background:var(--panel);border-radius:13px;box-shadow:0 16px 50px #07101288;backdrop-filter:blur(16px);scrollbar-color:#647375 transparent}
+.control summary{list-style:none;cursor:pointer;font-size:11px;font-weight:750;letter-spacing:.1em;padding:15px 0;user-select:none;display:flex;justify-content:space-between}.control summary::-webkit-details-marker{display:none}.control summary:after{content:'−';color:var(--accent);font-size:17px;line-height:12px}.control:not([open]){padding-bottom:0}.control:not([open]) summary:after{content:'+'}
+.control .desc{font-size:11px;color:#9db1b4;margin:0 0 14px}.control label.group{display:block;margin:13px 0 4px;font-size:11px;color:#cad8d7}.control output{float:right;color:#efcba2;font-variant-numeric:tabular-nums}.control select{width:100%;padding:9px 8px;background:#25343a;border:1px solid #56636a;border-radius:7px;color:#e9efee;outline:none}.control input[type=range]{width:100%;margin:7px 0 2px;accent-color:#e6b37e;cursor:pointer}.control .toggle{display:flex;gap:9px;align-items:center;margin-top:12px;color:#cbd9d7;font-size:11px}.control input[type=checkbox]{accent-color:#d7a777}
+.buttons{display:flex;gap:8px;margin-top:17px}.buttons button{flex:1;padding:9px 6px;border-radius:7px;border:1px solid #ffffff30;background:#26363b;color:#e4efed;cursor:pointer;font-size:11px}.buttons button:hover{background:#34494f}.note{margin:12px 0 0;border-top:1px solid var(--line);padding-top:11px;color:#92aaad;font-size:10px;line-height:1.5}
+.error{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(440px,90vw);padding:18px;border-radius:10px;background:#1e2228;border:1px solid #c99;z-index:20;display:none;color:#f2e4db;white-space:pre-wrap;overflow-wrap:anywhere}
+@media(max-width:700px){.top{left:12px;top:14px}.top h1{font-size:19px}.top p{max-width:185px;font-size:10px}.pill{top:12px;right:10px;padding:6px 8px;font-size:9px}.control{right:10px;top:57px;width:min(244px,calc(100vw - 20px));max-height:calc(100dvh - 115px)}.control:not([open]){width:165px}.hint{font-size:10px;bottom:14px;left:12px}}
+@media(max-height:520px){.top p,.hint{display:none}}
+</style></head><body>
+<canvas id="view" aria-label="Animated overhead ocean surface, drag to pan and pinch or scroll to zoom"></canvas>
+<div class="top"><div class="eyebrow">SPACIEL / MATERIAL STUDY 04</div><h1>Ocean V4 / Continuous Glint</h1><p>Cola-dark crossing swells. One continuous reflection field at every zoom.</p></div>
+<div class="pill"><span class="indicator" id="dot"></span><span id="status">Loading surface…</span></div>
+<details class="control" open><summary>WATER LAB / CONTROLS</summary><p class="desc">V4 keeps the same reflected-light field at every zoom. Small waves are averaged when they become subpixel, rather than replaced by unrelated distant noise. Compare with V3 below.</p>
+<label class="group" for="palette">Water palette</label><select id="palette"><option value="0" selected>Cola + cool undertow (B)</option><option value="1">Deep blue-black (comparison)</option><option value="2">Full amber sunset</option></select>
+<label class="group" for="structure">Wave organisation</label><select id="structure"><option value="0" selected>Quasiperiodic steering — new</option><option value="1">60° skew lattice — comparison</option><option value="2">Aligned waves — original feel</option></select>
+<label class="group" for="width">Map scale <output id="widthO">3,600 m</output></label><input id="width" type="range" min="0" max="100" value="52" step="1">
+<label class="group" for="brightness">Glint intensity <output id="brightnessO">1.30×</output></label><input id="brightness" type="range" min="0" max="3" value="1.3" step="0.05">
+<label class="group" for="sharpness">Glint sharpness <output id="sharpnessO">160</output></label><input id="sharpness" type="range" min="30" max="420" value="160" step="5">
+<label class="group" for="cross">Cross-swell strength <output id="crossO">0.85×</output></label><input id="cross" type="range" min="0" max="1.6" value="0.85" step="0.05">
+<label class="group" for="steer">Regional steering <output id="steerO">0.55×</output></label><input id="steer" type="range" min="0" max="1.6" value="0.55" step="0.05">
+<label class="group" for="energy">Regional variation <output id="energyO">0.90×</output></label><input id="energy" type="range" min="0" max="1.8" value="0.9" step="0.05">
+<label class="group" for="aggregate">Filtered glint strength <output id="aggregateO">1.10×</output></label><input id="aggregate" type="range" min="0" max="2.2" value="1.1" step="0.05">
+<label class="group" for="irregular">Pattern irregularity <output id="irregularO">0.85×</output></label><input id="irregular" type="range" min="0" max="1.6" value="0.85" step="0.05">
+<label class="group" for="chop">Short-wave chop <output id="chopO">1.00×</output></label><input id="chop" type="range" min="0.2" max="2.5" value="1" step="0.05">
+<label class="group" for="speed">Motion speed <output id="speedO">1.50×</output></label><input id="speed" type="range" min="0" max="6" value="1.5" step="0.25">
+<label class="group" for="elevation">Sun elevation <output id="elevationO">60°</output></label><input id="elevation" type="range" min="18" max="85" value="60" step="1">
+<label class="group" for="heading">Sun direction <output id="headingO">38°</output></label><input id="heading" type="range" min="0" max="360" value="38" step="1">
+<label class="toggle"><input type="checkbox" id="pure"> Pure Blinn–Phong (no artistic sun path)</label>
+<label class="toggle"><input type="checkbox" id="legacy"> Separate distant field — V3 (compare)</label>
+<label class="toggle"><input type="checkbox" id="pause"> Pause animation</label>
+<div class="buttons"><button type="button" id="reset">Reset view</button><button type="button" id="random">Rotate sunlight</button></div>
+<div class="note">Glint always comes from the same world-anchored waves. Subpixel wave slopes are integrated into the same lighting response, not replaced with a new noise pattern. The comparison switch restores V3's separate distant field. Approved Night City geography is untouched.</div>
+</details>
+<div class="hint">Drag to pan · Pinch / scroll to zoom · Water moves independently of camera</div><div class="error" id="error"></div>
+<script>
+'use strict';
+const canvas=document.querySelector('#view');
+if(window.matchMedia('(max-width:700px)').matches){document.querySelector('details.control').open=false;}
+let gl=canvas.getContext('webgl2',{alpha:false,antialias:false,depth:false,stencil:false,powerPreference:'high-performance'});
+const error=document.querySelector('#error'),status=document.querySelector('#status'),dot=document.querySelector('#dot');
+if(!gl){error.style.display='block';error.textContent='This demo needs WebGL2. Open the downloaded HTML in recent Chrome, Firefox, Edge or Safari with hardware acceleration enabled.';status.textContent='WebGL2 unavailable';dot.style.background='#eda899';}
+else{
+const VS=`#version 300 es
+precision highp float;
+const vec2 P[3]=vec2[3](vec2(-1.,-1.),vec2(3.,-1.),vec2(-1.,3.));
+void main(){gl_Position=vec4(P[gl_VertexID],0.,1.);}`;
+const FS=`#version 300 es
+precision highp float;
+out vec4 color;
+uniform vec2 uRes,uCenter;
+uniform float uSpan,uTime,uSharp,uChop,uGain,uSpeed,uElevation,uHeading;
+uniform float uCross,uSteer,uIrregular,uEnergy,uAggregate;
+uniform int uLegacy;
+uniform int uPalette,uPure,uStructure;
+#define PI 3.14159265358979
+#define TAU 6.28318530717959
+
+float h21(vec2 p){
+  vec3 q=fract(vec3(p.xyx)*.1031);
+  q+=dot(q,q.yzx+33.33);
+  return fract((q.x+q.y)*q.z);
+}
+float noise2(vec2 p){
+  vec2 i=floor(p),f=fract(p);f=f*f*(3.0-2.0*f);
+  return mix(mix(h21(i),h21(i+vec2(1,0)),f.x),
+             mix(h21(i+vec2(0,1)),h21(i+vec2(1,1)),f.x),f.y);
+}
+// Five non-collinear plane-wave vectors span a quasiperiodic steering field.
+// It has no obvious Cartesian repetition and is NOT a Spectre/hat polygon tiling.
+vec3 quasi(vec2 p,float t){
+  vec3 v=vec3(0.0);
+  for(int i=0;i<5;i++){
+    float f=float(i),theta=f*TAU/5.0+.17;
+    vec2 dir=vec2(cos(theta),sin(theta));
+    float ph=dot(p,dir)*TAU/2400.0+f*1.706+t*.011*(i%2==0?1.0:-1.0);
+    float ph2=dot(p,dir)*TAU/3883.3-f*.947-t*.007;
+    v+=vec3(sin(ph),cos(ph2),sin(ph*.61803398875+ph2*.44))*.2;
+  }
+  return v;
+}
+// Triangular/60-degree skew-domain alternative: still periodic in lattice topology,
+// but used only for broad wave steering, NOT surface triangles.
+vec3 skewField(vec2 p,float t){
+  vec2 q=vec2(p.x-p.y*.57735027,p.y*1.15470054);
+  vec2 r=vec2(.73*q.x-.683*q.y,.683*q.x+.73*q.y);
+  float a=noise2(q/1750.0+vec2(t*.003,-t*.001));
+  float b=noise2(q/2900.0+vec2(11.3,1.5));
+  float c=noise2(r/1150.0+vec2(-5.5,18.7));
+  return vec3(2.0*a-1.0,2.0*b-1.0,2.0*c-1.0);
+}
+float visibleWave(float px,float wavelength){
+  return 1.0-smoothstep(.085,.28,px/wavelength);
+}
+float spectralWL(int j){
+  if(j==0)return 1650.0;
+  if(j==1)return 650.0;
+  if(j==2)return 253.0;
+  if(j==3)return 100.0;
+  if(j==4)return 39.0;
+  if(j==5)return 15.0;
+  if(j==6)return 5.8;
+  return 2.15;
+}
+void main(){
+  vec2 uv=gl_FragCoord.xy/uRes;
+  float metresPerPixel=uSpan/uRes.x;
+  vec2 p=uCenter+(gl_FragCoord.xy-uRes*.5)*metresPerPixel;
+  float t=uTime;
+  float hd=radians(uHeading);
+  float elev=radians(uElevation);
+  bool straight=(uStructure==2);
+  vec3 structure = uStructure==0 ? quasi(p,t) : (uStructure==1 ? skewField(p,t) : vec3(0));
+  vec3 structure2 = uStructure==0 ? quasi(p*1.0+vec2(917.0,-483.0),t*.72) :
+                    (uStructure==1 ? skewField(p+vec2(440.0,-880.0),t*.72) : vec3(0));
+  float steer = straight ? 0.0 : uSteer;
+  float cross = straight ? 0.0 : uCross;
+  float irreg = straight ? 0.0 : uIrregular;
+  // Spatially coherent, smoothly changing flow orientation and gentle domain warp.
+  float regionalAngle=steer*(.68*structure.x+.29*structure2.z);
+  vec2 warp=steer*vec2(115.0*structure.y+45.0*structure2.z,
+                        95.0*structure2.x-35.0*structure.z);
+  // Independent large-scale roughness and lighting field, with rotated
+  // scales to suppress Cartesian repeats and prevent visible patch polygons.
+  vec2 zoneP=p+vec2(t*3.2,-t*1.8);
+  vec2 z0=mat2(.813,-.582,.582,.813)*zoneP;
+  vec2 z1=mat2(.318,.948,-.948,.318)*zoneP;
+  float zoneA=noise2(z0/3900.0+vec2(11.2,3.6));
+  float zoneB=noise2(z1/1700.0+vec2(-7.8,18.4));
+  float zoneC=noise2(zoneP/880.0+vec2(5.3,-13.7));
+  float zoneMixture=.46*zoneA+.38*zoneB+.16*zoneC;
+  float patchEnergy=clamp(.52+.63*(zoneA-.5)+.45*(zoneB-.5)+.22*(zoneC-.5)+.12*structure.z,.24,1.15);
+  float regionalEnergy=mix(.69,patchEnergy,clamp(uEnergy/1.5,0.0,1.0));
+  vec2 slope=vec2(0.0);
+  float seaMotion=0.0;
+  float totalEnergy=0.0;
+  float missingXX=0.0,missingYY=0.0,missingXY=0.0;
+  // Three distinct wave trains. They have different headings and propagation
+  // velocities. The final train disperses across many orientations (short chop).
+  for(int i=0;i<24;i++){
+    int family=i/8;
+    int band=i-family*8;
+    float fi=float(i),jb=float(band);
+    float waveLength=spectralWL(band);
+    waveLength*=mix(1.0,.82+.36*h21(vec2(fi,17.9)),irreg);
+    float visible=visibleWave(metresPerPixel,waveLength);
+    // Waves too small to draw still contribute unresolved slope variance.
+    float angle;
+    float famStrength;
+    float speedFactor;
+    if(family==0){
+      angle=hd+.27+regionalAngle+irreg*(.20*sin(fi*2.47)+.11*cos(fi*4.13));
+      famStrength=1.0;
+      speedFactor=1.0;
+    }else if(family==1){
+      angle=hd+1.47+.48*regionalAngle+irreg*(.28*sin(fi*2.39)+.14*cos(fi*3.47));
+      famStrength=cross*.82;
+      speedFactor=1.23;
+    }else{
+      angle=hd+2.39996*fi+regionalAngle*1.3+irreg*.4*sin(fi*1.91);
+      famStrength=uChop*.53;
+      speedFactor=.67+.38*h21(vec2(fi,31.7));
+    }
+    vec2 d=vec2(cos(angle),sin(angle));
+    float fullWeight=.083*(1.07-.03*jb)*famStrength*(.79+.31*regionalEnergy);
+    if(family==2)fullWeight*=.8+.2*float(band>=4);
+    // Variance of unresolvable facets: E[cos(phase)^2] = 1/2.
+    float lost=.5*fullWeight*fullWeight*max(0.0,1.0-visible*visible);
+    missingXX+=lost*d.x*d.x;
+    missingYY+=lost*d.y*d.y;
+    missingXY+=lost*d.x*d.y;
+    if(visible>.006){
+      float k=TAU/waveLength;
+      vec2 wp=p+warp*(family==0?.9:(family==1?-.65:.22));
+      float phase=k*dot(wp,d)-t*sqrt(9.81*k)*speedFactor+
+                  fi*2.274+irreg*TAU*h21(vec2(fi,91.2));
+      float weight=fullWeight*visible;
+      slope+=d*cos(phase)*weight;
+      seaMotion+=sin(phase)*(family==0?.07:(family==1?.035:.013))*visible;
+      totalEnergy+=weight*weight;
+    }
+  }
+  // Gradual small-scale dephasing: moving cross-streaks and regional eddies.
+  float eddy=sin(dot(p,vec2(.0031,.0019))+t*.26+structure.x*3.6);
+  float rough=clamp(.80+.26*structure.z+.10*eddy+.15*(.6-regionalEnergy),.37,1.32);
+  vec3 normal=normalize(vec3(-slope.x,-slope.y,1.0));
+  vec3 sunlight=normalize(vec3(cos(hd)*cos(elev),sin(hd)*cos(elev),sin(elev)));
+  vec3 halfway=normalize(sunlight+vec3(0.0,0.0,1.0));
+  float spec=pow(max(dot(normal,halfway),0.0),max(12.0,uSharp*rough));
+  // When small wavelengths cannot be resolved, use an integrated distribution
+  // of reflected light rather than showing a handful of giant wave stripes.
+  // Scale-space microfacet integration of the SAME live wave normal field.
+  // Accumulated covariance describes precisely those facets below pixel size.
+  vec2 wanted=-halfway.xy/max(.15,halfway.z);
+  vec2 diff=slope-wanted;
+  float lobe=max(.0010,1.0/max(12.0,uSharp*rough));
+  float varXX=lobe+missingXX,varYY=lobe+missingYY,varXY=missingXY;
+  float determinant=max(1.e-7,varXX*varYY-varXY*varXY);
+  float mahalanobis=max(0.0,(varYY*diff.x*diff.x+
+                              varXX*diff.y*diff.y-
+                              2.0*varXY*diff.x*diff.y)/determinant);
+  float filteredGlint=clamp(lobe*inversesqrt(determinant)*
+                            exp(-.5*min(80.0,mahalanobis)),0.0,1.0);
+  float missingAmount=(missingXX+missingYY)/
+                       max(1.e-5,missingXX+missingYY+2.0*lobe);
+  float filterBlend=smoothstep(.012,.16,missingAmount);
+  if(uLegacy==1){
+    // V3's detached far-field retained strictly for A/B comparison.
+    float distant=smoothstep(5.0,46.0,metresPerPixel);
+    float glintClusters=smoothstep(.29,.71,zoneMixture);
+    float v3far=(.095+.35*glintClusters)*(.68+.54*regionalEnergy)*max(0.0,uAggregate);
+    spec=mix(spec,v3far,distant);
+  }else{
+    spec=mix(spec,filteredGlint*max(0.0,uAggregate),filterBlend);
+  }
+  // Screen-space broad sun path; gentle, intentionally irregular boundary.
+  vec2 offset=uv-vec2(.51,.54);
+  vec2 across=vec2(-sin(hd),cos(hd));
+  float crossTrack=dot(offset,across);
+  float along=dot(offset,vec2(cos(hd),sin(hd)));
+  crossTrack+=.075*(zoneA-.5)+.08*(zoneB-.5)+.045*structure2.y;
+  float pathWidth=.155+.135*zoneA+.045*max(0.0,along+.3);
+  float corridor=exp(-.5*pow(crossTrack/pathWidth,2.0));
+  float path=uPure==1?1.0:(.23+.77*corridor);
+  float intensity=clamp(spec*uGain*path,0.,2.0);
+  // The cola base is lifted; the cooler undertow appears in moving broad areas.
+  vec3 water,undertow,glint,peak;
+  if(uPalette==0){
+    water=vec3(.163,.116,.097);
+    undertow=vec3(.079,.159,.170);
+    glint=vec3(.95,.53,.32);
+    peak=vec3(1.0,.91,.77);
+  }else if(uPalette==1){
+    water=vec3(.061,.104,.144);
+    undertow=vec3(.067,.157,.191);
+    glint=vec3(.76,.84,.90);
+    peak=vec3(.95,.97,.99);
+  }else{
+    water=vec3(.174,.099,.089);
+    undertow=vec3(.196,.113,.124);
+    glint=vec3(1.0,.46,.245);
+    peak=vec3(1.0,.84,.60);
+  }
+  float coolMix=clamp(.31+.25*structure2.y+.15*(zoneB-.5)+.10*seaMotion,.08,.79);
+  vec3 base=mix(water,undertow,coolMix);
+  base+=vec3(.019,.012,.010)*(zoneA-.5)+
+        vec3(.011,.018,.020)*(zoneB-.5)+
+        vec3(.006,.007,.007)*seaMotion;
+  float mixed=clamp(intensity,0.,2.0);
+  vec3 lowGlint=mix(vec3(.57,.30,.22),glint,smoothstep(.03,.42,mixed));
+  vec3 reflection=mix(lowGlint,peak,smoothstep(.55,1.48,mixed));
+  base+=reflection*(.74*mixed+.06*sqrt(max(0.,mixed)));
+  base+=glint*.012*path*max(0.,structure.x+.65);
+  color=vec4(clamp(base,0.,1.),1.0);
+}`;
+function makeShader(type,src){const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS)){const reason=gl.getShaderInfoLog(s);gl.deleteShader(s);throw new Error('Shader compilation failed: '+reason)}return s;}
+function makeProgram(){const v=makeShader(gl.VERTEX_SHADER,VS),f=makeShader(gl.FRAGMENT_SHADER,FS),p=gl.createProgram();gl.attachShader(p,v);gl.attachShader(p,f);gl.linkProgram(p);gl.deleteShader(v);gl.deleteShader(f);if(!gl.getProgramParameter(p,gl.LINK_STATUS))throw new Error('Shader link failed: '+gl.getProgramInfoLog(p));return p;}
+try{
+const program=makeProgram();gl.useProgram(program);gl.disable(gl.DEPTH_TEST);
+const u={};for(const n of ['uRes','uCenter','uSpan','uTime','uSharp','uChop','uGain','uSpeed','uElevation','uHeading','uPalette','uPure','uCross','uSteer','uIrregular','uStructure','uEnergy','uAggregate','uLegacy'])u[n]=gl.getUniformLocation(program,n);
+const val=id=>document.getElementById(id);const read=id=>Number(val(id).value);
+let running=true,time=0,previous=performance.now(),center=[0,0],span=3600,pointers=new Map(),dragMoved=false,pinch=null;
+function spanFromControl(){return Math.round(270*Math.pow(30000/270,read('width')/100));}
+function controlFromSpan(s){return 100*Math.log(s/270)/Math.log(30000/270);}
+val('width').value=controlFromSpan(span).toFixed(0);
+const outs={width:v=>Math.round(span).toLocaleString('en-GB')+' m',brightness:v=>v.toFixed(2)+'×',sharpness:v=>String(v),cross:v=>v.toFixed(2)+'×',steer:v=>v.toFixed(2)+'×',energy:v=>v.toFixed(2)+'×',aggregate:v=>v.toFixed(2)+'×',irregular:v=>v.toFixed(2)+'×',chop:v=>v.toFixed(2)+'×',speed:v=>v.toFixed(2)+'×',elevation:v=>v+'°',heading:v=>v+'°'};
+function updateLabels(){for(const [id,format]of Object.entries(outs))val(id+'O').textContent=format(read(id));}
+for(const id of Object.keys(outs)){val(id).addEventListener('input',()=>{if(id==='width')span=spanFromControl();updateLabels();});}
+function syncZoom(){val('width').value=Math.max(0,Math.min(100,controlFromSpan(span)));updateLabels();}
+val('reset').addEventListener('click',()=>{center=[0,0];span=3600;syncZoom();});
+val('random').addEventListener('click',()=>{val('heading').value=(read('heading')+47)%361;updateLabels();});
+function pixelCoords(e){const r=canvas.getBoundingClientRect();return [e.clientX-r.left,e.clientY-r.top];}
+function worldAt(pos,s){const r=canvas.getBoundingClientRect();return [center[0]+(pos[0]-r.width/2)*s/r.width,center[1]-(pos[1]-r.height/2)*s/r.width];}
+canvas.addEventListener('pointerdown',e=>{canvas.setPointerCapture(e.pointerId);pointers.set(e.pointerId,pixelCoords(e));if(pointers.size===2){const ps=[...pointers.values()];pinch={distance:Math.hypot(ps[1][0]-ps[0][0],ps[1][1]-ps[0][1]),span};}});
+canvas.addEventListener('pointermove',e=>{if(!pointers.has(e.pointerId))return;const old=pointers.get(e.pointerId),now=pixelCoords(e);pointers.set(e.pointerId,now);if(pointers.size===1){const r=canvas.getBoundingClientRect(),m=span/r.width;center[0]-=(now[0]-old[0])*m;center[1]+=(now[1]-old[1])*m;}else if(pointers.size===2){const ps=[...pointers.values()];const d=Math.hypot(ps[1][0]-ps[0][0],ps[1][1]-ps[0][1]);if(pinch&&d>5){span=Math.max(270,Math.min(30000,pinch.span*pinch.distance/d));syncZoom();}}});
+function release(e){pointers.delete(e.pointerId);pinch=null;}
+canvas.addEventListener('pointerup',release);canvas.addEventListener('pointercancel',release);canvas.addEventListener('lostpointercapture',release);
+canvas.addEventListener('wheel',e=>{e.preventDefault();const mouse=pixelCoords(e),world=worldAt(mouse,span);span=Math.max(270,Math.min(30000,span*Math.exp(Math.max(-.28,Math.min(.28,e.deltaY*.0013)))));const r=canvas.getBoundingClientRect();center[0]=world[0]-(mouse[0]-r.width/2)*span/r.width;center[1]=world[1]+(mouse[1]-r.height/2)*span/r.width;syncZoom();},{passive:false});
+let w=0,h=0;
+function resize(){const dpr=Math.min(window.devicePixelRatio||1,1.8),r=canvas.getBoundingClientRect();let nw=Math.max(1,Math.round(r.width*dpr)),nh=Math.max(1,Math.round(r.height*dpr));const pixels=nw*nh;if(pixels>2500000){const a=Math.sqrt(2500000/pixels);nw=Math.round(nw*a);nh=Math.round(nh*a);}if(nw!==w||nh!==h){canvas.width=w=nw;canvas.height=h=nh;gl.viewport(0,0,w,h);}}
+window.addEventListener('resize',resize);
+canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();running=false;status.textContent='GPU context lost — reload';dot.style.background='#eda899';});
+updateLabels();resize();status.textContent='Continuous glint · animating';
+function render(now){if(!running)return;requestAnimationFrame(render);resize();const dt=Math.min(.05,Math.max(0,(now-previous)*.001));previous=now;if(!val('pause').checked)time+=dt*read('speed');
+gl.useProgram(program);gl.uniform2f(u.uRes,w,h);gl.uniform2f(u.uCenter,center[0],center[1]);gl.uniform1f(u.uSpan,span);gl.uniform1f(u.uTime,time);gl.uniform1f(u.uSharp,read('sharpness'));gl.uniform1f(u.uChop,read('chop'));gl.uniform1f(u.uGain,read('brightness'));gl.uniform1f(u.uElevation,read('elevation'));gl.uniform1f(u.uHeading,read('heading'));gl.uniform1i(u.uPalette,read('palette'));gl.uniform1i(u.uPure,val('pure').checked?1:0);gl.uniform1i(u.uStructure,read('structure'));gl.uniform1f(u.uCross,read('cross'));gl.uniform1f(u.uSteer,read('steer'));gl.uniform1f(u.uIrregular,read('irregular'));gl.uniform1f(u.uEnergy,read('energy'));gl.uniform1f(u.uAggregate,read('aggregate'));gl.uniform1i(u.uLegacy,val('legacy').checked?1:0);gl.drawArrays(gl.TRIANGLES,0,3);status.textContent=(val('pause').checked?'Continuous glint · paused':'Continuous glint · animating')+' · '+(span/Math.max(w,1)).toFixed(1)+'m/px · '+time.toFixed(1)+'s';}
+requestAnimationFrame(render);
+}catch(err){error.style.display='block';error.textContent='Water shader error:\n'+err.message;status.textContent='Renderer error';dot.style.background='#eda899';console.error(err);}
+}
+</script></body></html>
