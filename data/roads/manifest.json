@@ -1,0 +1,34 @@
+{
+  "schema": "spaciel.roads.manifest.v1",
+  "coordinate_frame": {
+    "name": "night-city-2045-atlas",
+    "size_px": [
+      5175,
+      7966
+    ],
+    "origin": "top-left"
+  },
+  "current": {
+    "version": "roadcraft-v23",
+    "file": "roadcraft_v23_default_width22.json",
+    "graph_schema": "spaciel-roadcraft-v23-parallel-corridor-review",
+    "default_local_road_width_px": 22,
+    "major_width_multiplier": 1.55,
+    "selected_on": "2026-11-11",
+    "status": "working_default_for_new_spaciel_viewers",
+    "review_note": "Selected by the user as the road graph to use; cartographic QA and geometric refinement continue."
+  },
+  "legacy": {
+    "v17_display": "v17_cleaned_road_centerlines.geojson",
+    "v17_width_classes": "v17_road_width_classes_by_chain.csv",
+    "v21": "experiment/roadcraft-v21-cartographic-grammar",
+    "v22": "private archived experiment in Spaciel/working-data"
+  },
+  "checks": {
+    "connected_components": 1,
+    "nodes": 1436,
+    "paths": 1992,
+    "cycle_rank": 557
+  },
+  "usage": "New viewers load current.file by default. V17, V21 and V22 remain historical references, not silent fallbacks. Do not replace the currently published/private viewer unless it has explicitly been rebuilt against this manifest."
+}
