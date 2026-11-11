@@ -1,5 +1,11 @@
 # Spaciel — native SketchUp building placement workbench
 
+## Default Night City roads — Roadcraft V23 (11 November 2026)
+
+**Roadcraft V23, 22 atlas-pixel interpretation width, is the selected working road network for future Spaciel builds.** This is the road layer to use, not merely a comparison experiment. The actual **1,436-node / 1,992-path connected routing graph** is committed at [`data/roads/roadcraft_v23_default_width22.json`](data/roads/roadcraft_v23_default_width22.json). The [active road manifest](data/roads/manifest.json) makes this the canonical default and [`viewer/src/road-network.js`](viewer/src/road-network.js) loads it without silently substituting V17/V21.
+
+V23 collapses tracing artefacts that fit within the painted stroke: tiny diamonds, doubled parallel paths, sub-width spurs and narrow loops. **The source map still needs visual QA; this is our chosen working baseline, not a surveyed final road network.** V17, V21 and V22 remain as earlier snapshots; previously packaged private viewers will continue to show their embedded roads until rebuilt against the new default.
+
 This repository contains a **working baseline**, not a completed city viewer or a published website.
 
 
