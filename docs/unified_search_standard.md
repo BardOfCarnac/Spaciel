@@ -73,11 +73,12 @@ Always revalidate the transform when Roadcraft or the district geometry is revis
 
 ## Expanding search-bar behaviour (11 November 2026)
 
-- A single rounded-square magnifier starts at the top-right. On activation, the **same button** depresses briefly and its parent track expands leftward to nearly the screen width; the magnifier stays against the right edge and travels with it.
+- A single rounded-square magnifier starts at the **top-left** of the viewer. On activation, the **same button** depresses briefly, and its left-anchored track expands **rightward** across the screen; the magnifier rides with the expanding right edge to finish at the far right. In the closed state the icon is precisely centred in its square, not offset by the hidden text field.
 - The input is part of that expanding track, **not** in a separate modal/window. It becomes editable as the track opens. Press **Enter** or activate the magnifier again to search; both choose the top-ranked current result, using the existing navigation adapter. Tapping a suggestion chooses that specific result.
 - A compact results panel appears *below* the expanded bar when there is a nonempty query. The registered labels, geographic index, result ranking and navigation semantics are unchanged.
 - **Escape**, or tapping outside, collapses the search bar. On a mobile screen the bar expands to nearly the full viewport width. Users who request reduced motion do not get the expansion/press animation.
-- The desktop expansion width is at most 880 px, falling back to the available screen width. Timing: approximately 90 ms before width expansion, 470 ms width animation, 420 ms brief depressed-surface response. It is intentionally low-gloss, not a glass panel.
+- The desktop expansion width is at most 880 px, falling back to the available screen width; it remains left-anchored throughout. Timing: approximately 90 ms before width expansion, 470 ms width animation, 420 ms brief depressed-surface response. It is intentionally low-gloss, not a glass panel.
+- This is the locked search-control behaviour for the next actual Spaciel viewer integration, **not** acceptance of a separate mock viewer or a replacement viewer. Keep the approved map, roads, buildings, pins, labels, categories, bottom spectrum bar and other viewer functions.
 - Use **only** the current `SpacielSearch.mount()` handler. The legacy on-click popup and input listeners must be removed in the host viewer before it is mounted. Keep the magnifier element itself rather than replacing it with another icon.
 
 ## Repository and copyright boundaries
