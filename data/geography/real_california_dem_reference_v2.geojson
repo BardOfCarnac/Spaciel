@@ -1,0 +1,1925 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "version": "1",
+    "setting": "real present-day California",
+    "status": "Reference-only region label study, not Cyberpunk 2045 canon, not current V19 viewer",
+    "tile": "USGS_1_n36w121.tif",
+    "tile_lonlat_bounds": [
+      -121,
+      35,
+      -120,
+      36
+    ],
+    "viewer_image_px": [
+      2400,
+      2400
+    ],
+    "atlas_rectangle_px": [
+      [
+        180.01529651100424,
+        1273.0893005623295
+      ],
+      [
+        540.194148513474,
+        1214.5461895182186
+      ],
+      [
+        650.6604060383754,
+        1666.3372704167507
+      ],
+      [
+        290.4815540359057,
+        1724.8803814608614
+      ]
+    ],
+    "note": "Inside the atlas rectangle is not equivalent to preservation in engineered 2045 Night City; source GNIS feature points are not polygonal extents. Some are town or stream-mouth points.",
+    "sources": [
+      "https://www.topoquest.com/map/usgs-24k/california/morro-bay-south/76573",
+      "https://www.topoquest.com/map/usgs-24k/california/san-luis-obispo/71510",
+      "https://edits.nationalmap.gov/apps/gaz-domestic/public/search/names/1660461",
+      "https://www.mbnep.org/what-we-do/watershed-map/"
+    ],
+    "schema": "spaciel-real-california-geography-v2",
+    "total_features": 79,
+    "added_v2": 52,
+    "region_label_placement": "All region anchors are text-centre proposals; no new boundary or legal polygon established. A known point is not the surveyed centre of an extended named area.",
+    "source_crop": "Full one-degree USGS DEM, larger than Night City V19 visible area",
+    "separate_from_2045": "Do not apply real names over fictional city labels; the real-world reference layer is opt-in only.",
+    "default_visibility": [
+      "region",
+      "reservoir",
+      "industrial",
+      "headland"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.86768,
+          35.369419
+        ]
+      },
+      "properties": {
+        "name": "Morro Rock",
+        "kind": "summit",
+        "dem_tile_px": [
+          318.517,
+          1513.076
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.85129,
+          35.337752
+        ]
+      },
+      "properties": {
+        "name": "Morro Bay",
+        "kind": "water",
+        "dem_tile_px": [
+          357.853,
+          1589.077
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.849901,
+          35.365808
+        ]
+      },
+      "properties": {
+        "name": "Morro Bay (town)",
+        "kind": "settlement",
+        "dem_tile_px": [
+          361.187,
+          1521.743
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.905182,
+          35.448862
+        ]
+      },
+      "properties": {
+        "name": "Cayucos",
+        "kind": "settlement",
+        "dem_tile_px": [
+          228.512,
+          1322.413
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.876564,
+          35.450122
+        ]
+      },
+      "properties": {
+        "name": "Whale Rock Reservoir",
+        "kind": "water",
+        "dem_tile_px": [
+          297.195,
+          1319.389
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.874069,
+          35.412751
+        ]
+      },
+      "properties": {
+        "name": "Toro Creek",
+        "kind": "creek",
+        "dem_tile_px": [
+          303.183,
+          1409.079
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.864346,
+          35.376363
+        ]
+      },
+      "properties": {
+        "name": "Morro Creek",
+        "kind": "creek",
+        "dem_tile_px": [
+          326.519,
+          1496.411
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.734062,
+          35.414696
+        ]
+      },
+      "properties": {
+        "name": "Cerro Alto",
+        "kind": "summit",
+        "dem_tile_px": [
+          639.2,
+          1404.411
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.831845,
+          35.35803
+        ]
+      },
+      "properties": {
+        "name": "Black Hill",
+        "kind": "summit",
+        "dem_tile_px": [
+          404.521,
+          1540.41
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.8150372,
+          35.3519991
+        ]
+      },
+      "properties": {
+        "name": "Cerro Cabrillo",
+        "kind": "summit",
+        "dem_tile_px": [
+          444.86,
+          1554.884
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.787121,
+          35.343863
+        ]
+      },
+      "properties": {
+        "name": "Hollister Peak",
+        "kind": "summit",
+        "dem_tile_px": [
+          511.859,
+          1574.411
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.812122,
+          35.327752
+        ]
+      },
+      "properties": {
+        "name": "Los Osos Valley",
+        "kind": "valley",
+        "dem_tile_px": [
+          451.856,
+          1613.077
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.832401,
+          35.311086
+        ]
+      },
+      "properties": {
+        "name": "Los Osos",
+        "kind": "settlement",
+        "dem_tile_px": [
+          403.187,
+          1653.075
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.780454,
+          35.237753
+        ]
+      },
+      "properties": {
+        "name": "Irish Hills",
+        "kind": "range",
+        "dem_tile_px": [
+          527.859,
+          1829.075
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.863235,
+          35.263864
+        ]
+      },
+      "properties": {
+        "name": "Montaña de Oro State Park",
+        "kind": "park",
+        "dem_tile_px": [
+          329.185,
+          1766.408
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.859902,
+          35.283308
+        ]
+      },
+      "properties": {
+        "name": "Hazard Peak",
+        "kind": "summit",
+        "dem_tile_px": [
+          337.184,
+          1719.743
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.872125,
+          35.263031
+        ]
+      },
+      "properties": {
+        "name": "Valencia Peak",
+        "kind": "summit",
+        "dem_tile_px": [
+          307.849,
+          1768.407
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.697395,
+          35.302474
+        ]
+      },
+      "properties": {
+        "name": "Bishop Peak",
+        "kind": "summit",
+        "dem_tile_px": [
+          727.201,
+          1673.744
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.726563,
+          35.313863
+        ]
+      },
+      "properties": {
+        "name": "Cerro Romualdo",
+        "kind": "summit",
+        "dem_tile_px": [
+          657.198,
+          1646.411
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.68045,
+          35.282752
+        ]
+      },
+      "properties": {
+        "name": "Cerro San Luis Obispo",
+        "kind": "summit",
+        "dem_tile_px": [
+          767.869,
+          1721.077
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.842123,
+          35.34053
+        ]
+      },
+      "properties": {
+        "name": "Chorro Creek",
+        "kind": "creek",
+        "dem_tile_px": [
+          379.854,
+          1582.41
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.686971,
+          35.337458
+        ]
+      },
+      "properties": {
+        "name": "Chorro Reservoir",
+        "kind": "water",
+        "dem_tile_px": [
+          752.219,
+          1589.783
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.6689,
+          35.26707
+        ]
+      },
+      "properties": {
+        "name": "San Luis Obispo",
+        "kind": "settlement",
+        "dem_tile_px": [
+          795.589,
+          1758.714
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.8174,
+          35.252197
+        ]
+      },
+      "properties": {
+        "name": "Alan Peak",
+        "kind": "summit",
+        "dem_tile_px": [
+          439.189,
+          1794.409
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.804344,
+          35.269419
+        ]
+      },
+      "properties": {
+        "name": "Stony Peak",
+        "kind": "summit",
+        "dem_tile_px": [
+          470.523,
+          1753.076
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.882958,
+          35.427751
+        ]
+      },
+      "properties": {
+        "name": "Morro Strand State Beach",
+        "kind": "park",
+        "dem_tile_px": [
+          281.85,
+          1373.079
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.677672,
+          35.326641
+        ]
+      },
+      "properties": {
+        "name": "Chorro (settlement)",
+        "kind": "settlement",
+        "dem_tile_px": [
+          774.536,
+          1615.743
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.81,
+          35.53
+        ]
+      },
+      "properties": {
+        "id": "ca-santa-lucia-range",
+        "name": "Santa Lucia Range",
+        "kind": "region",
+        "dem_tile_px": [
+          456.949,
+          1127.682
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.29988,
+          35.34108
+        ]
+      },
+      "properties": {
+        "id": "ca-la-panza-range",
+        "name": "La Panza Range",
+        "kind": "region",
+        "dem_tile_px": [
+          1681.237,
+          1581.09
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23107668",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.763,
+          35.369
+        ]
+      },
+      "properties": {
+        "id": "ca-chorro-valley",
+        "name": "Chorro Valley",
+        "kind": "region",
+        "dem_tile_px": [
+          569.749,
+          1514.082
+        ],
+        "under_2045_atlas_rectangle": true,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.78,
+          35.268
+        ]
+      },
+      "properties": {
+        "id": "ca-san-luis-range",
+        "name": "San Luis Range",
+        "kind": "region",
+        "dem_tile_px": [
+          528.949,
+          1756.482
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.94,
+          35.43
+        ]
+      },
+      "properties": {
+        "id": "ca-estero-bay",
+        "name": "Estero Bay",
+        "kind": "region",
+        "dem_tile_px": [
+          144.949,
+          1367.682
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.607,
+          35.217
+        ]
+      },
+      "properties": {
+        "id": "ca-edna-valley",
+        "name": "Edna Valley",
+        "kind": "region",
+        "dem_tile_px": [
+          944.149,
+          1878.882
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.555,
+          35.161
+        ]
+      },
+      "properties": {
+        "id": "ca-arroyo-grande-valley",
+        "name": "Arroyo Grande Valley",
+        "kind": "region",
+        "dem_tile_px": [
+          1068.949,
+          2013.282
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.62243,
+          35.53784
+        ]
+      },
+      "properties": {
+        "id": "ca-el-pomar-district",
+        "name": "El Pomar District",
+        "kind": "region",
+        "dem_tile_px": [
+          907.117,
+          1108.866
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://pasowine.com/paso-robles/ava/",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.724,
+          35.552
+        ]
+      },
+      "properties": {
+        "id": "ca-templeton-gap-district",
+        "name": "Templeton Gap District",
+        "kind": "region",
+        "dem_tile_px": [
+          663.349,
+          1074.882
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://pasowine.com/paso-robles/ava/",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.87351,
+          35.64553
+        ]
+      },
+      "properties": {
+        "id": "ca-adelaida-district",
+        "name": "Adelaida District",
+        "kind": "region",
+        "dem_tile_px": [
+          304.525,
+          850.41
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://pasowine.com/paso-robles/ava/",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.505,
+          35.513
+        ]
+      },
+      "properties": {
+        "id": "ca-creston-district",
+        "name": "Creston District",
+        "kind": "region",
+        "dem_tile_px": [
+          1188.949,
+          1168.482
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://pasowine.com/paso-robles/ava/",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.59,
+          35.72
+        ]
+      },
+      "properties": {
+        "id": "ca-upper-salinas-valley",
+        "name": "Upper Salinas Valley",
+        "kind": "region",
+        "dem_tile_px": [
+          984.949,
+          671.682
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.61295,
+          35.4022
+        ]
+      },
+      "properties": {
+        "id": "ca-santa-margarita-ranch",
+        "name": "Santa Margarita Ranch",
+        "kind": "region",
+        "dem_tile_px": [
+          929.869,
+          1434.402
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23132022",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.37,
+          35.54
+        ]
+      },
+      "properties": {
+        "id": "ca-los-padres-national-forest",
+        "name": "Los Padres National Forest",
+        "kind": "region",
+        "dem_tile_px": [
+          1512.949,
+          1103.682
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.47,
+          35.62
+        ]
+      },
+      "properties": {
+        "id": "ca-paso-robles-highlands",
+        "name": "Paso Robles Highlands",
+        "kind": "region",
+        "dem_tile_px": [
+          1272.949,
+          911.682
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://pasowine.com/paso-robles/ava/",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.849,
+          35.329
+        ]
+      },
+      "properties": {
+        "id": "ca-morro-bay-estuary",
+        "name": "Morro Bay Estuary",
+        "kind": "region",
+        "dem_tile_px": [
+          363.349,
+          1610.082
+        ],
+        "under_2045_atlas_rectangle": true,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.66,
+          35.378
+        ]
+      },
+      "properties": {
+        "id": "ca-cuesta-ridge",
+        "name": "Cuesta Ridge",
+        "kind": "region",
+        "dem_tile_px": [
+          816.949,
+          1492.482
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.652,
+          35.603
+        ]
+      },
+      "properties": {
+        "id": "ca-paso-robles-basin",
+        "name": "Paso Robles Basin",
+        "kind": "region",
+        "dem_tile_px": [
+          836.149,
+          952.482
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.602,
+          35.389
+        ]
+      },
+      "properties": {
+        "id": "ca-rinconada-valley",
+        "name": "Rinconada Valley",
+        "kind": "region",
+        "dem_tile_px": [
+          956.149,
+          1466.082
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.389,
+          35.309
+        ]
+      },
+      "properties": {
+        "id": "ca-pozo-valley",
+        "name": "Pozo Valley",
+        "kind": "region",
+        "dem_tile_px": [
+          1467.349,
+          1658.082
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.859,
+          35.424
+        ]
+      },
+      "properties": {
+        "id": "ca-toro-creek-valley",
+        "name": "Toro Creek Valley",
+        "kind": "region",
+        "dem_tile_px": [
+          339.349,
+          1382.082
+        ],
+        "under_2045_atlas_rectangle": true,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.98526,
+          35.73659
+        ]
+      },
+      "properties": {
+        "id": "ca-lake-nacimiento",
+        "name": "Lake Nacimiento",
+        "kind": "reservoir",
+        "dem_tile_px": [
+          36.325,
+          631.866
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23074910",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.97638,
+          35.85648
+        ]
+      },
+      "properties": {
+        "id": "ca-lake-san-antonio",
+        "name": "Lake San Antonio",
+        "kind": "reservoir",
+        "dem_tile_px": [
+          57.637,
+          344.13
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23075000",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.47492,
+          35.32853
+        ]
+      },
+      "properties": {
+        "id": "ca-santa-margarita-lake",
+        "name": "Santa Margarita Lake",
+        "kind": "reservoir",
+        "dem_tile_px": [
+          1261.141,
+          1611.21
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23132012",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.47525,
+          35.19036
+        ]
+      },
+      "properties": {
+        "id": "ca-lopez-lake",
+        "name": "Lopez Lake",
+        "kind": "reservoir",
+        "dem_tile_px": [
+          1260.349,
+          1942.818
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23082214",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.66461,
+          35.46442
+        ]
+      },
+      "properties": {
+        "id": "ca-atascadero-lake",
+        "name": "Atascadero Lake",
+        "kind": "reservoir",
+        "dem_tile_px": [
+          805.885,
+          1285.074
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/22995932",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.69176,
+          35.26644
+        ]
+      },
+      "properties": {
+        "id": "ca-laguna-lake",
+        "name": "Laguna Lake",
+        "kind": "reservoir",
+        "dem_tile_px": [
+          740.725,
+          1760.226
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23074314",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.52143,
+          35.47555
+        ]
+      },
+      "properties": {
+        "id": "ca-clear-lake-intermittent",
+        "name": "Clear Lake (intermittent)",
+        "kind": "reservoir",
+        "dem_tile_px": [
+          1149.517,
+          1258.362
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23021456",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.85501,
+          35.21194
+        ]
+      },
+      "properties": {
+        "id": "ca-diablo-canyon-power-plant",
+        "name": "Diablo Canyon Power Plant",
+        "kind": "industrial",
+        "dem_tile_px": [
+          348.925,
+          1891.026
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://www.nrc.gov/node/2148776",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.856147,
+          35.370454
+        ]
+      },
+      "properties": {
+        "id": "ca-morro-bay-power-plant-historic",
+        "name": "Morro Bay Power Plant (historic)",
+        "kind": "industrial",
+        "dem_tile_px": [
+          346.196,
+          1510.592
+        ],
+        "under_2045_atlas_rectangle": true,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://ciwqs.waterboards.ca.gov/ciwqs/readOnly/CiwqsReportServlet?reportID=826198&sortCol=17",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.57583,
+          35.4175
+        ]
+      },
+      "properties": {
+        "id": "ca-kaiser-santa-margarita-quarry",
+        "name": "Kaiser–Santa Margarita Quarry",
+        "kind": "industrial",
+        "dem_tile_px": [
+          1018.957,
+          1397.682
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/28594746",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.47755,
+          35.2893
+        ]
+      },
+      "properties": {
+        "id": "ca-rinconada-mine",
+        "name": "Rinconada Mine",
+        "kind": "industrial",
+        "dem_tile_px": [
+          1254.829,
+          1705.362
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23120958",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.59401,
+          35.18592
+        ]
+      },
+      "properties": {
+        "id": "ca-cold-canyon-landfill",
+        "name": "Cold Canyon Landfill",
+        "kind": "industrial",
+        "dem_tile_px": [
+          975.325,
+          1953.474
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/29346312",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.6338,
+          35.52322
+        ]
+      },
+      "properties": {
+        "id": "ca-chicago-grade-landfill",
+        "name": "Chicago Grade Landfill",
+        "kind": "industrial",
+        "dem_tile_px": [
+          879.829,
+          1143.954
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/W337229329",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.77406,
+          35.77533
+        ]
+      },
+      "properties": {
+        "id": "ca-camp-roberts",
+        "name": "Camp Roberts",
+        "kind": "industrial",
+        "dem_tile_px": [
+          543.205,
+          538.89
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/26881014",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.64147,
+          35.23747
+        ]
+      },
+      "properties": {
+        "id": "ca-san-luis-obispo-county-airport",
+        "name": "San Luis Obispo County Airport",
+        "kind": "industrial",
+        "dem_tile_px": [
+          861.421,
+          1829.754
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23130338",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.62765,
+          35.67572
+        ]
+      },
+      "properties": {
+        "id": "ca-paso-robles-municipal-airport",
+        "name": "Paso Robles Municipal Airport",
+        "kind": "industrial",
+        "dem_tile_px": [
+          894.589,
+          777.954
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23108568",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.89907,
+          35.25525
+        ]
+      },
+      "properties": {
+        "id": "ca-point-buchon",
+        "name": "Point Buchon",
+        "kind": "headland",
+        "dem_tile_px": [
+          243.181,
+          1787.082
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23008266",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.75624,
+          35.16007
+        ]
+      },
+      "properties": {
+        "id": "ca-point-san-luis",
+        "name": "Point San Luis",
+        "kind": "headland",
+        "dem_tile_px": [
+          585.973,
+          2015.514
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "landmark",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23130406",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.69,
+          35.626
+        ]
+      },
+      "properties": {
+        "id": "ca-paso-robles",
+        "name": "Paso Robles",
+        "kind": "settlement",
+        "dem_tile_px": [
+          744.949,
+          897.282
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "town",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23108558",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.6707,
+          35.4894
+        ]
+      },
+      "properties": {
+        "id": "ca-atascadero",
+        "name": "Atascadero",
+        "kind": "settlement",
+        "dem_tile_px": [
+          791.269,
+          1225.122
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "town",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/Atascadero",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.706,
+          35.54969
+        ]
+      },
+      "properties": {
+        "id": "ca-templeton",
+        "name": "Templeton",
+        "kind": "settlement",
+        "dem_tile_px": [
+          706.549,
+          1080.426
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "town",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23148710",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.6963,
+          35.7525
+        ]
+      },
+      "properties": {
+        "id": "ca-san-miguel",
+        "name": "San Miguel",
+        "kind": "settlement",
+        "dem_tile_px": [
+          729.829,
+          593.682
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "town",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/San_Miguel_%28California%29",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.60906,
+          35.38997
+        ]
+      },
+      "properties": {
+        "id": "ca-santa-margarita",
+        "name": "Santa Margarita",
+        "kind": "settlement",
+        "dem_tile_px": [
+          939.205,
+          1463.754
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "town",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23131986",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.52377,
+          35.51886
+        ]
+      },
+      "properties": {
+        "id": "ca-creston",
+        "name": "Creston",
+        "kind": "settlement",
+        "dem_tile_px": [
+          1143.901,
+          1154.418
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "town",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23027052",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.37623,
+          35.30368
+        ]
+      },
+      "properties": {
+        "id": "ca-pozo",
+        "name": "Pozo",
+        "kind": "settlement",
+        "dem_tile_px": [
+          1497.997,
+          1670.85
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "town",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23115194",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.61295,
+          35.20386
+        ]
+      },
+      "properties": {
+        "id": "ca-edna",
+        "name": "Edna",
+        "kind": "settlement",
+        "dem_tile_px": [
+          929.869,
+          1910.418
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "town",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23036522",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.6413,
+          35.1427
+        ]
+      },
+      "properties": {
+        "id": "ca-pismo-beach",
+        "name": "Pismo Beach",
+        "kind": "settlement",
+        "dem_tile_px": [
+          861.829,
+          2057.202
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "town",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/Pismo_Beach",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.87351,
+          35.64553
+        ]
+      },
+      "properties": {
+        "id": "ca-adelaida",
+        "name": "Adelaida",
+        "kind": "settlement",
+        "dem_tile_px": [
+          304.525,
+          850.41
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "town",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/22990466",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.21543,
+          35.36108
+        ]
+      },
+      "properties": {
+        "id": "ca-la-panza",
+        "name": "La Panza",
+        "kind": "settlement",
+        "dem_tile_px": [
+          1883.917,
+          1533.09
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "town",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/23073746",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.62243,
+          35.53784
+        ]
+      },
+      "properties": {
+        "id": "ca-el-pomar",
+        "name": "El Pomar",
+        "kind": "settlement",
+        "dem_tile_px": [
+          907.117,
+          1108.866
+        ],
+        "under_2045_atlas_rectangle": false,
+        "label_class": "town",
+        "precision": "published_reference_point",
+        "source_url": "https://mapcarta.com/N3248101243",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.895,
+          35.366
+        ]
+      },
+      "properties": {
+        "id": "ca-morro-bay-coast",
+        "name": "Morro Bay Coast",
+        "kind": "region",
+        "dem_tile_px": [
+          252.949,
+          1521.282
+        ],
+        "under_2045_atlas_rectangle": true,
+        "label_class": "regional",
+        "precision": "approx_cartographic_label_anchor",
+        "source_url": "https://www.slocounty.ca.gov/departments/board-of-supervisors/about-the-county",
+        "source_year": 2026,
+        "reference_not_cyberpunk_2045": true
+      }
+    }
+  ]
+}
