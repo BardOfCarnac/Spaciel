@@ -23,6 +23,15 @@ The runnable modular package and portable viewer are private artifacts, **not co
 - Chromium with WebGL disabled opened the **actual portable viewer**, with the original Night City map, spectrum bar, 661 pins and no page errors.
 - The extracted-folder URL could not be browsed in this environment because of browser administrator restrictions. A complete real-hardware WebGL2 certification remains pending; original source road, water and building drawing code was preserved rather than rewritten.
 
+
+## User validation and terrain caveat — 11 November 2026
+
+The user has now opened the modular viewer and confirmed **the combined systems are cooperating**. This is acceptance of the **integration foundation**, **not** acceptance of the current terrain's resolution or fidelity. The displayed terrain is **not the approved full-resolution terrain**. Do not mark high-resolution terrain integration as complete, or treat the current sampled/base terrain as an approved replacement.
+
+**Next terrain milestone:** locate the approved full-resolution terrain asset and its original atlas registration; integrate through a replaceable terrain adapter without changing the functioning water, road, building, location, UI, or shared camera modules. Verify coast and crater profiles, height alignment, seams, zoom detail, and performance on real WebGL2 hardware. Preserve this build as a fallback baseline before any terrain change.
+
+The private working package and portable HTML have been saved in the user's Spaciel Library under `/Spaciel/working-data/`.
+
 ## Deliberately staged for the next integration pass
 1. Inspect modular V19 on a GPU-enabled device; verify road/water/native-architecture toggles and camera commands in the actual GL session.
 2. Integrate the newly approved **left-anchored, rightward expanding** magnifier field, using the existing module and preserving the exact search icon/alignment.
