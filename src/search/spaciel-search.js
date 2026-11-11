@@ -101,6 +101,9 @@
     if(document.getElementById('spaciel-search-shell'))
       throw new Error('Spaciel search is already mounted');
 
+    const originTrigger={parent:trigger.parentNode,next:trigger.nextSibling};
+    const originPanel={parent:panel.parentNode,next:panel.nextSibling};
+    const originInput={parent:input.parentNode,next:input.nextSibling};
     const shell=document.createElement('div');
     shell.id='spaciel-search-shell';
     shell.setAttribute('role','search');
@@ -132,7 +135,7 @@
       const q=input.value.trim();
       results.replaceChildren();
       rendered=search(index,q);
-      shell.classList.toggle('has-query',!!q);
+      shell.classList.toggle('has-query',normalize(q).length>=2);
       if(normalize(q).length<2)return;
       if(!rendered.length){
         const el=document.createElement('div');
@@ -197,6 +200,13 @@
       input.removeEventListener('keydown',keydown);
       document.removeEventListener('pointerdown',outside);
       document.removeEventListener('keydown',escapeOutside);
+      function restore(node,where){
+        if(where.parent) where.parent.insertBefore(node,
+          where.next&&where.next.parentNode===where.parent?where.next:null);
+      }
+      restore(input,originInput);
+      restore(panel,originPanel);
+      restore(trigger,originTrigger);
       shell.remove();
     }};
   }
