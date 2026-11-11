@@ -1,0 +1,293 @@
+{
+  "schema": "spaciel-outskirts-labels-v1",
+  "setting_year": 2045,
+  "status": "draft_review_only",
+  "created_date": "2026-11-11",
+  "coordinate_frame": "Spaciel working atlas 5175 x 7966 px, x right y down",
+  "coordinate_note": "Anchor coordinates are converted from current 556-record world x,z location register; not the 1396x1536 ghost-label study or 900x1390 search prototype.",
+  "transform_world_xz_to_atlas_xy": {
+    "x": [
+      0.36401031447152876,
+      -0.08089148759798048,
+      2590.5247436753693
+    ],
+    "y": [
+      0.0810790720593475,
+      0.36485555835278216,
+      3983.4231510082845
+    ],
+    "control_points": [
+      {
+        "name": "Northern Oil Fields",
+        "location_id": "NC2045-LOC-OUTSKIRTS-297-NORTHERN-OIL-FIELDS",
+        "viewer_xy": [
+          1971.55,
+          861.999
+        ],
+        "error_px": 3.2155493553843715e-13
+      },
+      {
+        "name": "Pol-Bud Miasto",
+        "location_id": "NC2045-LOC-OUTSKIRTS-298-POL-BUD-MIASTO",
+        "viewer_xy": [
+          4812.28,
+          3745.551
+        ],
+        "error_px": 9.094947017729282e-13
+      },
+      {
+        "name": "Laguna Bend",
+        "location_id": "NC2045-LOC-OUTSKIRTS-296-LAGUNA-BEND",
+        "viewer_xy": [
+          4759.055,
+          5524.53
+        ],
+        "error_px": 0
+      },
+      {
+        "name": "Jackson Plains Regional Airport",
+        "location_id": "NC2045-LOC-OUTSKIRTS-296-JACKSON-PLAINS-REGIONAL-AIRPORT",
+        "viewer_xy": [
+          2749.023,
+          7027.355
+        ],
+        "error_px": 0.00553896344323322
+      }
+    ],
+    "max_control_residual_px": 0.00553896344323322
+  },
+  "policy": {
+    "do_not_replace_city_districts": true,
+    "do_not_draw_boundaries_from_anchors": true,
+    "do_not_publish_unverified_2077_names_as_2045": true,
+    "do_not_render_until_overlay_checked": true,
+    "do_not_change_existing_pin_coordinates": true
+  },
+  "confirmed_2045_names": [
+    {
+      "id": "outskirts",
+      "name": "Outskirts",
+      "kind": "administrative_context",
+      "display_priority": "far_zoom",
+      "source_year": 2045,
+      "source": "Night City 2045, Outskirts chapter pp. 293–299",
+      "anchor": null,
+      "placement": "no official perimeter polygon in current data",
+      "phase": "context_only"
+    },
+    {
+      "id": "badlands",
+      "name": "Badlands",
+      "kind": "landscape_context",
+      "display_priority": "far_zoom",
+      "source_year": 2045,
+      "source": "Night City 2045, Outskirts",
+      "anchor": null,
+      "placement": "no official perimeter polygon in current data",
+      "phase": "context_only"
+    },
+    {
+      "id": "northern-oil-fields",
+      "name": "Northern Oil Fields",
+      "kind": "region",
+      "display_priority": "regional_zoom",
+      "source_year": 2045,
+      "source": "Night City 2045 p. 297",
+      "anchor": {
+        "location_id": "NC2045-LOC-OUTSKIRTS-297-NORTHERN-OIL-FIELDS",
+        "location_name": "Northern Oil Fields",
+        "viewer_atlas_px": [
+          1971.55,
+          861.999
+        ],
+        "coordinate_role": "registered site anchor, not region centre",
+        "location_review_required": true
+      },
+      "placement": "site-based region anchor only; label offset and extent await map review",
+      "phase": "anchor_found"
+    },
+    {
+      "id": "jackson-plains",
+      "name": "Jackson Plains",
+      "kind": "region",
+      "display_priority": "regional_zoom",
+      "source_year": 2045,
+      "source": "Night City 2045 p. 296 (regional airport); Jackson Plains geographic name confirmed in setting",
+      "anchor": {
+        "location_id": "NC2045-LOC-OUTSKIRTS-296-JACKSON-PLAINS-REGIONAL-AIRPORT",
+        "location_name": "Jackson Plains Regional Airport",
+        "viewer_atlas_px": [
+          2749.024,
+          7027.36
+        ],
+        "coordinate_role": "registered site anchor, not region centre",
+        "location_review_required": true
+      },
+      "placement": "airport is a proxy for the plains, not a verified centre or boundary",
+      "phase": "anchor_found"
+    },
+    {
+      "id": "pol-bud-miasto",
+      "name": "Pol-Bud Miasto",
+      "kind": "settlement",
+      "display_priority": "local_zoom",
+      "source_year": 2045,
+      "source": "Night City 2045 p. 298",
+      "anchor": {
+        "location_id": "NC2045-LOC-OUTSKIRTS-298-POL-BUD-MIASTO",
+        "location_name": "Pol-Bud Miasto",
+        "viewer_atlas_px": [
+          4812.28,
+          3745.551
+        ],
+        "coordinate_role": "registered site anchor, not region centre",
+        "location_review_required": true
+      },
+      "placement": "town anchor; do not relabel as the later Rocky Ridge settlement",
+      "phase": "anchor_found"
+    },
+    {
+      "id": "laguna-bend",
+      "name": "Laguna Bend",
+      "kind": "settlement",
+      "display_priority": "local_zoom",
+      "source_year": 2045,
+      "source": "Night City 2045 p. 296",
+      "anchor": {
+        "location_id": "NC2045-LOC-OUTSKIRTS-296-LAGUNA-BEND",
+        "location_name": "Laguna Bend",
+        "viewer_atlas_px": [
+          4759.055,
+          5524.53
+        ],
+        "coordinate_role": "registered site anchor, not region centre",
+        "location_review_required": true
+      },
+      "placement": "town is above water in 2045, not the submerged 2077 ruins",
+      "phase": "anchor_found"
+    },
+    {
+      "id": "laguna-reservoir",
+      "name": "Laguna Reservoir",
+      "kind": "waterbody",
+      "display_priority": "regional_zoom",
+      "source_year": 2045,
+      "source": "Night City 2045 / original lake near Laguna Bend",
+      "anchor": {
+        "location_id": "NC2045-LOC-OUTSKIRTS-296-LAGUNA-BEND",
+        "location_name": "Laguna Bend",
+        "viewer_atlas_px": [
+          4759.055,
+          5524.53
+        ],
+        "coordinate_role": "registered site anchor, not region centre",
+        "location_review_required": true
+      },
+      "placement": "proximity reference only; water-body label must be positioned from 2045 water polygon",
+      "phase": "needs_shoreline_review"
+    }
+  ],
+  "later_era_review_candidates": [
+    {
+      "name": "Red Peaks",
+      "kind": "hills",
+      "known_from": "Cyberpunk 2077-era geographical naming",
+      "render_in_2045": false,
+      "review_reason": "Near the municipal landfill east of the city",
+      "proximity_anchor": {
+        "location_id": "NC2045-LOC-OUTSKIRTS-296-MUNICIPAL-LANDFILL",
+        "location_name": "Municipal Landfill",
+        "viewer_atlas_px": [
+          4346.39,
+          4531.482
+        ],
+        "coordinate_role": "registered site anchor, not region centre",
+        "location_review_required": true
+      }
+    },
+    {
+      "name": "Rocky Ridge Plains",
+      "kind": "plains",
+      "known_from": "Cyberpunk 2077-era geographical naming",
+      "render_in_2045": false,
+      "review_reason": "Near Pol-Bud Miasto/Pol-Bud Mine; do not replace the 2045 settlement name",
+      "proximity_anchor": {
+        "location_id": "NC2045-LOC-OUTSKIRTS-298-POL-BUD-MIASTO",
+        "location_name": "Pol-Bud Miasto",
+        "viewer_atlas_px": [
+          4812.28,
+          3745.551
+        ],
+        "coordinate_role": "registered site anchor, not region centre",
+        "location_review_required": true
+      }
+    },
+    {
+      "name": "Sierra Sonora",
+      "kind": "hills",
+      "known_from": "Cyberpunk 2077-era geographical naming",
+      "render_in_2045": false,
+      "review_reason": "Southeastern elevations; verify against 2045 terrain",
+      "proximity_anchor": {
+        "location_id": "NC2045-LOC-OUTSKIRTS-298-POL-BUD-CEMENT-FACTORY",
+        "location_name": "Pol-Bud Cement Factory",
+        "viewer_atlas_px": [
+          5238.273,
+          5243.077
+        ],
+        "coordinate_role": "registered site anchor, not region centre",
+        "location_review_required": true
+      }
+    },
+    {
+      "name": "Vasquez Pass",
+      "kind": "pass",
+      "known_from": "Cyberpunk 2077-era geographical naming",
+      "render_in_2045": false,
+      "review_reason": "Eastern passage; no verified 2045 position",
+      "proximity_anchor": null
+    },
+    {
+      "name": "Biotechnica Flats",
+      "kind": "agricultural_region",
+      "known_from": "Cyberpunk 2077-era geographical naming",
+      "render_in_2045": false,
+      "review_reason": "Southern western lowlands; no sourcebook-era region boundary",
+      "proximity_anchor": null
+    },
+    {
+      "name": "Rattlesnake Creek",
+      "kind": "creek",
+      "known_from": "Cyberpunk 2077-era geographical naming",
+      "render_in_2045": false,
+      "review_reason": "Southern outskirts; no verified 2045 watercourse",
+      "proximity_anchor": null
+    },
+    {
+      "name": "Eastern Wastelands",
+      "kind": "macroregion",
+      "known_from": "Cyberpunk 2077-era geographical naming",
+      "render_in_2045": false,
+      "review_reason": "2077 geographic grouping, not a proven 2045 administrative region",
+      "proximity_anchor": null
+    },
+    {
+      "name": "Southern Desert",
+      "kind": "macroregion",
+      "known_from": "Cyberpunk 2077-era geographical naming",
+      "render_in_2045": false,
+      "review_reason": "2077 geographic grouping, not a proven 2045 administrative region",
+      "proximity_anchor": null
+    }
+  ],
+  "explicit_2045_exclusions": [
+    {
+      "name": "Rocky Ridge (town)",
+      "reason": "Later settlement name of Pol-Bud Miasto; 2045 map should retain Pol-Bud Miasto."
+    },
+    {
+      "name": "Laguna Bend Reservoir",
+      "reason": "The larger flood reservoir dates from 2062; 2045 has the town by the older Laguna Reservoir."
+    }
+  ]
+}
