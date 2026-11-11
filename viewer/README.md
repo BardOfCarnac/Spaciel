@@ -1,18 +1,25 @@
 # Spaciel viewer builds
 
-## Latest private mockup — Realisation 08 (11 November 2026)
+## Latest private architectural review — Realisation 09 (11 November 2026)
 
-**Source-derived SketchUp architecture, roads and location tags** are combined in a private viewer. **7,981 of 7,993 building placements** have registered *direct-face* SketchUp source geometry; 11 shoreline holds and one protected landmark remain provisional masses. The architecture is divided into **60** compressed spatial tiles and the modular renderer selects up to **16 nearby GPU tiles** at a time, using lighter massing at whole-city zoom. The viewer retains **556 tagged locations**, unified geographic search and offline V17 roads with an experimental online V21 attempt.
+The existing city has **7,993 provisional placements**, **7,981** with registered direct-face SKP geometry in **60** tiles; **11** shoreline cases and one protected Hot Zone mass remain held. V17 roads, online experimental V21 and **556 tagged locations** remain unchanged.
 
-The complete **portable HTML** and **modular private ZIP** are held in ChatGPT Library under `/Spaciel/working-data/`. They are not hosted or published in this public repository.
+**Important architecture correction:** the largest original source buildings were largely missing from the placement layout, even after recovering the 7,981 meshes. Realisation 09 recovered **100 previously unused large original source models** and creates a separate private landmark placement-review mode. **None is automatically installed.** Original SKP site suggestions require manual registration to the actual atlas.
 
-**Testing:** Desktop and mobile fallback browser checks passed, and simulated WebGL tile-buffer construction passed including tile eviction after panning. **Actual hardware GPU/WebGL2 appearance and performance are not yet verified.** Original nested SketchUp components, materials, shoreline/road conflicts and full V19 UI restoration remain open.
+The portable HTML, modular private project, 100 source-derived GLBs, preview gallery and site audit are in ChatGPT Library `/Spaciel/working-data/`. See [the Realisation 09 report](../reports/native_skp_realisation_09_large_originals_2026_11_11.md).
 
-[Read the Realisation 08 technical report](../reports/native_skp_realisation_08_tiled_private_viewer_2026_11_11.md). Earlier review milestones are documented in [Realisation 07](../reports/native_skp_realisation_07_private_viewer_2026_11_11.md) and the [initial integrated mockup](../reports/roads_buildings_tags_integrated_mockup_2026_11_11.md).
+**Testing:** portable desktop/mobile Canvas fallback checks passed, including model selection, rotation, draft placement and export control wiring; modular HTTP testing was blocked by the test browser. Actual WebGL2 on-device appearance is not yet verified.
 
-## Generic public source
+## Earlier milestones
+- [Realisation 08 — tiled architecture](../reports/native_skp_realisation_08_tiled_private_viewer_2026_11_11.md)
+- [Realisation 07 — direct-face registration](../reports/native_skp_realisation_07_private_viewer_2026_11_11.md)
+- [Original roads/buildings/tags integration](../reports/roads_buildings_tags_integrated_mockup_2026_11_11.md)
 
-- `src/native-architecture-tiles.js` — source-agnostic compressed tile loader.
-- `src/architecture-view-tiles.js` — source-agnostic camera-aware tile selection and 16-tile LOD budget.
+## Public source code, private geometry
 
-**Publication boundary:** Viewer HTML, geometry bundles, registered source meshes and original SKP remain private until redistribution rights are established. Do not upload the private ZIP, spatial data, original model library or full HTML to this public repository.
+Public files in this repository are intentionally source-independent:
+- `src/native-architecture-tiles.js` — template and tile loader
+- `src/architecture-view-tiles.js` — camera-aware tile selection
+- `src/large-building-placement.js` — source-independent model-footprint preview helpers
+
+Do **not** upload the source-derived SKP/GLB mesh library, private viewer HTML, placement geometry or source-built spatial tile data to this public repository until redistribution rights are verified.
