@@ -1,0 +1,178 @@
+{
+  "schema": "spaciel.additional_tags.policy.v4",
+  "rule": "Tags are optional controlled additional classifications. The 7 primary categories and 28 subtypes are authoritative for colour and icon; descriptions and affiliations never become default tags.",
+  "role_label_tags": {
+    "food:clubs": {
+      "Nightclub": "Nightclub",
+      "Maelstrom nightclub": "Nightclub",
+      "Private members’ club": "Members' club"
+    },
+    "food:cafes": {
+      "Tearoom / steam baths": "Tearoom",
+      "Bookshop / café": "Bookshop"
+    },
+    "food:bars": {
+      "Pub / martial arts studio": "Martial arts"
+    },
+    "leisure:attractions": {
+      "Casino": "Casino",
+      "Arcade": "Arcade",
+      "Aquarium": "Aquarium",
+      "Carnival": "Carnival"
+    },
+    "leisure:culture": {
+      "Museum": "Museum",
+      "Theatre": "Theatre",
+      "Concert hall": "Concert venue",
+      "Art gallery": "Gallery",
+      "Ruins / historic site": "Historic site",
+      "Ruined bar / memorial": "Memorial"
+    },
+    "leisure:sport": {
+      "Racetrack": "Racetrack",
+      "Arena": "Arena",
+      "Stadium": "Stadium",
+      "Country club": "Country club",
+      "Martial arts centre": "Martial arts",
+      "Gym": "Gym",
+      "Shooting range": "Shooting range"
+    },
+    "civic:faith": {
+      "Church": "Church",
+      "Temple": "Temple",
+      "Mosque": "Mosque",
+      "Shrine": "Shrine",
+      "Memorial": "Memorial",
+      "Crematorium": "Crematorium",
+      "Corporate church": "Church"
+    },
+    "civic:medical": {
+      "Clinic": "Clinic",
+      "Community medical clinic": "Clinic",
+      "Hospital": "Hospital",
+      "Pharmacy": "Pharmacy",
+      "Exotic clinic / bodysculpting": "Bodysculpting",
+      "Body bank / ripperdoc clinic": "Ripperdoc"
+    },
+    "civic:education": {
+      "School": "School",
+      "Childcare centre": "Childcare",
+      "Academy": "Academy",
+      "Orphanage / vocational school": "Orphanage"
+    },
+    "civic:public": {
+      "Consulate": "Consulate",
+      "Diplomatic mission": "Consulate",
+      "Fire / emergency station": "Fire station",
+      "City hall": "City hall",
+      "Vehicle licensing office": "Licensing",
+      "Convention centre": "Convention venue"
+    },
+    "living:homes": {
+      "Student container housing": "Student housing",
+      "Employee accommodation": "Staff housing"
+    },
+    "living:hotels": {
+      "Motel": "Motel",
+      "Lodge": "Lodge"
+    },
+    "living:shelters": {},
+    "shopping:general": {
+      "Market": "Market",
+      "Pawnshop": "Pawnshop",
+      "Bodega": "Convenience store",
+      "Grocer": "Grocer",
+      "Pharmacy": "Pharmacy",
+      "Fashion shop": "Fashion"
+    },
+    "shopping:specialist": {
+      "Pawnshop": "Pawnshop",
+      "Weapons dealer": "Weapons",
+      "Gun shop / adult club": "Weapons",
+      "Used-car dealership": "Vehicle sales",
+      "Electronics shop": "Electronics",
+      "Plant nursery": "Garden centre",
+      "Fashion shop": "Fashion",
+      "Home furnishings shop": "Furniture",
+      "Media / entertainment shop": "Media retail"
+    },
+    "shopping:gear": {
+      "Weapons dealer": "Weapons",
+      "Weapons / blade shop": "Weapons"
+    },
+    "shopping:services": {
+      "Bank": "Banking",
+      "Spa": "Spa",
+      "Massage parlour": "Massage",
+      "Tailor / alterations": "Tailoring",
+      "Custom vehicle workshop": "Vehicle customisation",
+      "CHOOH2 fuel station": "Fuel station"
+    },
+    "municipal:passenger": {
+      "Taxi service": "Taxi",
+      "Aerocab service": "Aerocab",
+      "Water taxi": "Water taxi",
+      "Airport": "Airport",
+      "Spaceport": "Spaceport",
+      "Airfield": "Airfield"
+    },
+    "municipal:freight": {
+      "Garage": "Garage",
+      "Rail yard": "Rail yard",
+      "Shipping yard": "Freight yard",
+      "Courier service": "Courier",
+      "Parking garage": "Parking",
+      "Depot": "Depot",
+      "Nomad cargo broker": "Cargo brokerage"
+    },
+    "municipal:security": {
+      "Checkpoint": "Checkpoint",
+      "Armoury": "Armoury",
+      "Gang-run jail": "Detention",
+      "Gang-controlled mall": "Mall",
+      "Voodoo Boys headquarters": "Headquarters",
+      "Dragula Racers headquarters": "Headquarters",
+      "Kimen-Gumi headquarters": "Headquarters",
+      "Gang-operated office tower": "Headquarters"
+    },
+    "municipal:infrastructure": {
+      "Electrical substation": "Power substation"
+    },
+    "work:media": {
+      "Radio station": "Radio station",
+      "Studio": "Studio"
+    },
+    "work:industry": {
+      "Factory": "Factory",
+      "Farm": "Farm",
+      "Construction site": "Construction site",
+      "Pharmaceutical plant": "Pharmaceutical manufacturing"
+    },
+    "work:warehouses": {
+      "Research facility": "Research",
+      "Warehouse": "Warehouse",
+      "Drone fulfilment warehouse": "Fulfilment"
+    }
+  },
+  "verified_extra_tags_by_id": {
+    "NC2045-LOC-DOWNTOWN-085-GUNS-DOLLS": [
+      "Adult entertainment"
+    ],
+    "NC2045-LOC-DOWNTOWN-085-MUNCH-MUNCH-MUNCH": [
+      "Adult entertainment"
+    ],
+    "NC2045-LOC-EXECUTIVE-ZONE-235-FIREBIRD-TEAROOM-STEAM-BATHS": [
+      "Bathing"
+    ],
+    "NC2045-LOC-KABUKI-206-TORANOKO-GAKUEN": [
+      "Vocational training"
+    ],
+    "NC2045-LOC-NORTH-HEYWOOD-250-THE-NIGHT-CITY-ANIMAL-SHELTER": [
+      "Bodysculpting"
+    ],
+    "NC2045-LOC-LITTLE-EUROPE-056-BRISTOL-BUSINESS-PARK": [
+      "Events venue"
+    ]
+  },
+  "source_policy": "Only exact role+existing-label pairs and explicitly reviewed secondary functions. Do not infer tags from names, affiliations, descriptions, or subtype fallbacks. Preserve unrecognised old labels for audit, not UI."
+}
