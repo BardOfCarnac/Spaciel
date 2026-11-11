@@ -1,0 +1,12 @@
+# Modular 03 — Roadcraft V23, irregular terrain, bubble v07
+
+11 November 2026. Private viewer built from user-validated Modular 02, not a replacement mock.
+
+- Roadcraft V23 **22-atlas-pixel corridor interpretation** selected by default in the viewer: 1,992 routable chains, one connected component and 557 cycles, from the user's private V23 JSON. V17 previous roads and experimental V21 are retained for comparison. V23 remains a **candidate**, not a newly certified authoritative network. Corridor-cleaning tolerance in atlas pixels is different from visual road-surface widths (18m major / 12m local).
+- Terrain replaces close-up square-grid triangulation with the actual **V17 original irregular/adaptive source topology** (12,884 source faces), each source face uniformly subdivided two levels into a 206,144-triangle display mesh, in the exact V19 affine coordinate registration. Heights are sampled from the approved V19 FINAL 20m raster, not the raw 1m USGS DEM; the prior coarse source remains failure fallback. Native-topology fidelity is improved; high-resolution LiDAR and GPU visual verification remain separate.
+- Both canvas bubbles and detail DOM use approved **Bubble Typography v07**: Chakra Petch category/subcategory, Oxanium location, compact coloured yellow-family shell and white content, circular hole and lower-right anchored shade, fixed `NIGHT CITY` geography heading followed by available comma-separated neighbourhood, district, region. Show only geographic levels present in a record; preserve linked Vend-R entries.
+- Closed left-hand spyglass glyph moved 5px to the left **inside** its existing 40px hit target; opens rightwards as before.
+
+Regression tests 13/13 pass; all JS syntax checks pass; archive integrity verified. In this environment a browser administrator restriction prevented live folder/portable navigation, and WebGL2 3D rendering is **not certified**. User hardware inspection remains needed, especially V17-V19 terrain registration/height seams, coastline, Hot Zone, V23 road/architecture clearance and geometry visibility at close zoom.
+
+**Storage:** The full privately licensed viewer, its source files and geometry are saved to the Spaciel Library at `/Spaciel/working-data/Spaciel_Modular_03_Private.zip` and `Spaciel_Modular_03_Portable.html`. Do not copy those assets into this public repository without licensing review. Modular 02 remains untouched as rollback.
