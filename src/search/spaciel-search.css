@@ -1,0 +1,37 @@
+/* Canonical Spaciel V19 unified search panel; scoped to the established IDs. */
+#geo-search-panel {
+ position:fixed;z-index:24;top:63px;right:12px;width:min(344px,calc(100vw - 24px));
+ box-sizing:border-box;padding:14px;border:1px solid #395b64;border-top:2px solid #70d9ca;
+ background:#0a1a22f5;color:#e4f4f5;border-radius:8px;box-shadow:0 15px 42px #000a;
+ font:13px system-ui,sans-serif;display:none;
+}
+#geo-search-panel.open {display:block}
+#geo-search-panel .search-title {
+ font-weight:750;letter-spacing:.12em;color:#aec5c7;font-size:11px;margin-bottom:9px;
+}
+#geo-search-input {
+ font:14px system-ui,sans-serif;width:100%;outline:0;border:1px solid #466c75;
+ border-radius:6px;background:#122b33;color:#f3ffff;padding:11px;box-sizing:border-box;
+}
+#geo-search-input:focus {border-color:#7ad6c8}
+#geo-search-results {max-height:min(44vh,400px);overflow-y:auto;margin-top:7px}
+#geo-search-results button {
+ display:block;text-align:left;width:100%;border:0;border-bottom:1px solid #44636c4a;
+ background:transparent;padding:8px 4px;color:#eaf7f8;font:13px system-ui,sans-serif;cursor:pointer;
+}
+#geo-search-results button:hover,#geo-search-results button:focus-visible {background:#1e363e}
+#geo-search-results .search-kind {
+ display:inline-block!important;margin:0 6px 0 0!important;padding:2px 5px;
+ border-radius:2px;border:1px solid #5b8d91;color:#9ed0c6!important;
+ letter-spacing:.08em;font-size:9px!important;font-weight:700;line-height:1.1;vertical-align:1px;
+}
+#geo-search-results .search-kind.street {border-color:#ac9252;color:#ebcd82!important}
+#geo-search-results .search-kind.pin {border-color:#526b7e;color:#a6c2dc!important}
+#geo-search-results .search-kind.locality {border-color:#7d708f;color:#cab2e0!important}
+#geo-search-results button .search-sub {
+ display:block!important;margin-top:3px;font-size:10px;color:#9fb5b8;
+}
+#geo-search-results .search-summary {padding:10px 4px 8px;color:#9bb5b7;font-size:11px}
+@media(max-width:600px) {
+ #geo-search-panel {top:58px;right:8px;width:min(344px,calc(100vw - 16px))}
+}
