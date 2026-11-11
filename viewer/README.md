@@ -1,5 +1,11 @@
 # Spaciel viewer builds
 
+## Selected road network — V23 (11 November 2026)
+
+**Roadcraft V23 at 22 atlas pixels is the default for all new Spaciel viewer integrations.** The actual graph lives at [`data/roads/roadcraft_v23_default_width22.json`](../data/roads/roadcraft_v23_default_width22.json); [`data/roads/manifest.json`](../data/roads/manifest.json) declares it current, and [`src/road-network.js`](src/road-network.js) loads and validates it. The exported routing graph contains **1,436 nodes, 1,992 paths, 557 independent cycles, one connected component**.
+
+Use `loadSpacielRoads()` in new modular viewers, and render its `roads[].points` without inventing route connections at visually overlapping painted strokes. V17, V21 and V22 are archived comparison references, not defaults. Earlier standalone HTML viewer versions **are not retroactively updated** by changing the GitHub manifest; those will need an integration rebuild. The cleaned geometry is a selected working baseline, not a claim of final atlas alignment or surveyed carriageways.
+
 ## Latest private integrated city infill — Realisation 14 (11 November 2026)
 
 **One citywide skyline-first infill pass** retained **all 7,367 existing Realisation 13 buildings**, including its restored large original SketchUp structures, and added or recovered **1,454** small native-source building instances. The private review city now has **8,821 building objects** and **8,810** registered direct-face original-source mesh instances across **60** architecture tiles. The previous large buildings were not resized, moved or removed, and **202** smaller building identities from the held reserve were reinstated. **824** earlier reserved smaller placements are still retained separately, not forcibly packed into blocks where they cannot fit.
