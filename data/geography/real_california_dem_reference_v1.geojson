@@ -1,0 +1,613 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "version": "1",
+    "setting": "real present-day California",
+    "status": "reference-only; not 2045 canon",
+    "tile": "USGS_1_n36w121.tif",
+    "tile_lonlat_bounds": [
+      -121,
+      35,
+      -120,
+      36
+    ],
+    "viewer_image_px": [
+      2400,
+      2400
+    ],
+    "atlas_rectangle_px": [
+      [
+        180.01529651100424,
+        1273.0893005623295
+      ],
+      [
+        540.194148513474,
+        1214.5461895182186
+      ],
+      [
+        650.6604060383754,
+        1666.3372704167507
+      ],
+      [
+        290.4815540359057,
+        1724.8803814608614
+      ]
+    ],
+    "note": "Inside the atlas rectangle is not equivalent to preservation in engineered 2045 Night City; source GNIS feature points are not polygonal extents. Some are town or stream-mouth points.",
+    "sources": [
+      "https://www.topoquest.com/map/usgs-24k/california/morro-bay-south/76573",
+      "https://www.topoquest.com/map/usgs-24k/california/san-luis-obispo/71510",
+      "https://edits.nationalmap.gov/apps/gaz-domestic/public/search/names/1660461",
+      "https://www.mbnep.org/what-we-do/watershed-map/"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.86768,
+          35.369419
+        ]
+      },
+      "properties": {
+        "name": "Morro Rock",
+        "kind": "summit",
+        "dem_tile_px": [
+          318.517,
+          1513.076
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.85129,
+          35.337752
+        ]
+      },
+      "properties": {
+        "name": "Morro Bay",
+        "kind": "water",
+        "dem_tile_px": [
+          357.853,
+          1589.077
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.849901,
+          35.365808
+        ]
+      },
+      "properties": {
+        "name": "Morro Bay (town)",
+        "kind": "settlement",
+        "dem_tile_px": [
+          361.187,
+          1521.743
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.905182,
+          35.448862
+        ]
+      },
+      "properties": {
+        "name": "Cayucos",
+        "kind": "settlement",
+        "dem_tile_px": [
+          228.512,
+          1322.413
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.876564,
+          35.450122
+        ]
+      },
+      "properties": {
+        "name": "Whale Rock Reservoir",
+        "kind": "water",
+        "dem_tile_px": [
+          297.195,
+          1319.389
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.874069,
+          35.412751
+        ]
+      },
+      "properties": {
+        "name": "Toro Creek",
+        "kind": "creek",
+        "dem_tile_px": [
+          303.183,
+          1409.079
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.864346,
+          35.376363
+        ]
+      },
+      "properties": {
+        "name": "Morro Creek",
+        "kind": "creek",
+        "dem_tile_px": [
+          326.519,
+          1496.411
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.734062,
+          35.414696
+        ]
+      },
+      "properties": {
+        "name": "Cerro Alto",
+        "kind": "summit",
+        "dem_tile_px": [
+          639.2,
+          1404.411
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.831845,
+          35.35803
+        ]
+      },
+      "properties": {
+        "name": "Black Hill",
+        "kind": "summit",
+        "dem_tile_px": [
+          404.521,
+          1540.41
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.8150372,
+          35.3519991
+        ]
+      },
+      "properties": {
+        "name": "Cerro Cabrillo",
+        "kind": "summit",
+        "dem_tile_px": [
+          444.86,
+          1554.884
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.787121,
+          35.343863
+        ]
+      },
+      "properties": {
+        "name": "Hollister Peak",
+        "kind": "summit",
+        "dem_tile_px": [
+          511.859,
+          1574.411
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.812122,
+          35.327752
+        ]
+      },
+      "properties": {
+        "name": "Los Osos Valley",
+        "kind": "valley",
+        "dem_tile_px": [
+          451.856,
+          1613.077
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.832401,
+          35.311086
+        ]
+      },
+      "properties": {
+        "name": "Los Osos",
+        "kind": "settlement",
+        "dem_tile_px": [
+          403.187,
+          1653.075
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.780454,
+          35.237753
+        ]
+      },
+      "properties": {
+        "name": "Irish Hills",
+        "kind": "range",
+        "dem_tile_px": [
+          527.859,
+          1829.075
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.863235,
+          35.263864
+        ]
+      },
+      "properties": {
+        "name": "Montaña de Oro State Park",
+        "kind": "park",
+        "dem_tile_px": [
+          329.185,
+          1766.408
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.859902,
+          35.283308
+        ]
+      },
+      "properties": {
+        "name": "Hazard Peak",
+        "kind": "summit",
+        "dem_tile_px": [
+          337.184,
+          1719.743
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.872125,
+          35.263031
+        ]
+      },
+      "properties": {
+        "name": "Valencia Peak",
+        "kind": "summit",
+        "dem_tile_px": [
+          307.849,
+          1768.407
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.697395,
+          35.302474
+        ]
+      },
+      "properties": {
+        "name": "Bishop Peak",
+        "kind": "summit",
+        "dem_tile_px": [
+          727.201,
+          1673.744
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.726563,
+          35.313863
+        ]
+      },
+      "properties": {
+        "name": "Cerro Romualdo",
+        "kind": "summit",
+        "dem_tile_px": [
+          657.198,
+          1646.411
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.68045,
+          35.282752
+        ]
+      },
+      "properties": {
+        "name": "Cerro San Luis Obispo",
+        "kind": "summit",
+        "dem_tile_px": [
+          767.869,
+          1721.077
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.842123,
+          35.34053
+        ]
+      },
+      "properties": {
+        "name": "Chorro Creek",
+        "kind": "creek",
+        "dem_tile_px": [
+          379.854,
+          1582.41
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.686971,
+          35.337458
+        ]
+      },
+      "properties": {
+        "name": "Chorro Reservoir",
+        "kind": "water",
+        "dem_tile_px": [
+          752.219,
+          1589.783
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.6689,
+          35.26707
+        ]
+      },
+      "properties": {
+        "name": "San Luis Obispo",
+        "kind": "settlement",
+        "dem_tile_px": [
+          795.589,
+          1758.714
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.8174,
+          35.252197
+        ]
+      },
+      "properties": {
+        "name": "Alan Peak",
+        "kind": "summit",
+        "dem_tile_px": [
+          439.189,
+          1794.409
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.804344,
+          35.269419
+        ]
+      },
+      "properties": {
+        "name": "Stony Peak",
+        "kind": "summit",
+        "dem_tile_px": [
+          470.523,
+          1753.076
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.882958,
+          35.427751
+        ]
+      },
+      "properties": {
+        "name": "Morro Strand State Beach",
+        "kind": "park",
+        "dem_tile_px": [
+          281.85,
+          1373.079
+        ],
+        "under_2045_atlas_rectangle": true,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.677672,
+          35.326641
+        ]
+      },
+      "properties": {
+        "name": "Chorro (settlement)",
+        "kind": "settlement",
+        "dem_tile_px": [
+          774.536,
+          1615.743
+        ],
+        "under_2045_atlas_rectangle": false,
+        "source": "USGS GNIS / TopoQuest",
+        "reference_not_fictional": true
+      }
+    }
+  ]
+}
