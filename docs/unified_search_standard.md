@@ -1,6 +1,6 @@
 # Spaciel unified geographic search — standard
 
-**Canonical standard, reviewed 10 November 2026.** This is the reusable version of the V19 search approved for Spaciel. It applies to full-map viewers and any map search UI. Its repository home is the search module, not another 31 MB standalone viewer.
+**Canonical geographic coverage, reviewed 10 November 2026; expanding search-bar UI approved for implementation 11 November 2026.** This is the reusable version of the V19 search approved for Spaciel. It applies to full-map viewers and any map search UI. Its repository home is the search module, not another 31 MB standalone viewer.
 
 ## Coverage and behaviour
 
@@ -15,7 +15,7 @@ Results carry distinct DISTRICT, NEIGHBOURHOOD, STREET, PLACE or VENUE tags. Sea
 ## Files
 
 - `src/search/spaciel-search.js` — standard index/matching, renderer-neutral destinations and responsive search panel handler.
-- `src/search/spaciel-search.css` — reviewed result type tags and compact panel, including mobile rules.
+- `src/search/spaciel-search.css` — expanding top search bar, carried magnifier, the slim result dropdown and responsive rules.
 - `data/search/unified_geographic_v1.json` — the exact 24 district / 11 neighbourhood / 527 street dataset extracted from the approved V19 search prototype.
 - `tests/test_unified_search.js` — executable search regression tests.
 
@@ -24,10 +24,10 @@ Results carry distinct DISTRICT, NEIGHBOURHOOD, STREET, PLACE or VENUE tags. Sea
 Include the CSS and JavaScript files from the repository and place the established V19 search elements in the viewer. The host application supplies its own live location pin array.
 
 ```html
-<button type="button" id="geo-search-button" aria-label="Search Night City">⌕</button>
-<div id="geo-search-panel" role="dialog" aria-label="Search Night City">
-  <div class="search-title">SEARCH NIGHT CITY · PLACES / AREAS / STREETS</div>
-  <input type="search" id="geo-search-input" placeholder="Search place, district, street…" autocomplete="off">
+<!-- These familiar V19 IDs are moved into a single top search bar by mount(). -->
+<button type="button" id="geo-search-button" aria-label="Open Night City search">⌕</button>
+<div id="geo-search-panel" aria-label="Search suggestions">
+  <input type="search" id="geo-search-input" placeholder="Search places, districts or streets…" autocomplete="off">
   <div id="geo-search-results"></div>
 </div>
 <link rel="stylesheet" href="src/search/spaciel-search.css">
@@ -51,7 +51,7 @@ SpacielSearch.mount({
 });
 ```
 
-The approved V19 3D viewer already has a `spSearchNavigate(hit)` adapter with the expected `{kind, payload}` shape, so this can replace its query/UI event handling while preserving the established camera and bubble behaviour. Remove the older pin-only search handlers when wiring it up; **do not attach two handlers to the same search controls**.
+The approved unified-search V19 integration has a `spSearchNavigate(hit)` adapter with the expected `{kind, payload}` shape, so this can replace its query/UI event handling while preserving the established camera and bubble behaviour. Remove the older pin-only search handlers when wiring it up; **do not attach two handlers to the same search controls**.
 
 The `target` argument from `SpacielSearch.destination(hit)` is useful for another renderer: districts contain prototype-frame bounds, neighbourhoods prototype-frame points, streets V17 local-road coordinates and the full traced polylines, and pins/venues map-world locations plus stable location/shop IDs.
 
@@ -69,6 +69,16 @@ const roadToBitmap = ([x,y]) => [
 ```
 
 Always revalidate the transform when Roadcraft or the district geometry is revised. The future production viewer should frame full district polygons when available rather than treating prototype bounding rectangles as surveyed boundaries.
+
+
+## Expanding search-bar behaviour (11 November 2026)
+
+- A single rounded-square magnifier starts at the top-right. On activation, the **same button** depresses briefly and its parent track expands leftward to nearly the screen width; the magnifier stays against the right edge and travels with it.
+- The input is part of that expanding track, **not** in a separate modal/window. It becomes editable as the track opens. Press **Enter** or activate the magnifier again to search; both choose the top-ranked current result, using the existing navigation adapter. Tapping a suggestion chooses that specific result.
+- A compact results panel appears *below* the expanded bar when there is a nonempty query. The registered labels, geographic index, result ranking and navigation semantics are unchanged.
+- **Escape**, or tapping outside, collapses the search bar. On a mobile screen the bar expands to nearly the full viewport width. Users who request reduced motion do not get the expansion/press animation.
+- The desktop expansion width is at most 880 px, falling back to the available screen width. Timing: approximately 90 ms before width expansion, 470 ms width animation, 420 ms brief depressed-surface response. It is intentionally low-gloss, not a glass panel.
+- Use **only** the current `SpacielSearch.mount()` handler. The legacy on-click popup and input listeners must be removed in the host viewer before it is mounted. Keep the magnifier element itself rather than replacing it with another icon.
 
 ## Repository and copyright boundaries
 
