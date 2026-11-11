@@ -110,7 +110,8 @@
     shell.setAttribute('aria-label','Night City geographic search');
     const track=document.createElement('div');
     track.className='spaciel-search-track';
-    // Keep the existing magnifier button node. It rides the right-hand edge.
+    // Keep the existing magnifier button node: starts at top-left and
+    // travels to the right end as its left-anchored track expands.
     document.body.append(shell);
     shell.append(track,panel);
     track.append(input,trigger);
