@@ -92,52 +92,112 @@
   /* Mount uses the reviewed V19 HTML IDs and gives the host a result
    * and its renderer-neutral destination. The host owns actual navigation,
    * pin-to-bubble morphing, category visibility and street highlighting. */
+
+  /* The same V19 search element IDs are retained, but the search control
+   * itself now expands into a field; search results appear only below it. */
   function mount({index,trigger,panel,input,results,onSelect}={}) {
     if(!index||!trigger||!panel||!input||!results||typeof onSelect!=='function')
       throw new Error('SpacielSearch.mount needs index, trigger, panel, input, results and onSelect');
-    let rendered=[];
-    function close(){panel.classList.remove('open');trigger.setAttribute('aria-expanded','false');}
+    if(document.getElementById('spaciel-search-shell'))
+      throw new Error('Spaciel search is already mounted');
+
+    const shell=document.createElement('div');
+    shell.id='spaciel-search-shell';
+    shell.setAttribute('role','search');
+    shell.setAttribute('aria-label','Night City geographic search');
+    const track=document.createElement('div');
+    track.className='spaciel-search-track';
+    // Keep the existing magnifier button node. It rides the right-hand edge.
+    document.body.append(shell);
+    shell.append(track,panel);
+    track.append(input,trigger);
+    panel.setAttribute('aria-label','Search suggestions');
+    panel.removeAttribute('role');
+    input.placeholder='Search places, districts or streets…';
+    input.tabIndex=-1;
+    trigger.setAttribute('aria-expanded','false');
+    trigger.setAttribute('aria-label','Open Night City search');
+    let rendered=[],timer=0,disposed=false;
+
+    function close({refocus=false}={}) {
+      clearTimeout(timer);
+      shell.classList.remove('is-open','is-pressed','has-query');
+      panel.classList.remove('open');
+      trigger.setAttribute('aria-expanded','false');
+      trigger.setAttribute('aria-label','Open Night City search');
+      input.tabIndex=-1;
+      if(refocus)trigger.focus({preventScroll:true});
+    }
     function render(){
-      const q=input.value.trim();results.replaceChildren();rendered=search(index,q);
-      if(normalize(q).length<2){
-        const c=index.counts,el=document.createElement('div');el.className='search-summary';
-        el.textContent='Search '+c.locations+' location pins, linked venues, '+
-          c.districts+' districts, '+c.neighbourhoods+' mapped neighbourhoods and '+
-          c.streets+' named streets.';
+      const q=input.value.trim();
+      results.replaceChildren();
+      rendered=search(index,q);
+      shell.classList.toggle('has-query',!!q);
+      if(normalize(q).length<2)return;
+      if(!rendered.length){
+        const el=document.createElement('div');
+        el.className='search-summary';
+        el.textContent='No matching places, districts or streets';
         results.append(el);return;
       }
-      if(!rendered.length){
-        const el=document.createElement('div');el.className='search-summary';
-        el.textContent='No matching places, districts or streets';results.append(el);return;
-      }
-      for(const hit of rendered){
-        const btn=document.createElement('button');btn.type='button';
-        const tag=document.createElement('span');tag.className='search-kind '+hit.kind;
+      for(const hit of rendered) {
+        const btn=document.createElement('button');
+        btn.type='button';
+        const tag=document.createElement('span');
+        tag.className='search-kind '+hit.kind;
         tag.textContent=KINDS[hit.kind];
-        const sub=document.createElement('span');sub.className='search-sub';
+        const sub=document.createElement('span');
+        sub.className='search-sub';
         sub.textContent=hit.subtitle;
         btn.append(tag,document.createTextNode(hit.name),sub);
-        btn.addEventListener('click',()=>{close();onSelect(hit,destination(hit));});
+        btn.addEventListener('click',()=>{
+          close();onSelect(hit,destination(hit));
+        });
         results.append(btn);
       }
     }
-    function toggle(){
-      const open=!panel.classList.contains('open');
-      panel.classList.toggle('open',open);trigger.setAttribute('aria-expanded',String(open));
-      if(open){render();input.focus();}
+    function submit() {
+      if(!input.value.trim()){input.focus({preventScroll:true});return;}
+      if(!rendered.length)render();
+      if(rendered.length){
+        const hit=rendered[0];
+        close();onSelect(hit,destination(hit));
+      }else input.focus({preventScroll:true});
+    }
+    function activate() {
+      if(shell.classList.contains('is-open')){submit();return;}
+      shell.classList.add('is-open','is-pressed');
+      trigger.setAttribute('aria-expanded','true');
+      trigger.setAttribute('aria-label','Search');
+      input.tabIndex=0;
+      render();
+      input.focus({preventScroll:true});
+      timer=setTimeout(()=>shell.classList.remove('is-pressed'),440);
     }
     function keydown(e){
-      if(e.key==='Escape'){close();trigger.focus();}
-      if(e.key==='Enter'&&rendered.length){e.preventDefault();close();onSelect(rendered[0],destination(rendered[0]));}
+      if(e.key==='Escape'){e.preventDefault();close({refocus:true});}
+      else if(e.key==='Enter'){e.preventDefault();submit();}
     }
-    trigger.addEventListener('click',toggle);
+    function outside(e){
+      if(shell.classList.contains('is-open')&&!shell.contains(e.target))close();
+    }
+    function escapeOutside(e){
+      if(e.key==='Escape'&&shell.classList.contains('is-open'))close({refocus:true});
+    }
+    trigger.addEventListener('click',activate);
     input.addEventListener('input',render);
     input.addEventListener('keydown',keydown);
-    trigger.setAttribute('aria-expanded','false');
+    document.addEventListener('pointerdown',outside);
+    document.addEventListener('keydown',escapeOutside);
     return {render,close,destroy(){
-      trigger.removeEventListener('click',toggle);
+      if(disposed)return;
+      disposed=true;clearTimeout(timer);
+      trigger.removeEventListener('click',activate);
       input.removeEventListener('input',render);
       input.removeEventListener('keydown',keydown);
+      document.removeEventListener('pointerdown',outside);
+      document.removeEventListener('keydown',escapeOutside);
+      shell.remove();
     }};
   }
   return Object.freeze({KINDS,normalize,createIndex,search,destination,mount});
