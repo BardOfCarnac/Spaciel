@@ -1,20 +1,22 @@
 # Spaciel viewer builds
 
-## Latest private skyline-first mockup — Realisation 13 (11 November 2026)
+## Latest private integrated city infill — Realisation 14 (11 November 2026)
 
-Per the updated placement approach, **large original SketchUp models take priority**. A reversible private city mockup now places **399 additional original large buildings** near their approximate historical source areas, without changing their original model shapes or scale. **1,027 smaller provisional placements** have been held in a fully recoverable infill reserve so smaller buildings can later be packed around the restored skyline. Previously **none** of the 20 largest screened source definitions was placed; **13** are now represented.
+**One citywide skyline-first infill pass** retained **all 7,367 existing Realisation 13 buildings**, including its restored large original SketchUp structures, and added or recovered **1,454** small native-source building instances. The private review city now has **8,821 building objects** and **8,810** registered direct-face original-source mesh instances across **60** architecture tiles. The previous large buildings were not resized, moved or removed, and **202** smaller building identities from the held reserve were reinstated. **824** earlier reserved smaller placements are still retained separately, not forcibly packed into blocks where they cannot fit.
 
-The resulting staged viewer contains **7,367 building objects**, including **7,356** source-derived direct-face mesh instances in **60** architectural tiles; **71** of the new buildings exceed 100 m in original source height. Our **556 tagged locations**, search, V17 offline road graph and experimental V21 layer remain unchanged. Road placement uses approximate atlas-painted exclusions and must receive a final visual review. [Read Realisation 13 aggregate report](../reports/native_skp_realisation_13_skyline_first_2026_11_11.md).
+The infill uses the accepted road-separated buildable areas, preserves Hot Zone voids, screens against working coastline and roads and differentiates denser districts from suburban, port, military and resort blocks. **27 contextual waterfront-edge, road-end-vicinity and peripheral-source placement examples** are highlighted in the new viewer. **556 tagged locations**, location/street/district search, the offline V17 road fallback and the experimental V21 road retrieval remain in place.
 
-The self-contained HTML, modular private viewer ZIP, before/after image and detailed reversible infill reserve are available in the private ChatGPT Library at `/Spaciel/working-data/`. Desktop/mobile HTML fallback checks passed. GPU WebGL2 hardware visual testing and a served modular test remain outstanding.
+All new native projected mesh hulls passed local geometric checks against earlier buildings, one another and the working painted-road/water exclusions. Desktop/mobile standalone fallback checks passed; **actual GPU WebGL2 drawing and served modular browser tests remain unverified**. The app is a full combined mockup, not yet the restored final V19 UI or certified final map.
 
-## Previous milestones
-- [Realisation 12 — staged two-building restoration](../reports/native_skp_realisation_12_staged_restoration_2026_11_11.md)
-- [Realisation 11 — completed screened source catalogue](../reports/native_skp_realisation_11_complete_source_catalogue_2026_11_11.md)
-- [Realisation 10 — approximate original anchors](../reports/native_skp_realisation_10_original_anchors_2026_11_11.md)
-- [Realisation 09 — first original large source recovery](../reports/native_skp_realisation_09_large_originals_2026_11_11.md)
-- [Realisation 08 — tiled architecture](../reports/native_skp_realisation_08_tiled_private_viewer_2026_11_11.md)
+The standalone viewer, complete private modular ZIP, full polygon data, provenance and comparison imagery are in private ChatGPT Library `/Spaciel/working-data/`. [Read the Realisation 14 technical review](../reports/native_skp_realisation_14_full_infill_2026_11_11.md).
 
-## Public code, private source geometry
+## Previous architecture milestones
 
-The public `viewer/src/` holds source-independent loading, view and placement helpers only. The original SKP/GLBs, private source-derived HTML viewer, geometry tiles, footprint coordinates and original source registries are not committed to this public repository.
+- [Realisation 13 — skyline-first large original placements](../reports/native_skp_realisation_13_skyline_first_2026_11_11.md)
+- [Realisation 12 — first reversible major building repack](../reports/native_skp_realisation_12_staged_restoration_2026_11_11.md)
+- [Realisation 11 — complete screened source catalogue](../reports/native_skp_realisation_11_complete_source_catalogue_2026_11_11.md)
+- [Realisation 08 — native source tiling](../reports/native_skp_realisation_08_tiled_private_viewer_2026_11_11.md)
+
+## Public code / private source-data separation
+
+The public `viewer/src/` contains only source-independent architecture loaders, view selection and placement-preview helpers. **Do not commit the original SketchUp models, GLB/mesh catalogue, full-source HTML, private spatial data, registered native silhouettes or source tile files to this public repository** until redistribution rights are established.
