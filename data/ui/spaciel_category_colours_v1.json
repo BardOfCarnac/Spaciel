@@ -1,0 +1,65 @@
+{
+  "schema": "spaciel.category-colour-standard.v1",
+  "adopted": "2026-11-11",
+  "status": "APPROVED",
+  "scope": "Category icon, bubble and focused bottom spectrum bar colours. Original category indices unchanged.",
+  "categories": [
+    {
+      "index": 0,
+      "label": "Work & industry",
+      "hex": "#d54ae8"
+    },
+    {
+      "index": 1,
+      "label": "Leisure & culture",
+      "hex": "#08a4f5"
+    },
+    {
+      "index": 2,
+      "label": "Food & nightlife",
+      "hex": "#42d7ff"
+    },
+    {
+      "index": 3,
+      "label": "Living & lodging",
+      "hex": "#00d79d"
+    },
+    {
+      "index": 4,
+      "label": "Shopping & services",
+      "hex": "#ffeb26"
+    },
+    {
+      "index": 5,
+      "label": "Municipal",
+      "hex": "#ff8527"
+    },
+    {
+      "index": 6,
+      "label": "Civic & care",
+      "hex": "#ff4237"
+    }
+  ],
+  "spectrumDisplayOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "rules": {
+    "focusedBase": "Use the selected category's exact icon RGB/hex, without an independent focus tint, channel cap, saturation dampening, dark colour overlay or hue shift.",
+    "focusedLighting": "Preserve existing gaseous movement and restrained glow/shading without replacing the base hue.",
+    "unfocused": "Keep the softer ambient illuminated colours of all other segments, not a blanket increase in brightness.",
+    "paletteSource": "All icons, category bubbles and focused bar segments must read the same category palette rather than parallel hand-coded colour sets.",
+    "categoryMembership": "No changes to category indexes, filtering rules, location pins or tags.",
+    "animation": "No changes to the V19 720 ms overlapping visibility morph; spectrum bar itself does not morph."
+  },
+  "privateReference": {
+    "v19": "/Spaciel/approved-baselines/Spaciel_V19_True_Focus_Colours_2026-11-11.html",
+    "integrated": "/Spaciel/approved-baselines/Spaciel_Integrated_Review_02_True_Focus_Colours.html",
+    "originalV19": "/Spaciel/approved-baselines/Spaciel_Approved_Category_Morph_2026-11-11.html"
+  }
+}
