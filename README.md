@@ -2,6 +2,10 @@
 
 This repository contains a **working baseline**, not a completed city viewer or a published website.
 
+## Unified geographic search — standard (11 November 2026)
+
+The [unified geographic search](docs/unified_search_standard.md) is the canonical Spaciel search interface. It indexes **24 official districts, 11 mapped neighbourhoods, 527 named streets** (with road geometry and provisional/review flags), plus the viewer's existing **location pins and linked Vend-R venues**. Use [the reusable JS module](src/search/spaciel-search.js), [panel styles](src/search/spaciel-search.css), and [geographic index](data/search/unified_geographic_v1.json) in future viewers; [regression tests](tests/test_unified_search.js) check the search contract. The large self-contained V19 viewer and its embedded licensed assets remain private and are **not** published in this repository.
+
 ## Design principle
 
 Use the approved V10 footprint layout as approximate **where buildings should sit**, not as moulds that stretch models. Keep original building geometry, proportions, and (once registered) approximate SKP positions wherever feasible. Rotate/translate buildings modestly to align to roads and plots, preserve important architectural silhouettes, and fill gaps with smaller suitable native SKP buildings. Do not replace distinctive original geometry with simple extruded proxies unless necessary. Preserve roads, coastline and terrain.
