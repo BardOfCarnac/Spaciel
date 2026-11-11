@@ -1,0 +1,3853 @@
+{
+  "schema": "spaciel.location_additional_tags.v4",
+  "status": "staged",
+  "count": 556,
+  "by_id": {
+    "NC2045-LOC-CHARTER-HILL-224-92-9-NIGHT-FM": {
+      "tags": [
+        "Radio station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-224-ANJELIKA-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-226-BELLA-MIA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-226-CHARTER-HILL-MUSEUM-OF-ALL-ART": {
+      "tags": [
+        "Museum"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-226-CHECKPOINT-LINCOLN": {
+      "tags": [
+        "Checkpoint"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-226-COLONIAL-STUDIOS": {
+      "tags": [
+        "Studio"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-227-THE-COLUMBARIUM": {
+      "tags": [
+        "Memorial"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-227-DRGS-247": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-227-EYE-OF-THE-TIGER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-227-THE-FLOW-MEGACHURCH": {
+      "tags": [
+        "Church"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-227-HILLSIDE-COUNTRY-CLUB": {
+      "tags": [
+        "Country club"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-228-HOTEL-MUY-CARO": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-228-L-ERMITAGE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-228-MANY-HANDS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-228-SERAL-GROVE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-229-WARD-SECURITY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-229-YOUR-NEIGHBORHOOD": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-CHARTER-HILL-229-YOUR-NEXT-BIG-CRECHE": {
+      "tags": [
+        "Childcare"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-080-ACACIA-WAY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-082-BELLA-VISTA-MARKET": {
+      "tags": [
+        "Market"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-082-CAFE-BOUCHON": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-082-CLOCKTOWER-RESIDENCES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-082-CONTINENTAL-BRANDS-OFFICE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-083-CONTINENTAL-PLAZA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-083-CORTEX-COMPLEX": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-083-DELIRIUM": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-083-THE-ELDRITCH-MIRAGE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-084-EUROPA-MEATWORKS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-084-FOLIO": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-084-GILDED-PHOENIX-ARCADE": {
+      "tags": [
+        "Arcade"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-084-GOOSETOPIA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-085-GUNS-DOLLS": {
+      "tags": [
+        "Weapons",
+        "Adult entertainment"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "adult entertainment"
+      ],
+      "context_tags": [
+        "mixed-use"
+      ]
+    },
+    "NC2045-LOC-DOWNTOWN-085-JADE-BLOSSOM-SPA": {
+      "tags": [
+        "Spa"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-085-MOLEHARTY-S-BOOKS-ANTIQUES": {
+      "tags": [
+        "Pawnshop"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-085-MUNCH-MUNCH-MUNCH": {
+      "tags": [
+        "Members' club",
+        "Adult entertainment"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "food and drink",
+        "short-stay rooms",
+        "adult entertainment"
+      ],
+      "context_tags": [
+        "private-members"
+      ]
+    },
+    "NC2045-LOC-DOWNTOWN-085-NEW-LIBERTINE-TOWER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-086-NIGHT-CITY-FIRESTATION-2": {
+      "tags": [
+        "Fire station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-086-THE-NIGHTINGALE-THEATER": {
+      "tags": [
+        "Theatre"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-086-STUDIO-BLOCKS-A-THRU-D": {
+      "tags": [
+        "Studio"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-086-WEST-HILL-CHURCH-OF-GOD": {
+      "tags": [
+        "Church"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-DOWNTOWN-087-WEST-HILL-PARK": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-RESIDENCE-ARTYOM-SOKOLOV": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-RESIDENCE-DENNY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-RESIDENCE-ERAN-MALOUR": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-RESIDENCE-KERRY-EURODYNE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-RESIDENCE-FRANKLIN-M-BOLU": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-RESIDENCE-HEATHER-STEIN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-RESIDENCE-JAMI-SHARKEATER-TEALOV": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-RESIDENCE-KAREN-DAVIES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-RESIDENCE-MICHIKO-SANDERSON": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-RESIDENCE-MISTER-KERNAGHAN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-RESIDENCE-WILLIAM-JOSEPH-BILLY-JOE-BRENTWOOD": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-RESIDENCE-UR": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-234-EXECUTIVE-ZONE-CASINO-COUNTRY-CLUB": {
+      "tags": [
+        "Casino"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-235-FIREBIRD-TEAROOM-STEAM-BATHS": {
+      "tags": [
+        "Tearoom",
+        "Bathing"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "steam baths",
+        "wellness services"
+      ],
+      "context_tags": [
+        "mixed-use"
+      ]
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-235-GROUNDSKEEPER-SHED": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-235-GROWING-SHOOTS-DAYCARE": {
+      "tags": [
+        "Childcare"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-235-HOA-OFFICES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-236-LAZARUS-BASE-OF-OPERATIONS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-236-MONORAIL-STATION": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-236-OASIS-EXEC-ZONE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-EXECUTIVE-ZONE-236-PUDDLEFORGE-GAMES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-DOCKS-242-THE-CYLINDERS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-DOCKS-242-DECKER-TANAKA-ROGERS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-DOCKS-242-DOCKSIDE-BILLHOOKS-TRACK": {
+      "tags": [
+        "Racetrack"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-DOCKS-242-GREENBOX-STORAGE-UNITS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-DOCKS-242-HF-S-CONSTRUCTION": {
+      "tags": [
+        "Construction site"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-DOCKS-243-LOADSTAR-CONTINENTAL-SHIPPING": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-DOCKS-243-RAIL-YARD": {
+      "tags": [
+        "Rail yard"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-DOCKS-243-SHIPPING-YARD": {
+      "tags": [
+        "Freight yard"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-DOCKS-243-SK-SECURITIES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-DOCKS-243-WAREHOUSE-13": {
+      "tags": [
+        "Warehouse"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-258-ALDECALDO-DEPOT": {
+      "tags": [
+        "Depot"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-258-AGRON-S-BOXED-LUNCHES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-258-ARROYO-CONCERN-OFFICES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-258-CONTINENTAL-BRANDS-MANUFACTURING": {
+      "tags": [
+        "Factory"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-258-D-V-RAMBLING-ROSE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-259-GUNMART-MANUFACTURING": {
+      "tags": [
+        "Factory"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-259-THE-INTERCHANGE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-259-MILITECH-MANUFACTURING-PLANT": {
+      "tags": [
+        "Factory"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-259-THE-OLD-IRONWORKS-BUILDING": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-259-PETROCHEM-PLASTICS-PLANT": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-260-RAVEN-MICROCYBERNETICS-FACTORY": {
+      "tags": [
+        "Factory"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-260-ROCKLIN-AUGMENTICS-MANUFACTURING": {
+      "tags": [
+        "Factory"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-260-THE-RODEO": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-260-SOVOIL-PLASTICS-PLANT": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-261-TRAUMA-TEAM-PHARMACEUTICAL-PLANT": {
+      "tags": [
+        "Pharmaceutical manufacturing"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-261-YANG-S-WHEELS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-261-ZHIRAFA-OFFICE-PARK": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [
+        "factory premises"
+      ],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-261-ZHIRAFA-MICROVILLAGE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-HEYWOOD-INDUSTRIAL-ZONE-262-ZIGGURAT-WAREHOUSES": {
+      "tags": [
+        "Warehouse"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-202-100-0-G3-GUN-GAL-STATION": {
+      "tags": [
+        "Radio station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-202-91-9-ROYAL-BLUE": {
+      "tags": [
+        "Radio station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-202-ANIMELOCARIS": {
+      "tags": [
+        "Media retail"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-202-CYBORG-STATION": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-202-DELPHI-X": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-202-HIROTO-MIYAMOTO-MEMORIAL-CLINIC": {
+      "tags": [
+        "Clinic"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-203-HOUOU": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-203-KABUKI-CEREMONIAL-HALL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-203-KABUKI-MARKET": {
+      "tags": [
+        "Market"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-203-MATSURA-FOOD-PRODUCTS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-204-MURAKAMI-SUIUN-IMPORTS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-204-NAKAGAWA-ACADEMY": {
+      "tags": [
+        "Academy"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-204-NAKAGAWA-GARAGE-TOWER": {
+      "tags": [
+        "Parking"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-204-NAKAGAWA-KABUKI-THEATER": {
+      "tags": [
+        "Theatre"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-205-NO-TELL-MOTEL": {
+      "tags": [
+        "Motel"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-205-OASIS-KABUKI": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-205-ROKUMEI-KAN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-205-SANROO-NEURO-LAND": {
+      "tags": [
+        "Weapons"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-205-SEGOTARI-HQ-EXCEL-1": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-206-TENGEN-TOWERS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-206-TORANOKO-GAKUEN": {
+      "tags": [
+        "Orphanage",
+        "Vocational training"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "orphanage",
+        "vocational training"
+      ],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-206-TYGER-DOJO-TORA-NO-ANA": {
+      "tags": [
+        "Martial arts"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-KABUKI-206-TYGER-WORKS-TOWER": {
+      "tags": [
+        "Headquarters"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "office premises"
+      ],
+      "context_tags": [
+        "gang-operated"
+      ]
+    },
+    "NC2045-LOC-KABUKI-206-YUM-SENG": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-CHINA-098-BRIDGETOWN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-CHINA-098-CHROME-CROSS": {
+      "tags": [],
+      "affiliations": [
+        "Red Chrome Legion"
+      ],
+      "secondary_functions": [],
+      "context_tags": [
+        "gang hangout"
+      ]
+    },
+    "NC2045-LOC-LITTLE-CHINA-098-THE-FORLORN-HOPE-WRECKAGE": {
+      "tags": [
+        "Memorial"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "former bar",
+        "memorial"
+      ],
+      "context_tags": [
+        "ruined",
+        "non-operational"
+      ]
+    },
+    "NC2045-LOC-LITTLE-CHINA-098-GUANGBO-TOWER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-CHINA-099-GUANYIN-TEMPLE": {
+      "tags": [
+        "Temple"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-CHINA-099-THE-HONG-KONG-MARKET": {
+      "tags": [
+        "Market"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-CHINA-100-HYDROSUBSIDIUM": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-CHINA-100-LING-HUSAN-S-NEW-CHINA-PHARMACY": {
+      "tags": [
+        "Pharmacy"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-CHINA-100-LING-PO-IMPORTS-WRECKAGE": {
+      "tags": [
+        "Historic site"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-CHINA-100-MADAM-YAP-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-CHINA-100-MADAME-LIN-S-MASSAGE-PARLOR": {
+      "tags": [
+        "Massage"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-CHINA-101-THE-PARISIAN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-CHINA-101-PROSPERITY-GARDEN-TENEMENTS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-CHINA-101-RICHARD-NIGHT-AQUARIUM": {
+      "tags": [
+        "Aquarium"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-CHINA-101-THE-SEEP": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [
+        "former temple"
+      ],
+      "context_tags": [
+        "sinkhole",
+        "polluted runoff",
+        "hazard"
+      ]
+    },
+    "NC2045-LOC-LITTLE-EUROPE-056-101-1-KILLZONE": {
+      "tags": [
+        "Radio station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-056-BIOTECHNICA-REFERENCE-FOREST-RF-14": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-056-BRISTOL-BUSINESS-PARK": {
+      "tags": [
+        "Events venue"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "events venue"
+      ],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-057-CAMDEN-COURT": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-057-CHOPPER-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-058-CONTINENTAL-BRANDS-VERTICAL-NEIGHBORHOOD": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-058-CUBE-A-RAMA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-058-DANGER-GAL-HOUSING-FACILITY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-058-DANGER-GAL-OFFICES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-059-EVERYTHING-AND-MORE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-059-FIDDLER-S-GREEN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-059-GRETA-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-059-HOLY-ANGELS-CHURCH": {
+      "tags": [
+        "Church"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-060-KAITO-MARKET": {
+      "tags": [
+        "Market"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-060-NIGHT-CORP-HQ": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-061-OLD-SAINT-CHRISTOPHER-CENTER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-061-PARADISO-TERRESTRE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-061-RED-CAB-COMPANY": {
+      "tags": [
+        "Taxi"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-062-REVERE-COURIER-SERVICES": {
+      "tags": [
+        "Courier"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-062-SHADY-OAKS-ELEMENTARY": {
+      "tags": [
+        "School"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-062-SHORT-CIRCUIT": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-062-SOPRANO-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-LITTLE-EUROPE-063-TORRELL-AND-CHIANG-S": {
+      "tags": [
+        "Fashion"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-214-AEROCAB": {
+      "tags": [
+        "Aerocab"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-214-AUGMENTED-OPTIC": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-214-CANALSIDE-PLAZA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-214-CHATELAINE-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-215-THE-COMBAT-ZONE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-215-DENYA-JINJA": {
+      "tags": [
+        "Shrine"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-215-DILLY-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-216-EVERGREEN-APARTMENTS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-216-HARDGRIND": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-216-HOLLIDAY-MARKET": {
+      "tags": [
+        "Market"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-216-LINCOLN-LOT": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-217-MEDICAL-ERRORS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-217-MEGABUILDING-H6-CONSTRUCTION-SITE": {
+      "tags": [
+        "Construction site"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-217-NET54-88-2": {
+      "tags": [
+        "Radio station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-217-NETWORK-54-PLAZA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-217-NETWORK-54-WESTBROOK-PRIVATE-ACRES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-218-NIGHT-CITY-FIRESTATION-1": {
+      "tags": [
+        "Fire station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-218-NORTH-CARGO-VILLAGE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-218-ROCKLIN-AUGMENTICS-CAMPUS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-218-ROCKLIN-AUGMENTICS-INNOVATION-HUB": {
+      "tags": [
+        "Research"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-219-SILVER-PIXEL-CLOUD": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-219-VALUEMART-VILLAGE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-220-VIRTUAL-VARIETY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-220-WOODY-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NEW-WESTBROOK-220-WORLDSAT-COMMUNICATIONS-OFFICES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-180-157TH-TACTICAL-AIR-SQUADRON-AIRFIELD": {
+      "tags": [
+        "Airfield"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-181-COG-TREATMENT-FACILITY-CTF": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-181-ESTERO-BAY-MILITARY-COG-ACADEMY": {
+      "tags": [
+        "Academy"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-181-FIRE-EMERGENCY-RESPONSE-CENTER": {
+      "tags": [
+        "Fire station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-181-MAIN-GATE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-181-MESS-HALL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-181-MILITARY-POLICE-HEADQUARTERS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-182-MILITECH-CORPORATE-HOUSING": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-182-MILITECH-OFFICES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-182-MOTOR-POOL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-182-THE-OAKS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-183-PARADE-GROUND": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-183-THE-POTENTILLA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-183-POST-EXCHANGE-PX": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-183-THE-REC-CENTER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-183-TASK-FORCE-384-DOCKS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORCAL-MILITARY-BASE-184-USO-HALL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-246-ACORN-TOWERS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-248-AMERICAR-DISTRIBUTION-CENTER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-248-THE-ARMORY": {
+      "tags": [
+        "Armoury"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-248-BLUE-AIR-STUDIO-APARTMENTS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-248-BYTE-SWITCH": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-249-DYNALAR-CAMPUS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-249-EVERGREEN-VISTA-PARK": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-249-THE-FORLORN-HOPE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-249-HAVEN-SPA-RECOVERY": {
+      "tags": [
+        "Spa"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-250-HAYWIRE-CIRCUIT-GYM": {
+      "tags": [
+        "Gym"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-250-NANA-MEOW-S-NURSERY": {
+      "tags": [
+        "Garden centre"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-250-NEON-HOLLOW-STRIP": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-250-THE-NIGHT-CITY-ANIMAL-SHELTER": {
+      "tags": [
+        "Bodysculpting"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "bodysculpting"
+      ],
+      "context_tags": [
+        "exotics clinic"
+      ]
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-250-NORTH-HEYWOOD-CIVIC-NEXUS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-251-PERENNIAL-HEIGHTS-THE-RUPTURE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-251-SLEEPEASY-HOME-SOLUTIONS": {
+      "tags": [
+        "Furniture"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-NORTH-HEYWOOD-251-TURBINE-ALLEY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-NORTH-HEYWOOD-252-BIOTECHNICA-PALM-GROVE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-NORTH-HEYWOOD-252-BREEZE": {
+      "tags": [
+        "Pharmacy"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-NORTH-HEYWOOD-252-THE-PALMS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-NORTH-HEYWOOD-252-THE-SHARK": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-NORTH-HEYWOOD-252-XANADU": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-NORTH-HEYWOOD-252-ZOLLETTA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-168-ALICE-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-168-ALWAYS-HOT": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-168-THE-ARENA": {
+      "tags": [
+        "Arena"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-168-BLADEWARE": {
+      "tags": [
+        "Weapons"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-169-THE-FARNSWORTH-BUILDING": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-169-FLASHER-S-CORNER": {
+      "tags": [
+        "Pawnshop"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-169-FROM-THE-ASHES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-169-IONIC-SEMICONDUCTOR-BUILDING": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-169-JESSE-JAMES-KOSHER-DELI": {
+      "tags": [
+        "Martial arts"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "martial arts studio"
+      ],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-170-KIBBLE-KIRKLE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-170-THE-LAYDOWN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-170-THE-LODGE": {
+      "tags": [
+        "Lodge"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-170-SUBSTATION-12": {
+      "tags": [
+        "Power substation"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-170-THE-TERRACE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-171-THE-UNDERGROUND": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-COMBAT-ZONE-171-THE-WARREN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-OLD-COMBAT-ZONE-171-ANGEL-RADIO": {
+      "tags": [
+        "Radio station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-OLD-COMBAT-ZONE-171-BASKIN-BOOKS": {
+      "tags": [
+        "Media retail"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-OLD-COMBAT-ZONE-171-OCZ-SCHOOLHOUSE": {
+      "tags": [
+        "School"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-OLD-COMBAT-ZONE-172-THE-PANTHEON": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-OLD-COMBAT-ZONE-171-SMITHERY": {
+      "tags": [
+        "Weapons"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-OLD-COMBAT-ZONE-171-UNCLE-ANNE-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-128-THE-BASEMENT": {
+      "tags": [
+        "Pawnshop"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-130-THE-BODUKKAN": {
+      "tags": [
+        "Headquarters"
+      ],
+      "affiliations": [
+        "Kimen-Gumi"
+      ],
+      "secondary_functions": [],
+      "context_tags": [
+        "gang headquarters"
+      ]
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-130-CRISIS-MEDICAL-CENTER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-130-THE-CUTTING-EDGE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-130-DINE-N-DASH": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-130-GAZEBO-PARK": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-130-THE-GRATEFUL-CRANE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-131-HIGHCOURT-PLAZA-HOTEL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-131-HONEST-HIRO-S-USED-CARS": {
+      "tags": [
+        "Vehicle sales"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-131-IMPERIAL-BANK": {
+      "tags": [
+        "Banking"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-131-KAIFU-CORNER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-132-KID-KAMP": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-132-KAKOI-CHO": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-132-LOVELY-DRONE-HEROES-CAFE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-132-MIYASAKA-CLINIC": {
+      "tags": [
+        "Clinic"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-132-MRS-SUZUKI-S-BODEGA": {
+      "tags": [
+        "Convenience store"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-133-NEO-GALAXY-CARDS-AND-COMICS": {
+      "tags": [
+        "Media retail"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-133-ONI-YAMA-JAIL": {
+      "tags": [
+        "Detention"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "detention"
+      ],
+      "context_tags": [
+        "gang-run"
+      ]
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-133-THE-PRECIPICE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-133-SANROO-COMPLEX": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-134-SEGOTARI-FACTORY": {
+      "tags": [
+        "Factory"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-134-SEGOTARI-STATION-JAPANTOWN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-134-TARTARUS": {
+      "tags": [
+        "Mall"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "mall / retail"
+      ],
+      "context_tags": [
+        "gang-controlled"
+      ]
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-134-TSUKUYOMI": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-134-UNNAMED-CUBE-HOTEL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OLD-JAPANTOWN-134-WHITE-SIDE": {
+      "tags": [
+        "Pawnshop"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-276-THE-ASCENSION": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-278-BITS-N-BOLTS": {
+      "tags": [
+        "Electronics"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-278-CUBELAND-BY-THE-SEA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-278-DREAM-FOREST-DEVELOPMENT": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-278-FLAIRE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-279-JODES-CAMP": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-279-MISTER-RICE-GUY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-279-OBSIDIAN-EQUINOX-MARINA-DOCKS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-280-PACIFICA-ARCOLOGY-RUINS": {
+      "tags": [
+        "Historic site"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-280-PLAYHOUSE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-280-PLEASANT-VALLEY-APARTMENTS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-280-PURSUIT-SECURITY-INC-SHOWROOM": {
+      "tags": [
+        "Weapons"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-280-QUAID-WINSTON-MEMORIAL-DE-SALINIZATION-PLANT": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-280-SHELLSHOCK-CENTRAL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-281-SCENIC-CUBES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-281-SMILE-ANOTHER-DAY": {
+      "tags": [
+        "Pawnshop"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-281-STOP-SHOP-STITCH": {
+      "tags": [
+        "Tailoring"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-281-TANSON-GROUP-HEADQUARTERS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-282-TORTA-SIENDA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-282-VOLKODAV-RACETRACK": {
+      "tags": [
+        "Racetrack"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-282-WNS-OFFICES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PACIFICA-PLAYGROUND-282-THE-XX-THE-TWENTY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-150-THE-AMBER-ROOM": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-152-DOCK-13": {
+      "tags": [
+        "Pawnshop"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-152-DOCK-14-STUDIO-APARTMENTS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-152-DOCK-CARGO-COMMUNITY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-152-FLOTSAM": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-153-HARBOR-PATROL-HQ": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-153-MAIN-PORT": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-154-MARITIME-SUPPLY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-154-MEDICAL-TECHNOLOGIES": {
+      "tags": [
+        "Ripperdoc"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-154-MESTNYY-BANK": {
+      "tags": [
+        "Banking"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-154-NAIAD-S-EMBRACE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-154-RECLAIMED-STUDIOS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-154-THE-RECLAMATION-PLANT": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-155-RUSTY-S-DIVE-SHACK": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-PORT-OF-NIGHT-CITY-155-THE-YARD": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RANCHO-CORONADO-286-106-9-SANGRE-Y-ARENA": {
+      "tags": [
+        "Radio station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RANCHO-CORONADO-288-ALBINO-ALLIGATOR-CAR-WASH": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RANCHO-CORONADO-288-BREAD-AND-ROSES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RANCHO-CORONADO-288-CORONADO-HEIGHTS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RANCHO-CORONADO-288-THE-CULMS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RANCHO-CORONADO-289-DIGITAL-DIVINITY-RUINS": {
+      "tags": [
+        "Historic site"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RANCHO-CORONADO-289-EAGLE-ROCK-STADIUM": {
+      "tags": [
+        "Stadium"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RANCHO-CORONADO-289-THE-HENHOUSE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RANCHO-CORONADO-289-THE-ISLAND": {
+      "tags": [
+        "Headquarters"
+      ],
+      "affiliations": [
+        "Voodoo Boys"
+      ],
+      "secondary_functions": [],
+      "context_tags": [
+        "gang headquarters"
+      ]
+    },
+    "NC2045-LOC-RANCHO-CORONADO-289-JACK-N-THE-GREEN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RANCHO-CORONADO-290-MINIMALLISM": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [
+        "market stalls"
+      ],
+      "context_tags": [
+        "fixer-run"
+      ]
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-158-BOOSTER-BISTRO": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-160-COUNTRY-CARS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-160-EARL-S-SECOND-HAND-SHOP": {
+      "tags": [
+        "Pawnshop"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-160-FLASHBACK": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-160-FOUNDRY-TECH-SCHOOL": {
+      "tags": [
+        "School"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-161-FREDDIE-DOUGLAS-SCHOOL": {
+      "tags": [
+        "School"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-161-GORDON-S-GARAGE": {
+      "tags": [
+        "Garage"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-161-MCGEE-SPEEDWAY": {
+      "tags": [
+        "Racetrack"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-161-HERSCHEL-S-CREMATORIUM": {
+      "tags": [
+        "Crematorium"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-161-LA-PERRERA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-161-METAL-MOUNTAIN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-162-MOBILE-MOSQUE-PRAYER-CENTER": {
+      "tags": [
+        "Mosque"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-162-NCART-YARDS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-162-RECLAMATION-ZONE-STATION": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-RECLAMATION-ZONE-162-SECOND-CITY-SOLOS-FIRING-RANGE": {
+      "tags": [
+        "Shooting range"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-264-88-9-NOMAD-PRESENTS-RADIO-NOPR": {
+      "tags": [
+        "Radio station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-266-ALDECALDO-CAMP": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-SANTO-DOMINGO-266-ALLNATIONS-CONSTRUCTION": {
+      "tags": [
+        "Construction site"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-SANTO-DOMINGO-266-BAZAAR-EL-SABER": {
+      "tags": [
+        "Market"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-SANTO-DOMINGO-266-CAITLIN-MARKET": {
+      "tags": [
+        "Market"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-SANTO-DOMINGO-266-DR-PEDRO-MARIA-GUTIERREZ-SCHOOL": {
+      "tags": [
+        "School"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-SANTO-DOMINGO-266-RADIO-TENT": {
+      "tags": [
+        "Radio station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-SANTO-DOMINGO-266-SKINNY-JAMES-LOT": {
+      "tags": [
+        "Cargo brokerage"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "cargo brokerage"
+      ],
+      "context_tags": [
+        "nomad-operated"
+      ]
+    },
+    "NC2045-OUT-SANTO-DOMINGO-266-SOL-CANELA-PARK": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-SANTO-DOMINGO-267-TEPUI": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-267-ALDECALDO-PEACEKEEPERS-HQ": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-267-ALDECALDO-WARRIORS-TRACK": {
+      "tags": [
+        "Racetrack"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-267-ALTAR-A-NUESTRA-SENORADE-LA-SANTA-MUERTE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-267-CIUDAD-TECHITO": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-267-CORONADO-DAM": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-268-EAST-CARGO-VILLAGE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-268-HEYWOOD-SUITES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-268-HUNGER-STREET": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-268-LIVE-WIRE-BARB-HOUSE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-268-MARIA-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-269-MEGABUILDING-H4": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-269-METALSTORM": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-269-NCPD-PRECINCT-2": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-270-NORTHERN-LIGHT-SUPPLIES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-270-SALON-DE-VALENTINO": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-270-SOVOIL-PAINT-FACTORY": {
+      "tags": [
+        "Factory"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SANTO-DOMINGO-270-WOODCHIPPER-S-GARAGE": {
+      "tags": [
+        "Garage"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-140-THE-BONEYARD": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-140-COMBAT-CABB-HEADQUARTERS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-141-CONTAINER-MART": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [
+        "multiple retail stalls"
+      ],
+      "context_tags": [
+        "shopping complex"
+      ]
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-142-FORT-SUMTER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-142-GUNMART": {
+      "tags": [
+        "Weapons"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-142-HAAKENSEN-TOWER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-143-KIDZ": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-143-LAZARUS-TRAINING-CENTER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-143-MAX-TAC-HQ": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-144-MINDNUTZ-LOVER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-144-SAVAGE-DOCS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-144-SILVERHAND-STUDIOS": {
+      "tags": [
+        "Studio"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-145-THE-SLAMMER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-145-SOUTH-CARGO-VILLAGE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-145-SOUTH-NIGHT-CITY-VOLUNTEER-FIRE-STATION": {
+      "tags": [
+        "Fire station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-145-UNION-CHAPEL-BUILDING": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-SOUTH-NIGHT-CITY-146-UNIVERSITY-CARGO-BAY": {
+      "tags": [
+        "Student housing"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "student accommodation"
+      ],
+      "context_tags": [
+        "container housing"
+      ]
+    },
+    "NC2045-LOC-THE-GLEN-116-1ST-NIGHT-CITY-BANK": {
+      "tags": [
+        "Banking"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-116-96-1-FEVER-DREAM": {
+      "tags": [
+        "Radio station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-116-AIR": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-117-ARCHER-LI": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-117-BEAR-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-117-BETH-EL-CONGREGATION": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-118-CITY-HALL": {
+      "tags": [
+        "City hall"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-118-CLUB-ATLANTIS": {
+      "tags": [
+        "Nightclub"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-THE-GLEN-118-EEC-CONSULATE": {
+      "tags": [
+        "Consulate"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-THE-GLEN-118-JAPANESE-CONSULATE": {
+      "tags": [
+        "Consulate"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-THE-GLEN-119-MEXICAN-CONSULATE": {
+      "tags": [
+        "Consulate"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-THE-GLEN-119-PACIFICA-CONFEDERATION-OFFICES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-THE-GLEN-119-OAS-MISSION": {
+      "tags": [
+        "Consulate"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-THE-GLEN-119-UNITED-STATES-CONSULATE": {
+      "tags": [
+        "Consulate"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-119-DIPLOMATIC-IMMUNITY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-120-DMV": {
+      "tags": [
+        "Licensing"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-120-EUROBANK": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-120-FIRST-BAPTIST-CHURCH-OF-NIGHT-CITY": {
+      "tags": [
+        "Church"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-120-GLENLIFE-PERFECTED": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-121-HALL-OF-JUSTICE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-121-KASIM-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-121-LAZARUS-REGIONAL-HQ": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-122-LE-JARDIN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-122-MERRILL-ASUKAGA-FINCH-OFFICES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-122-THE-MOLLY-MAY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-122-NCPD-PRECINCT-1": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-123-NIGHT-CITY-NEWS-TODAY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-123-NIGHT-CITY-PLAZA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-123-RAVEN-MICROCYBERNETICS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-124-SEAFOAM": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-124-SOULS-RESPITE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-124-WORLD-STOCK-EXCHANGE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-GLEN-124-WORTHY-HOUSING": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-106-94-4-NCU-RADIO": {
+      "tags": [
+        "Radio station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-106-BIOGRAPH-THEATER": {
+      "tags": [
+        "Theatre"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-106-BIOTECHNICA-CAMPUS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-106-BIOTECHNICA-HABITATION-SPHERE-ALPHA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-107-CAMPUS-CHAPEL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-107-CARRIAGE-STREET-BOOKS-AFTERWORDS-CAFE": {
+      "tags": [
+        "Bookshop"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "bookshop"
+      ],
+      "context_tags": [
+        "mixed-use"
+      ]
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-107-FASHION-CUTS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-107-FOOD-TRUCK-PLAZA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-107-KOSMOS-HOSPITAL": {
+      "tags": [
+        "Hospital"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-108-NIGHT-CITY-SYMPHONY-HALL": {
+      "tags": [
+        "Concert venue"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-UNIVERSITY-DISTRICT-108-ADMINISTRATION-BUILDING": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-108-BLAINE-BUILDING": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-108-BROOKS-LIBRARY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-108-THE-CELLS-SITE-01": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-108-THE-CELLS-SITE-02": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-108-THE-CELLS-SITE-03": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-108-HOWARD-WONG-BUILDING": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-108-MICHAELS-HALL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-109-KNUTE-HALL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-109-LOGGAGIA-SCIENCE-LABS": {
+      "tags": [
+        "Research"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-UNIVERSITY-DISTRICT-108-LOMBARDY-GROCERIES": {
+      "tags": [
+        "Grocer"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-UNIVERSITY-DISTRICT-108-NCU-CLINIC": {
+      "tags": [
+        "Clinic"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-109-SCHUMACHER-HALL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-109-SCIENCE-TOWER": {
+      "tags": [
+        "Research"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-109-THOMPSON-HALL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-109-PARKSIDE-LIVING": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-109-PRINCESSLAND": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-110-RETAIL-RESALE": {
+      "tags": [
+        "Fashion"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-110-STEMS-SEEDS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-110-TUMBLE-AND-DRY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-110-UNIVERSITY-CRECHE": {
+      "tags": [
+        "Childcare"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-110-UNIVERSITY-CUBES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UNIVERSITY-DISTRICT-111-YEWTREE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-068-THE-AFTERLIFE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-068-BAY-BRIDGE-RESIDENCES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-068-BLESS-YOUR-HEART": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-068-BRIGHT-FOREST-CASINO": {
+      "tags": [
+        "Casino"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-069-BROWNSTONE-WATERFRONT": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-069-BUFFALO-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-069-CITY-MEDICAL-CENTER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-070-CMAX": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-070-COURT-TOWERS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-070-CRYSTAL-PARK-MARKET": {
+      "tags": [
+        "Market"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-070-DIGITAL-DIVINITY-INCORPORATED-NC": {
+      "tags": [
+        "Church"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-071-FLOWERTOWN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-071-THE-FORGE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [
+        "chrome refurbishment"
+      ],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-071-THE-GARDEN-OF-EARTHLY-DELIGHTS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-071-GRAFFITIX": {
+      "tags": [
+        "Gallery"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "art retail"
+      ],
+      "context_tags": [
+        "gallery"
+      ]
+    },
+    "NC2045-LOC-UPPER-MARINA-071-THE-GRAND-ILLUSION": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-072-GREAT-RIVER-STOREHOUSE": {
+      "tags": [
+        "Fulfilment"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "drone fulfilment"
+      ],
+      "context_tags": [
+        "distribution"
+      ]
+    },
+    "NC2045-LOC-UPPER-MARINA-072-HYDROSUBSIDIUM-R-D": {
+      "tags": [
+        "Research"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-072-JC-HOMES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-072-KRAKEN-LINE-WATER-TAXIS": {
+      "tags": [
+        "Water taxi"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-072-LA-LUNE-BLEUE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-073-MARINA-BREEZE-APARTMENTS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-073-MARINA-FLOATHOMES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [
+        "floating residences"
+      ],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-073-MCCARTNEY-CUBES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-073-MCCARTNEY-FIELD-STADIUM": {
+      "tags": [
+        "Stadium"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-074-MEGABUILDING-H8-CONSTRUCTION-SITE": {
+      "tags": [
+        "Construction site"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-074-METAL-HEAVEN": {
+      "tags": [
+        "Media retail"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-074-MIDNIGHT-ARMS-REGIONAL-OFFICE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-074-MORRO-STRAND-YACHT-CLUB": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-075-THE-NEON-JOHNSON": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-075-NIGHT-CITY-BUBBLES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-075-NIGHT-CITY-CONVENTION-CENTER": {
+      "tags": [
+        "Convention venue"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-075-OCEANSIDE-DOCKS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-075-OTTER-DOCKS-TRANSFER-STATION": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-076-QUARANTINE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-076-REO-MEATWAGON": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-076-TRAVLSTAY-CITYCENTER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-076-UPPER-MARINA-SUBSTATION-2": {
+      "tags": [
+        "Power substation"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-076-ZIGGURAT-CORPORATE-TERRACE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-UPPER-MARINA-077-ZIGGURAT-HEADQUARTERS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-186-AKAGI-RYU-KARATE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-188-CANADIAN-CONSULATE": {
+      "tags": [
+        "Consulate"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-188-CITY-TOT-DAYCARE": {
+      "tags": [
+        "Childcare"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-188-EBUNIKE-DOCKS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-188-FAISAL-S-CUSTOMS": {
+      "tags": [
+        "Weapons"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-SUB-WATSON-DEVELOPMENT-189-BODYWEIGHT-LIFE-PRESERVATION-SYSTEMS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-SUB-WATSON-DEVELOPMENT-189-CACTUS-WATER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-WATSON-DEVELOPMENT-189-GIBSON-BATTLEGEAR": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-SUB-WATSON-DEVELOPMENT-189-HAMMERED-INDUSTRIES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-SUB-WATSON-DEVELOPMENT-189-KENDACHI": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-SUB-WATSON-DEVELOPMENT-189-KIROSHI": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-SUB-WATSON-DEVELOPMENT-189-MAKIGAI-AUTOMOTIVE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-WATSON-DEVELOPMENT-189-SEGOTARI": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-WATSON-DEVELOPMENT-189-TOWA-MANUFACTURING": {
+      "tags": [
+        "Factory"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-189-FUDHOUSE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-189-GIBSON-BATTLEGEAR-OUTLET": {
+      "tags": [
+        "Fashion"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-189-HAMMERED-UP-LIQUOR": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-189-HTOWN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-190-HUNDRED-UNDER-HAVEN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-190-JOINT-TEMPORARY-HOUSING-SOLUTION": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-190-MEGABUILDING-H10": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-191-MEGABUILDING-H11": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-191-MORGAN-S": {
+      "tags": [
+        "Weapons"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-191-NCPD-PRECINCT-3": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-192-NEOSOVIET-CONSULATE": {
+      "tags": [
+        "Consulate"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-192-THE-OBITUARY": {
+      "tags": [
+        "Headquarters"
+      ],
+      "affiliations": [
+        "Dragula Racers"
+      ],
+      "secondary_functions": [],
+      "context_tags": [
+        "gang headquarters"
+      ]
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-192-OLD-BLACK-RUM-PUB": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-192-OUMEI-JI-TEMPLE": {
+      "tags": [
+        "Temple"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-192-PETROCHEM-OFFICES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-193-PETROCHEM-OIL-REFINERY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-193-THE-POCHINKO-CARNIVAL": {
+      "tags": [
+        "Carnival"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-193-RED-OKTOBER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-193-REDLINE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-193-SAKURA-S": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-194-SKIDROW-LIMITED": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-194-SMASH-CUT": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-194-SNACK-SHACK": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-194-SOVOIL-OFFICES": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-194-SOVOIL-OIL-REFINERY": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-194-TRAUMA-TEAM-TOWER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-195-TRAUMA-TEAM-CORPORATE-LIVING-CENTER": {
+      "tags": [
+        "Staff housing"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-195-TURBO-NEON-MOTORS": {
+      "tags": [
+        "Vehicle customisation"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "vehicle customisation"
+      ],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-195-UNOMAS-MEXICAN-BAR-GRILL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-195-VARGTIMMEN": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-195-WATSON-CENTRAL-CUBELIFE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-WATSON-DEVELOPMENT-195-WHAMMER-ARENA": {
+      "tags": [
+        "Arena"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-HOT-ZONE-092-ASHCROFT-HOTEL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-HOT-ZONE-092-THE-CRATER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-HOT-ZONE-092-CRISIS-CENTER": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-HOT-ZONE-092-DARK-ZONE-ONE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-HOT-ZONE-092-THE-DUMP": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-HOT-ZONE-092-EURASIABANK-PLAZA": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-HOT-ZONE-093-GRACELAND-MEDICAL": {
+      "tags": [
+        "Clinic"
+      ],
+      "affiliations": [],
+      "secondary_functions": [
+        "community healthcare"
+      ],
+      "context_tags": [
+        "gang-controlled"
+      ]
+    },
+    "NC2045-LOC-THE-HOT-ZONE-093-THE-N54": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-HOT-ZONE-093-SAFE-CHILD": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-HOT-ZONE-093-TOGGLE-S-TEMPLE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-THE-HOT-ZONE-093-TOTENTANZ": {
+      "tags": [
+        "Nightclub"
+      ],
+      "affiliations": [
+        "Maelstrom"
+      ],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-294-107-3-MORRO-ROCK-RADIO": {
+      "tags": [
+        "Radio station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-OUTSKIRTS-294-EDGEWOOD-FARM": {
+      "tags": [
+        "Farm"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-OUTSKIRTS-294-INGALLS-FARM": {
+      "tags": [
+        "Farm"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-OUT-OUTSKIRTS-296-POPPY-FARM": {
+      "tags": [
+        "Farm"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-296-JACKSON-PLAINS-REGIONAL-AIRPORT": {
+      "tags": [
+        "Airport"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-296-LAGUNA-BEND": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-296-MUNICIPAL-LANDFILL": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-297-NIGHT-CITY-SPACEPORT": {
+      "tags": [
+        "Spaceport"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-297-NORCAL-MARSHAL-STATION": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-297-MILITECH-BALLISTICS-EXPLOSIVES-RANGE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-297-NIGHT-CORP-SOLAR-STATION": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-297-NORTHERN-OIL-FIELDS": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-298-PETROCHEM-CHOOH2-STATION": {
+      "tags": [
+        "Fuel station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-298-POL-BUD-CEMENT-FACTORY": {
+      "tags": [
+        "Factory"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-298-POL-BUD-MIASTO": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-298-POL-BUD-MINE": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-299-SHERIFF-S-STATION": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-299-SOVOIL-CHOOH2-STATION": {
+      "tags": [
+        "Fuel station"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-299-SUNSHINE-MOTEL": {
+      "tags": [
+        "Motel"
+      ],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    },
+    "NC2045-LOC-OUTSKIRTS-299-UNION-RAILROAD-STATION": {
+      "tags": [],
+      "affiliations": [],
+      "secondary_functions": [],
+      "context_tags": []
+    }
+  },
+  "counts": {
+    "with_additional_tags": 194,
+    "without_additional_tags": 362,
+    "tag_instances": 198,
+    "distinct_additional_tags": 93,
+    "existing_roles": 28,
+    "existing_colour_families": 7,
+    "reviewed_facets": 38,
+    "main_locations": 556
+  }
+}
