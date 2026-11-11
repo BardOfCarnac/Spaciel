@@ -43,7 +43,7 @@
 <label class="group" for="heading">Sun direction <output id="headingO">38°</output></label><input id="heading" type="range" min="0" max="360" value="38" step="1">
 <label class="toggle"><input type="checkbox" id="pure"> Pure Blinn–Phong (no artistic sun path)</label>
 <label class="toggle"><input type="checkbox" id="pause"> Pause animation</label>
-<div class="buttons"><button type="button" id="reset">Reset view</button><button type="button" id="random">Rotate sunlight</button></div>
+<div class="buttons"><button type="button" id="focusShore">Focus shoreline</button><button type="button" id="reset">Reset view</button><button type="button" id="random">Rotate sunlight</button></div>
 <div class="note">V6 computes a 20 m shoreline distance texture from the approved V19 wet mask. Existing swells are locally damped; incoming shore-normal trains curve around bays and islands. V5 gloss pooling remains independent. This is an illustrative nearshore model, not measured bathymetry or a full wave simulation. Main viewer unchanged.</div>
 </details>
 <div class="hint">Drag to pan · Pinch / scroll to zoom · Water moves independently of camera</div><div class="error" id="error"></div>
@@ -388,7 +388,7 @@ function preparePool(w,h){
 }
 // Packed PNGs originate from the same V19 shoreline classes used by the 3D viewer.
 // Keep the source PNG orientation; shader maps the identical world grid to texel centres.
-let coastMaskReady=false,coastFetchReady=false,coastDistanceReady=false;
+let coastMaskReady=false,coastFetchReady=false,coastDistanceReady=false,shoreFocus=null;
 const texCoast=gl.createTexture(),texFetch=gl.createTexture(),texCoastDistance=gl.createTexture();
 gl.activeTexture(gl.TEXTURE3);gl.bindTexture(gl.TEXTURE_2D,texCoastDistance);
 gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);
@@ -434,6 +434,25 @@ function makeShoreDistance(im){
   gl.texImage2D(gl.TEXTURE_2D,0,gl.R8,w,h,0,gl.RED,gl.UNSIGNED_BYTE,bytes);
   gl.pixelStorei(gl.UNPACK_ALIGNMENT,4);
   coastDistanceReady=true;
+  // Choose a genuinely nearshore wet spot near the urban centre, with
+  // exposed wave fetch, so the new behaviour is easy to inspect.
+  let best=-1.e10,site=null;
+  for(let y=90;y<h-90;y+=9)for(let x=90;x<w-90;x+=9){
+    const i=y*w+x,d=distance[i];
+    if(d<9||d>30||pixels[i*4+3]<128)continue;
+    const exposure=pixels[i*4+1]/255,shelter=pixels[i*4+2]/255;
+    const dx=(x-555)/280,dy=(y-696)/340;
+    const score=2.5*exposure-1.1*shelter+2.1*Math.exp(-.7*(dx*dx+dy*dy))-
+                .65*Math.abs(d-17)/17;
+    if(score>best){best=score;site=[-11098.46+(x+.5)*20,-13918.137+(y+.5)*20];}
+  }
+  if(site){
+    shoreFocus=site;
+    if(!window.__spacielCoastV6FocusedOnce){
+      center=[site[0],site[1]];span=3600;syncZoom();
+      window.__spacielCoastV6FocusedOnce=true;
+    }
+  }
 }
 function coastalTexture(texture,unit,internal,format,base64,onReady){
  gl.activeTexture(gl.TEXTURE0+unit);gl.bindTexture(gl.TEXTURE_2D,texture);
@@ -471,6 +490,10 @@ function updateLabels(){for(const [id,format]of Object.entries(outs))val(id+'O')
 for(const id of Object.keys(outs)){val(id).addEventListener('input',()=>{if(id==='width')span=spanFromControl();updateLabels();});}
 function syncZoom(){val('width').value=Math.max(0,Math.min(100,controlFromSpan(span)));updateLabels();}
 val('reset').addEventListener('click',()=>{center=[0,0];span=3600;syncZoom();});
+val('focusShore').addEventListener('click',()=>{
+  if(shoreFocus){center=[shoreFocus[0],shoreFocus[1]];span=2600;syncZoom();}
+  else status.textContent='Shoreline mask still loading';
+});
 val('random').addEventListener('click',()=>{val('heading').value=(read('heading')+47)%361;updateLabels();});
 function pixelCoords(e){const r=canvas.getBoundingClientRect();return [e.clientX-r.left,e.clientY-r.top];}
 function worldAt(pos,s){const r=canvas.getBoundingClientRect();return [center[0]+(pos[0]-r.width/2)*s/r.width,center[1]-(pos[1]-r.height/2)*s/r.width];}
