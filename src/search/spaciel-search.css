@@ -1,9 +1,10 @@
 /* Spaciel expanding search — use with SpacielSearch.mount.
- * Reuses the V19 magnifier and #geo-search-* IDs. */
+ * Reuses the V19 magnifier and #geo-search-* IDs.
+ * Approved orientation: left-anchored at rest, opens to the RIGHT. */
 #spaciel-search-shell {
   --spaciel-search-width:min(880px, calc(100vw - 24px));
   position:fixed;z-index:42;
-  top:max(10px, env(safe-area-inset-top));right:12px;
+  top:max(10px, env(safe-area-inset-top));left:12px;right:auto;
   width:40px;box-sizing:border-box;
   color:#e6f5f5;font:14px system-ui,-apple-system,sans-serif;
   transition:width 470ms cubic-bezier(.18,.83,.19,1) 90ms;
@@ -93,7 +94,7 @@
 #geo-search-results button .search-sub {display:block!important;margin-top:3px;font-size:10px;color:#9fb5b8;}
 #geo-search-results .search-summary {padding:10px 4px 8px;color:#9bb5b7;font-size:11px;}
 @media(max-width:600px){
-  #spaciel-search-shell {right:8px;--spaciel-search-width:calc(100vw - 16px);}
+  #spaciel-search-shell {left:8px;right:auto;--spaciel-search-width:calc(100vw - 16px);}
   #spaciel-search-shell .spaciel-search-track {height:44px;}
   #spaciel-search-shell #geo-search-button {height:42px;flex-basis:42px;width:42px;}
 }
