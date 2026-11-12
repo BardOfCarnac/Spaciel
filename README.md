@@ -1,5 +1,13 @@
 # Spaciel — native SketchUp building placement workbench
 
+## Vend-R Gear normalisation and merchandise search — V5 (12 November 2026)
+
+**Approved working classification:** the seven map colour families and 28 role codes are unchanged. Four dedicated weapons retailers (Guns & Dolls, Sanroo Neuro-land, Pursuit Security Inc Showroom, Midnight Arms Regional Office) have moved from Specialist Retail to **Gear & technology** in the [556-place V5 register](data/locations/spaciel_locations_556_gear_v5_2026-11-12.json). The V4 baseline is retained.
+
+**Merchandise discovery is broader than primary icons:** Vend-R v1.3 profiles identify **21 weapons-capable sellers, 18 armour-capable sellers, 29 in either group**, but some are pawnbrokers, markets, or general retailers and keep their existing subtype. The [150-profile canonical-ID merchandise index](data/search/spaciel_vendr_merchandise_index_v1_2026-11-12.json) and [integration helper](src/locations/vendr-commerce-v1.mjs) add controlled searchable department terms; [unified place search](src/search/spaciel-search.js) now indexes these optional terms. No extra pins are manufactured and no inventory availability is guaranteed. [Full policy, counts, and tests](docs/vendr_gear_discovery_v5_2026-11-12.md).
+
+**Status:** committed data + reusable search logic only. The private 661-pin viewer and Supabase have **not** been rebuilt or deployed with V5.
+
 ## Approved Ocean Optics 02 — bowl-centred water colour (12 November 2026)
 
 **Approved visual baseline:** the dark ocean body cycles from black through dark red, cola, green and blue, returning via cola and red to black. The observer's screen centre shows the true time-of-day phase, while the left/right water shifts subtly earlier/later with viewing angle; sun-driven glints remain independent. The first full **private Modular 10** trial restores the separate water surface above the approved October terrain, retaining coast, roads, buildings and pins. Real-device WebGL2 appearance is **not yet verified**. See the [approved behaviour and QA](docs/approved_ocean_optics_02_2026-11-12.md), [source-independent reference](src/water/ocean-optics-v1.mjs) and [tests](tests/test_ocean_optics_v1.mjs). Licensed full viewer assets remain in private ChatGPT Library `/Spaciel/working-data/`.
