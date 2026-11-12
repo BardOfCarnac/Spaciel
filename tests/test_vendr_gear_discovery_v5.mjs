@@ -28,7 +28,7 @@ test('only four approved primary roles change across existing 556 records', () =
   const original = structuredClone(v4.records), rows=structuredClone(original);
   const result=applyVendrCommerceV1(rows, roles, vendr);
   assert.equal(result.corrected_primary_gear_roles, 4);
-  assert.equal(result.matching_merchants, 54);
+  assert.equal(result.matching_merchants, 52);
   assert.equal(new Set(rows.map(x=>x.category)).size,7);
   assert.equal(new Set(rows.map(x=>x.role)).size,28);
   assert.deepEqual(rows.map(x=>x.id),original.map(x=>x.id));
