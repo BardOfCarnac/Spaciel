@@ -60,21 +60,20 @@ export function applyVendrCommerceV1(locations, overlay, index, {strict=true}={}
     const override = changeById.get(id);
     const outlet = outletById.get(id);
     if (override || outlet) {
-      const next = override || outlet;
       const current = location.role || '';
-      // Never change primary categories or reclass a non-shopping service.
-      if (location.category === 'shopping' &&
-          (current === (override?.from_role || '') ||
-           current === next.recommended_role ||
-           current === next.to_role ||
-           (!override && !current))) {
-        const target = override?.to_role || outlet.recommended_role;
-        if (current !== target) {
-          location.role = target;
-          location.subtype = 'Gear & technology';
-          (override ? changed : outletChanged).add(id);
-        }
-      } else if (override && strict && current !== override.to_role) {
+      const target = override?.to_role || outlet.recommended_role;
+      // Primary roles only change within Shopping. The four main location
+      // changes have preconditions; standalone embedded outlets can come
+      // through any Shopping subtype before this normalization.
+      const permitted = location.category === 'shopping' && (
+        override ? (current === override.from_role || current === target)
+                 : (!current || current.startsWith('shopping:'))
+      );
+      if (permitted && current !== target) {
+        location.role = target;
+        location.subtype = 'Gear & technology';
+        (override ? changed : outletChanged).add(id);
+      } else if (override && !permitted && strict) {
         throw new Error('Conflicting category/role for V5 role correction: ' + id);
       }
     }
