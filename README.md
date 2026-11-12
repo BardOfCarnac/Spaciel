@@ -1,5 +1,10 @@
 # Spaciel — native SketchUp building placement workbench
 
+## Approved Ocean Optics 02 — bowl-centred water colour (12 November 2026)
+
+**Approved visual baseline:** the dark ocean body cycles from black through dark red, cola, green and blue, returning via cola and red to black. The observer's screen centre shows the true time-of-day phase, while the left/right water shifts subtly earlier/later with viewing angle; sun-driven glints remain independent. The first full **private Modular 10** trial restores the separate water surface above the approved October terrain, retaining coast, roads, buildings and pins. Real-device WebGL2 appearance is **not yet verified**. See the [approved behaviour and QA](docs/approved_ocean_optics_02_2026-11-12.md), [source-independent reference](src/water/ocean-optics-v1.mjs) and [tests](tests/test_ocean_optics_v1.mjs). Licensed full viewer assets remain in private ChatGPT Library `/Spaciel/working-data/`.
+
+
 
 ## Icon bubbles — 661 descriptions and geographic footer (12 November 2026)
 
