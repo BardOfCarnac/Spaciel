@@ -1,6 +1,10 @@
 # Spaciel — native SketchUp building placement workbench
 
 
+## Location one-line descriptions — V2 complete draft (12 November 2026)
+
+Every one of the **661 pin IDs** now has a description in the **private V2 editorial bundle**: 140 existing Vend-R-edited lines plus 521 sourcebook-grounded original summaries. This completes the former 171 missing records, without changing any previously written copy. The **521 summaries are drafts pending editorial review**, not automatically approved for publication. The private standalone V19 preview uses the V4 optional tags unchanged; live Spaciel/Supabase is not yet updated. See the [V2 description coverage and integration contract](docs/location_one_line_descriptions_v2_2026-11-12.md).
+
 ## Optional location tags — canonical V4 standard (11 November 2026)
 
 **Do not confuse category, subtype, tag and description.** Seven existing category colours and 28 existing roles/subtypes remain the sole icon classification. `tags` is an **optional array** of useful, searchable additional functions; an empty array is correct. Do not manufacture one label per place or duplicate the role as a display tag (e.g., `Specialist retailer` under `shopping:specialist`). Distinctive merchandise, ownership and narrative belong in descriptions; factions such as Maelstrom go in `affiliations`, not tags. Reviewed secondary uses and physical conditions remain in their own fields.
