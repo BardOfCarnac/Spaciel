@@ -1,0 +1,78 @@
+{
+  "schema": "spaciel.location-primary-role-overlay.v5",
+  "date": "2026-11-12",
+  "status": "approved classification overlay; staged for viewer rebuild",
+  "base_register": "data/locations/spaciel_locations_556_optional_tags_v4_2026-11-11.json",
+  "source": "Vend-R v1.3 stock_profiles",
+  "policy": {
+    "categories": "Preserve all seven existing category families",
+    "subtypes": "Preserve the existing 28 role codes; reassign dedicated equipment sellers to shopping:gear",
+    "mixed_retail": "Do not reclassify pawnshops, mixed market traders or fashion outlets merely because they can stock weapons or armour; use merchandise index for discovery",
+    "medical": "Medical & Cyberware remains civic:medical, pending a separate clinical-source review",
+    "no_geometry_changes": true
+  },
+  "primary_role_changes": [
+    {
+      "id": "NC2045-LOC-KABUKI-205-SANROO-NEURO-LAND",
+      "name": "Sanroo Neuro-land",
+      "from_role": "shopping:specialist",
+      "to_role": "shopping:gear",
+      "from_category": "shopping",
+      "reason": "Vend-R v1.3 lists a primary dedicated equipment-selling archetype with a direct stock profile"
+    },
+    {
+      "id": "NC2045-LOC-PACIFICA-PLAYGROUND-280-PURSUIT-SECURITY-INC-SHOWROOM",
+      "name": "Pursuit Security Inc Showroom",
+      "from_role": "shopping:specialist",
+      "to_role": "shopping:gear",
+      "from_category": "shopping",
+      "reason": "Vend-R v1.3 lists a primary dedicated equipment-selling archetype with a direct stock profile"
+    },
+    {
+      "id": "NC2045-LOC-UPPER-MARINA-074-MIDNIGHT-ARMS-REGIONAL-OFFICE",
+      "name": "Midnight Arms Regional Office",
+      "from_role": "shopping:specialist",
+      "to_role": "shopping:gear",
+      "from_category": "shopping",
+      "reason": "Vend-R v1.3 lists a primary dedicated equipment-selling archetype with a direct stock profile"
+    },
+    {
+      "id": "NC2045-LOC-DOWNTOWN-085-GUNS-DOLLS",
+      "name": "Guns & Dolls",
+      "from_role": "shopping:specialist",
+      "to_role": "shopping:gear",
+      "from_category": "shopping",
+      "reason": "Vend-R v1.3 lists a primary dedicated equipment-selling archetype with a direct stock profile"
+    }
+  ],
+  "possible_embedded_outlet_roles": [
+    {
+      "id": "NC2045-OUT-LITTLE-EUROPE-060-CHEEK-TURN",
+      "name": "Cheek Turn",
+      "entity_level": "embedded_outlet",
+      "recommended_role": "shopping:gear",
+      "note": "Only apply to an exactly matching existing outlet pin; do not manufacture a map pin."
+    },
+    {
+      "id": "NC2045-OUT-SANTO-DOMINGO-269-YOBRO",
+      "name": "YoBro!",
+      "entity_level": "embedded_outlet",
+      "recommended_role": "shopping:gear",
+      "note": "Only apply to an exactly matching existing outlet pin; do not manufacture a map pin."
+    },
+    {
+      "id": "NC2045-OUT-UPPER-MARINA-070-CYBERSHACK",
+      "name": "Cybershack",
+      "entity_level": "embedded_outlet",
+      "recommended_role": "shopping:gear",
+      "note": "Only apply to an exactly matching existing outlet pin; do not manufacture a map pin."
+    },
+    {
+      "id": "NC2045-OUT-RECLAMATION-ZONE-162-EGGHEADZ",
+      "name": "Eggheadz",
+      "entity_level": "embedded_outlet",
+      "recommended_role": "shopping:gear",
+      "note": "Only apply to an exactly matching existing outlet pin; do not manufacture a map pin."
+    }
+  ]
+}
