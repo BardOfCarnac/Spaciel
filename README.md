@@ -7,6 +7,10 @@ The **private Modular 07 review build** now links all **661 individual map icons
 
 See [the implementation and validation contract](docs/icon_descriptions_and_geography_bubbles_2026-11-12.md), [the reusable connector](src/locations/pin-bubble-details-v1.mjs) and [regression tests](tests/test_pin_bubble_details_v1.mjs). The 43 MB portable viewer and 661 original descriptions remain private. This is **not** a production/Supabase deployment; the 521 sourcebook summaries still need editorial sign-off.
 
+## Reciprocal Night City geography — V2 working review (12 November 2026)
+
+The existing 2045 hierarchy (4 regions, 24 official districts, 11 adopted working subdivision schemes) is now wired into a **canonical-ID-based two-way location index**. All **639 Night City pins** retain their book-recorded districts/regions; **22 Outskirts pins** remain separate; the **105 Vend-R outlets** keep their parent areas. Bubble neighbourhood or working-area coverage increases from **22 to 263 pins**, with **241 of the new assignments explicitly provisional** because the polygon atlas still requires independent registration. Sources, confidence, branch API and QA limitations are detailed in the [V2 geography integration report](docs/geography_area_membership_v2_2026-11-12.md), and the [reusable module](src/geography/apply-area-membership-v2.mjs) preserves optional V4 tags and descriptions. The complete 661-pin viewer and area inspector remain private, not a mainline public deployment.
+
 ## Location one-line descriptions — V2 complete draft (12 November 2026)
 
 Every one of the **661 pin IDs** now has a description in the **private V2 editorial bundle**: 140 existing Vend-R-edited lines plus 521 sourcebook-grounded original summaries. This completes the former 171 missing records, without changing any previously written copy. The **521 summaries are drafts pending editorial review**, not automatically approved for publication. The private standalone V19 preview uses the V4 optional tags unchanged; live Spaciel/Supabase is not yet updated. See the [V2 description coverage and integration contract](docs/location_one_line_descriptions_v2_2026-11-12.md).
