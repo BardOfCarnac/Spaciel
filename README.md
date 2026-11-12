@@ -1,6 +1,12 @@
 # Spaciel — native SketchUp building placement workbench
 
 
+## Icon bubbles — 661 descriptions and geographic footer (12 November 2026)
+
+The **private Modular 07 review build** now links all **661 individual map icons** to their V2 one-line descriptions by canonical ID and preserves the V4 optional tags. The bubble footer uses the locked typography: **NIGHT CITY** above a single **neighbourhood, district, region** line, omitting unverified levels rather than guessing; 24 district-to-region mappings are authoritative, and 22 locality pins have verified neighbourhood assignments. The independent 2D fallback uses the same data. The source arrays have all 15 earlier ID repairs, and existing terrain, colour categories, 28 subtypes and icon animations are retained.
+
+See [the implementation and validation contract](docs/icon_descriptions_and_geography_bubbles_2026-11-12.md), [the reusable connector](src/locations/pin-bubble-details-v1.mjs) and [regression tests](tests/test_pin_bubble_details_v1.mjs). The 43 MB portable viewer and 661 original descriptions remain private. This is **not** a production/Supabase deployment; the 521 sourcebook summaries still need editorial sign-off.
+
 ## Location one-line descriptions — V2 complete draft (12 November 2026)
 
 Every one of the **661 pin IDs** now has a description in the **private V2 editorial bundle**: 140 existing Vend-R-edited lines plus 521 sourcebook-grounded original summaries. This completes the former 171 missing records, without changing any previously written copy. The **521 summaries are drafts pending editorial review**, not automatically approved for publication. The private standalone V19 preview uses the V4 optional tags unchanged; live Spaciel/Supabase is not yet updated. See the [V2 description coverage and integration contract](docs/location_one_line_descriptions_v2_2026-11-12.md).
