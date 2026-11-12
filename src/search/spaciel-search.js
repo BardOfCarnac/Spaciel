@@ -12,6 +12,13 @@
   const PRIORITY = Object.freeze({district:0, locality:1, street:2, pin:3, venue:4});
   const normalize = value => String(value == null ? '' : value).normalize('NFKD')
     .replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase().trim();
+  // Optional Vend-R catalogue annotations are search-only: never create pins,
+  // override their primary subtype, or imply real-time inventory availability.
+  const commerceTerms = record => [
+    ...(record.tags || []),
+    ...(record.vendr_search_terms || record.vendrSearchTerms || []),
+    record.subtype || ''
+  ].join(' ');
 
   function createIndex({geography={}, locations=[], venues=[]}={}) {
     const records=[], byId=new Map();
@@ -27,12 +34,12 @@
     for (const s of geography.streets||[])
       add('street',s.name,(s.provisional?'Provisional name · ':'')+'Named street'+(s.review?' · alignment to review':''),s);
     for (const p of locations) {
-      add('pin',p.name,(p.district||'Night City')+' · location pin',p,(p.district||'')+' '+(p.source||''));
+      add('pin',p.name,(p.district||'Night City')+' · location pin',p,(p.district||'')+' '+(p.source||'')+' '+commerceTerms(p));
       if (p.id != null) byId.set(String(p.id),p);
       for (const shop of p.shops||[]) {
         if (shop.ownPin) continue;
         add('venue',shop.name,'Inside '+p.name+' · '+(p.district||'Night City'),
-          {p,shop},(p.district||'')+' '+(shop.kind||''));
+          {p,shop},(p.district||'')+' '+(shop.kind||'')+' '+commerceTerms(shop));
       }
     }
     for (const shop of venues) {
@@ -40,7 +47,7 @@
       const p=shop.p||byId.get(String(shop.parentId||shop.parent_id||''));
       if (!p||(p.shops||[]).some(s=>s.id!=null&&s.id===shop.id)) continue;
       add('venue',shop.name,'Inside '+p.name+' · '+(p.district||'Night City'),
-        {p,shop},(p.district||'')+' '+(shop.kind||''));
+        {p,shop},(p.district||'')+' '+(shop.kind||'')+' '+commerceTerms(shop));
     }
     return {
       version:geography.version||'unified-geographic-v1',records,
