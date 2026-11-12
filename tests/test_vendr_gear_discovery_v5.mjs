@@ -7,6 +7,7 @@ const require = createRequire(import.meta.url);
 const SpacielSearch = require('../src/search/spaciel-search.js');
 const read = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url),'utf8'));
 const v4 = read('data/locations/spaciel_locations_556_optional_tags_v4_2026-11-11.json');
+const v5 = read('data/locations/spaciel_locations_556_gear_v5_2026-11-12.json');
 const roles = read('data/locations/spaciel_gear_role_overlay_v5_2026-11-12.json');
 const vendr = read('data/search/spaciel_vendr_merchandise_index_v1_2026-11-12.json');
 
@@ -48,6 +49,21 @@ test('only four approved primary roles change across existing 556 records', () =
   assert.ok(pawn.vendr_search_terms.includes('guns'));
   // A second application must not change the same roles again.
   assert.equal(applyVendrCommerceV1(rows,roles,vendr).corrected_primary_gear_roles,0);
+});
+
+test('canonical V5 register matches applying the overlay to V4', () => {
+  const expected=structuredClone(v4.records);
+  applyVendrCommerceV1(expected,roles,vendr);
+  assert.equal(v5.records.length,556);
+  assert.equal(v5.counts.role_changes_in_vendr_gear_v5,4);
+  for(let i=0;i<556;i++){
+    const a=v5.records[i],b=expected[i],c=v4.records[i];
+    for(const key of ['id','name','district','category','role','subtype','x','z','height','display_tag','source']) {
+      assert.deepEqual(a[key],b[key],a.name+' canonical mismatch: '+key);
+    }
+    assert.deepEqual(a.tags,c.tags);
+    assert.deepEqual(a.secondary_functions,c.secondary_functions);
+  }
 });
 
 test('embedded sellers are only updated when existing matching pins are present', () => {
