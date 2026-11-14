@@ -1,0 +1,45 @@
+{
+  "schema": "spaciel.locations.manifest.v1",
+  "current": {
+    "version": "vendr-gear-v5",
+    "approved_on": "2026-11-14",
+    "status": "locked_default_for_future_spaciel_builds",
+    "main_locations": "data/locations/spaciel_locations_556_gear_v5_2026-11-12.json",
+    "main_count": 556,
+    "separate_vendr_outlets": 105,
+    "intended_combined_pins": 661,
+    "merchandise_index": "data/search/spaciel_vendr_merchandise_index_v1_2026-11-12.json",
+    "primary_role_overlay": "data/locations/spaciel_gear_role_overlay_v5_2026-11-12.json",
+    "commerce_helper": "src/locations/vendr-commerce-v1.mjs",
+    "unified_search": "src/search/spaciel-search.js",
+    "integration_contract": "docs/vendr_gear_discovery_v5_2026-11-12.md"
+  },
+  "classification": {
+    "category_colours": 7,
+    "subtype_codes": 28,
+    "equipment_role": "shopping:gear",
+    "primary_role_rule": "Use Gear & technology for dedicated equipment retailers; do not change the seven categories or add subtype codes.",
+    "medical_role": "civic:medical",
+    "medical_rule": "Ripperdocs and medical clinics remain Medical & cyberware; no medical role changes approved by this manifest.",
+    "mixed_sellers_rule": "Keep pawnshops, markets, fashion shops and general stores in their primary role; index their Vend-R stock departments for discovery.",
+    "stock_availability": "Department profile means goods the vendor can plausibly sell, not confirmed on-hand stock.",
+    "id_join": "Canonical exact-ID joins only, with no inferred coordinates, phantom pins or duplicated outlets."
+  },
+  "precedence": [
+    "For a new build, load current.main_locations rather than V4 for the 556 main pin classifications.",
+    "Preserve the 105 separate Vend-R outlet pins from the approved private viewer; join existing IDs, never manufacture outlets from stock profiles.",
+    "Use current.merchandise_index and current.commerce_helper to attach searchable primary/secondary stock departments to existing pins before building unified search.",
+    "Use current.primary_role_overlay as an idempotent check/adapter if the input pins still have pre-V5 roles; do not apply unrelated role changes.",
+    "Keep V4 optional tags, category colour and existing icon morphology/animations; Vend-R departments are search facets, not display tags."
+  ],
+  "legacy": {
+    "v4": "data/locations/spaciel_locations_556_optional_tags_v4_2026-11-11.json",
+    "v4_status": "historical rollback only; not a default for new builds"
+  },
+  "scope": {
+    "future_builds_only": true,
+    "existing_private_viewer_updated": false,
+    "supabase_updated": false,
+    "no_geometry_or_viewer_visual_changes": true
+  }
+}
