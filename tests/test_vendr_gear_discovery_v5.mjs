@@ -6,10 +6,27 @@ import {applyVendrCommerceV1, findVendrRetailers} from '../src/locations/vendr-c
 const require = createRequire(import.meta.url);
 const SpacielSearch = require('../src/search/spaciel-search.js');
 const read = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url),'utf8'));
+const manifest = read('data/locations/manifest.json');
 const v4 = read('data/locations/spaciel_locations_556_optional_tags_v4_2026-11-11.json');
 const v5 = read('data/locations/spaciel_locations_556_gear_v5_2026-11-12.json');
 const roles = read('data/locations/spaciel_gear_role_overlay_v5_2026-11-12.json');
 const vendr = read('data/search/spaciel_vendr_merchandise_index_v1_2026-11-12.json');
+
+test('locked build manifest selects V5 and preserves future-viewer boundaries', () => {
+  assert.equal(manifest.current.version,'vendr-gear-v5');
+  assert.equal(manifest.current.status,'locked_default_for_future_spaciel_builds');
+  assert.equal(manifest.current.main_locations,'data/locations/spaciel_locations_556_gear_v5_2026-11-12.json');
+  assert.equal(manifest.current.merchandise_index,'data/search/spaciel_vendr_merchandise_index_v1_2026-11-12.json');
+  assert.equal(manifest.current.primary_role_overlay,'data/locations/spaciel_gear_role_overlay_v5_2026-11-12.json');
+  assert.equal(manifest.current.main_count,556);
+  assert.equal(manifest.current.separate_vendr_outlets,105);
+  assert.equal(manifest.classification.category_colours,7);
+  assert.equal(manifest.classification.subtype_codes,28);
+  assert.equal(manifest.classification.equipment_role,'shopping:gear');
+  assert.equal(manifest.classification.medical_role,'civic:medical');
+  assert.equal(manifest.scope.existing_private_viewer_updated,false);
+  assert.equal(manifest.legacy.v4_status.startsWith('historical rollback'),true);
+});
 
 test('source population and merchandise search counts do not confuse stock with dedicated stores', () => {
   assert.equal(vendr.records.length, 150);
