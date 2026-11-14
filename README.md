@@ -1,5 +1,9 @@
 # Spaciel — native SketchUp building placement workbench
 
+## LOCKED: V5 locations and Vend-R merchandise discovery — default for future builds (14 November 2026)
+
+**Canonical build source:** [`data/locations/manifest.json`](data/locations/manifest.json) locks the approved V5 556-location register, Vend-R merchandise-search index and exact-ID integration helper as the default for **every future Spaciel viewer build**. Do not silently fall back to V4 or the old eight-weapon-tag list. The existing private 661-pin viewer is **not** automatically redeployed by this repository change.
+
 ## Vend-R Gear normalisation and merchandise search — V5 (12 November 2026)
 
 **Approved working classification:** the seven map colour families and 28 role codes are unchanged. Four dedicated weapons retailers (Guns & Dolls, Sanroo Neuro-land, Pursuit Security Inc Showroom, Midnight Arms Regional Office) have moved from Specialist Retail to **Gear & technology** in the [556-place V5 register](data/locations/spaciel_locations_556_gear_v5_2026-11-12.json). The V4 baseline is retained.
