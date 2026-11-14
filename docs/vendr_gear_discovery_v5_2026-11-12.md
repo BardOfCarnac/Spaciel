@@ -2,6 +2,12 @@
 
 **Decision:** 12 November 2026. **Status:** Approved data + reusable integration committed to the public Spaciel repository; the private 661-pin portable viewer and any Supabase deployment have **not** been rebuilt or altered.
 
+## Future-build baseline locked — 14 November 2026
+
+**The user approved V5 as the authoritative default for future Spaciel builds.** The root-relative file [`data/locations/manifest.json`](../data/locations/manifest.json) now selects the complete V5 556-place register, canonical Vend-R merchandise index, and exact-ID commerce helper as the canonical location stack. A future build must follow that manifest instead of reusing the old V4 categories/subtypes embedded in older viewers.
+
+Keep the 105 separate Vend-R outlet pins only when already present in approved private viewer data. Preserve the original seven category colours and all 28 role codes. Merchandise departments affect findability, not an item's icon or its optional descriptive tags. Existing private viewers, hosted apps and Supabase remain unchanged until deliberately rebuilt and verified.
+
 ## Why
 
 The older 556-place Spaciel register had only eight explicit `Weapons` optional-tag assignments, misleadingly suggesting only eight shops. The independent Vend-R v1.3 stock profile database identifies **21 sellers whose stock model includes weapons** and **18 including armour**; **29** distinct sellers have at least one of those departments. Of the 21 weapons-capable vendors, nine have the primary `weapons-dealer` archetype. These counts describe cataloguing/supply capability, **not a promise of live stock**, and include embedded stores / mixed retailers.
