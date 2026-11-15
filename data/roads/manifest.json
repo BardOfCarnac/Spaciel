@@ -19,7 +19,14 @@
     "topology_policy": "V30 user-approved joins; reviewed rejections retained",
     "paint_style_file": "v33_yellow_paint_style_v1.json",
     "yellow_width_atlas_px": 20,
-    "paint_style_status": "conservative_dual_atlas_match"
+    "paint_style_status": "conservative_dual_atlas_match",
+    "grey_width_style_file": "v33_grey_width_style_v1.json",
+    "grey_width_classes_atlas_px": {
+      "narrow": 9,
+      "regular": 12,
+      "wide": 17
+    },
+    "styling_note": "Three grey display widths in addition to 20 px fixed yellow; no geometry change"
   },
   "legacy": {
     "v23": "roadcraft_v23_default_width22.json",
@@ -35,7 +42,13 @@
     "observed_edge_samples": 2288,
     "estimated_edge_samples": 5221,
     "yellow_paths": 394,
-    "paint_review_paths": 191
+    "paint_review_paths": 191,
+    "grey_narrow_paths": 501,
+    "grey_regular_paths": 753,
+    "grey_wide_paths": 68,
+    "grey_review_paths": 55,
+    "grey_dual_atlas_supported": 336,
+    "grey_provisional_paths": 986
   },
-  "usage": "New integrations load V33 road graph and the separate yellow paint styling map. Confirmed yellow paths have a constant 20 atlas-pixel width. No change to centreline geometry or junctions. The private combined viewer needs separate rebuild."
+  "usage": "V33 topology and centrelines remain canonical. New viewers load yellow colour styling then grey width styling; 191 colour-uncertain plus 55 grey-width-uncertain paths retain previous widths. The private 3D city viewer still requires separate rebuilding."
 }
