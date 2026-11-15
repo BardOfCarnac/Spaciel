@@ -41,14 +41,13 @@ The [V4 optional-tag policy](data/decisions/location_additional_tag_policy_v4.js
 This is the **approved data/UI rule**, not a claim that the private main application or Supabase has already been redeployed. Older V19 and modular preview HTML files embed their previous tag snapshots until explicitly updated.
 
 
-## Default Night City roads — Roadcraft V23 (11 November 2026)
+## Default Night City roads — Roadcraft V33 (15 November 2026)
 
-**Roadcraft V23, 22 atlas-pixel interpretation width, is the selected working road network for future Spaciel builds.** This is the road layer to use, not merely a comparison experiment. The actual **1,436-node / 1,992-path connected routing graph** is committed at [`data/roads/roadcraft_v23_default_width22.json`](data/roads/roadcraft_v23_default_width22.json). The [active road manifest](data/roads/manifest.json) makes this the canonical default and [`viewer/src/road-network.js`](viewer/src/road-network.js) loads it without silently substituting V17/V21.
+**Roadcraft V33 is the accepted working road layer for all new Spaciel builds.** Its centreline graph has 1,390 nodes, 1,962 paths, 208 degree-one endpoints and 11 approved V30 road continuations. The graph remains connected and preserves V31's curves with the conservative V33 atlas-checked corrections. V32 was rejected.
 
-V23 collapses tracing artefacts that fit within the painted stroke: tiny diamonds, doubled parallel paths, sub-width spurs and narrow loops. **The source map still needs visual QA; this is our chosen working baseline, not a surveyed final road network.** V17, V21 and V22 remain as earlier snapshots; previously packaged private viewers will continue to show their embedded roads until rebuilt against the new default.
+The [V33 road manifest](data/roads/manifest.json) is now the canonical default; the [V33 runtime data](data/roads/roadcraft_v33_usable.json), [loader and renderer-facing API](viewer/src/road-network.js), [router](viewer/src/road-routing.mjs), and [tests](tests/roadcraft-v33-default.test.mjs) are committed. The previous V23 graph remains in place as a historical reference, not an automatic fallback. Observed edge samples are distinguished from modelled approximations.
 
-This repository contains a **working baseline**, not a completed city viewer or a published website.
-
+**Zoom-detail standard (experimental appearance):** the same V33 outer road edges read as thin outlines at a distance and gradually resolve into stylised kerbs and pavement bands when viewed closely. See [the road zoom design](docs/ROAD_ZOOM_DETAIL_V1.md) and [the reusable LOD renderer](viewer/src/road-kerb-lod.mjs). Pavements are visual estimates, not surveyed geometry. The existing private V19/WebGL viewer does not update until separately integrated and rebuilt.
 
 ## Approved focused spectrum colours — standard (11 November 2026)
 
