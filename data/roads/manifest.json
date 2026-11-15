@@ -9,26 +9,28 @@
     "origin": "top-left"
   },
   "current": {
-    "version": "roadcraft-v23",
-    "file": "roadcraft_v23_default_width22.json",
-    "graph_schema": "spaciel-roadcraft-v23-parallel-corridor-review",
-    "default_local_road_width_px": 22,
-    "major_width_multiplier": 1.55,
-    "selected_on": "2026-11-11",
-    "status": "working_default_for_new_spaciel_viewers",
-    "review_note": "Selected by the user as the road graph to use; cartographic QA and geometric refinement continue."
+    "version": "roadcraft-v33",
+    "file": "roadcraft_v33_usable.json",
+    "graph_schema": "spaciel.roads.runtime.v1",
+    "status": "user_accepted_for_new_spaciel_builds",
+    "selected_on": "2026-11-15",
+    "geometry_policy": "V31 curves with atlas-checked V33 corrections; V32 rejected",
+    "edge_policy": "observed edge samples distinguished from inferred",
+    "topology_policy": "V30 user-approved joins; reviewed rejections retained"
   },
   "legacy": {
-    "v17_display": "v17_cleaned_road_centerlines.geojson",
-    "v17_width_classes": "v17_road_width_classes_by_chain.csv",
-    "v21": "experiment/roadcraft-v21-cartographic-grammar",
-    "v22": "private archived experiment in Spaciel/working-data"
+    "v23": "roadcraft_v23_default_width22.json",
+    "v31": "Private V31/V33 edge-evidence archive (not published in this repository)",
+    "v32": "rejected-experimental"
   },
   "checks": {
     "connected_components": 1,
-    "nodes": 1436,
-    "paths": 1992,
-    "cycle_rank": 557
+    "nodes": 1390,
+    "paths": 1962,
+    "degree_one_nodes": 208,
+    "approved_join_count": 11,
+    "observed_edge_samples": 2288,
+    "estimated_edge_samples": 5221
   },
-  "usage": "New viewers load current.file by default. V17, V21 and V22 remain historical references, not silent fallbacks. Do not replace the currently published/private viewer unless it has explicitly been rebuilt against this manifest."
+  "usage": "V33 is the default for all new Spaciel road integrations. Private V19/3D viewers require separate rebuilds; no automatic deployment. Atlas images remain private."
 }
