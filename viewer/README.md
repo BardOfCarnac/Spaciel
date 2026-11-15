@@ -1,10 +1,10 @@
 # Spaciel viewer builds
 
-## Selected road network — V23 (11 November 2026)
+## Selected road network — V33 (15 November 2026)
 
-**Roadcraft V23 at 22 atlas pixels is the default for all new Spaciel viewer integrations.** The actual graph lives at [`data/roads/roadcraft_v23_default_width22.json`](../data/roads/roadcraft_v23_default_width22.json); [`data/roads/manifest.json`](../data/roads/manifest.json) declares it current, and [`src/road-network.js`](src/road-network.js) loads and validates it. The exported routing graph contains **1,436 nodes, 1,992 paths, 557 independent cycles, one connected component**.
+**Roadcraft V33 is the default for all new viewer integrations.** The canonical manifest is [data/roads/manifest.json](../data/roads/manifest.json); its source-independent runtime graph is [roadcraft_v33_usable.json](../data/roads/roadcraft_v33_usable.json). Load it with [loadSpacielRoads()](src/road-network.js): `roads[].points`, `roads[].widthPx`, `roads[].roadClass`, `roads[].edgeSamples`, plus the graph-aware `router.snap()` and `router.route()`. The connected graph contains **1,390 nodes, 1,962 paths and 11 user-approved joins**. Routes remain in atlas pixels, not real-world travel times.
 
-Use `loadSpacielRoads()` in new modular viewers, and render its `roads[].points` without inventing route connections at visually overlapping painted strokes. V17, V21 and V22 are archived comparison references, not defaults. Earlier standalone HTML viewer versions **are not retroactively updated** by changing the GitHub manifest; those will need an integration rebuild. The cleaned geometry is a selected working baseline, not a claim of final atlas alignment or surveyed carriageways.
+Use [road-kerb-lod.mjs](src/road-kerb-lod.mjs) when experimenting with close-zoom pavement/kerb styling; the appearance uses the same centreline and road width, and adds **no extra navigable graph geometry**. The V23 graph is retained as an archive; V32 was rejected. Edge samples marked modelled are not surveyed kerbs. The private V19/WebGL viewer has **not** been rebuilt automatically.
 
 ## Latest private integrated city infill — Realisation 14 (11 November 2026)
 
