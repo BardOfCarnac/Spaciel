@@ -12,7 +12,7 @@ The same continuous centreline and individual width from V33 determine every sta
 
 Street-level widths of sidewalks are **illustrative**, not present in the original source atlas; the road layer retains `edgeSamples` with explicit observed (`o`) versus modelled (`m`) evidence. No assumption that the constructed pavement is a measured object should enter routing, collision, or building-placement systems.
 
-Draw adjoining roads in shared passes (pavement, kerb lip, road fill), so intersection joins form one surface. Keep curbs across true junction mouths absent once the roadway fills; finer intersection cut-outs should come from a junction-aware mesh once other app layers are integrated.
+Draw all pavements first, all roadways second, and two offset kerb-edge polylines last. Trim those outlines near real 3+-arm junctions so no artificial circular caps or kerb lines appear across a junction mouth. Supply node degrees calculated from the full graph even when culling offscreen paths. A future junction-aware mesh can make exact corner arcs.
 
 ## Boundaries
 

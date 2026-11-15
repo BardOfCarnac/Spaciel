@@ -16,3 +16,8 @@ test('detail is presentation only and enforces positive widths and zoom',()=>{
   assert.throws(()=>roadDetailAtZoom(path,0));
   assert.equal(roadDetailAtZoom(path,.1,'kerbs').reveal,1);
 });
+test('node degree utilities count real graph endpoints, not geometry crossings',async()=>{
+ const {roadNodeDegrees}=await import('../viewer/src/road-kerb-lod.mjs');
+ const ds=roadNodeDegrees([{from:1,to:2},{from:2,to:3},{from:2,to:4}]);
+ assert.equal(ds.get('2'),3);assert.equal(ds.get('1'),1);
+});
