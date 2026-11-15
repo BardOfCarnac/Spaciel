@@ -16,7 +16,10 @@
     "selected_on": "2026-11-15",
     "geometry_policy": "V31 curves with atlas-checked V33 corrections; V32 rejected",
     "edge_policy": "observed edge samples distinguished from inferred",
-    "topology_policy": "V30 user-approved joins; reviewed rejections retained"
+    "topology_policy": "V30 user-approved joins; reviewed rejections retained",
+    "paint_style_file": "v33_yellow_paint_style_v1.json",
+    "yellow_width_atlas_px": 20,
+    "paint_style_status": "conservative_dual_atlas_match"
   },
   "legacy": {
     "v23": "roadcraft_v23_default_width22.json",
@@ -30,7 +33,9 @@
     "degree_one_nodes": 208,
     "approved_join_count": 11,
     "observed_edge_samples": 2288,
-    "estimated_edge_samples": 5221
+    "estimated_edge_samples": 5221,
+    "yellow_paths": 394,
+    "paint_review_paths": 191
   },
-  "usage": "V33 is the default for all new Spaciel road integrations. Private V19/3D viewers require separate rebuilds; no automatic deployment. Atlas images remain private."
+  "usage": "New integrations load V33 road graph and the separate yellow paint styling map. Confirmed yellow paths have a constant 20 atlas-pixel width. No change to centreline geometry or junctions. The private combined viewer needs separate rebuild."
 }
